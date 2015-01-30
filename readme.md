@@ -17,7 +17,8 @@ Once these tweets are found, search through the tweets looking for names of
 nominess (including aliases + twitter handle).  If possible determine if the tweet was
 congratulatory or bitter, use this to weigh score.
 
-Score = `number of tweets about particular a nominee / all tweets with nominee`
+Score = `number of tweets about particular a nominee / all tweets about category
+with any nominee`
 
 If tweet is determined congratulatory, increase it's weight by N (for example,
 pretend it was in the dataset 5 times)
