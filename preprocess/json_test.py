@@ -1,5 +1,6 @@
 import sys
 import json
+import string
 
 def write_tweets(source_path, out_path, attr):
     written = 0
@@ -7,6 +8,7 @@ def write_tweets(source_path, out_path, attr):
         outfile = open(out_path, 'w')
         for line in json_file:
             content = json.loads(line)[attr]
+            content = string.replace(content, "\n", " ")
             outfile.write(content.encode('utf-8') + "\n".encode('utf-8'))
             written += 1
             if written % 1000 == 0:
