@@ -31,7 +31,7 @@ class Award(object):
 
     def __init__(self, name, aliases=[], nominees=[]):
         self.name = name
-        self.short_names = short_names
+        self.aliases = aliases
 
         # nominees should all be NOMINEE OBJECTS!
         self.nominees = nominees
