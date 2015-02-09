@@ -25,11 +25,11 @@ def search_tweets(source_path, out_path, searchterm_list, arg):	# arg = 0: Searc
 			content = line
                         t = tweet.Tweet(content)
 			if arg == '0':
-                                if t.tweet_contains_token_in(searchterm_list):
+                                if t.tweet_contains_word_in(searchterm_list):
                                         count += 1
-                                        if count % 100 == 0:
+                                        if count % 10 == 0:
                                             print "Wrote %d tweets" % count
-                                        outfile.write(content + "\n")
+                                        outfile.write(content)
 			elif arg == '1':
 				for element in searchterm_list:
 					if element not in tweet_list:
@@ -37,14 +37,13 @@ def search_tweets(source_path, out_path, searchterm_list, arg):	# arg = 0: Searc
                                                 break
 				if add == "True":
 					count += 1
-					outfile.write(content + "\n")
+					outfile.write(content)
 	return count
 
 def main():		# sys.argv[1] = String of search terms separated by spaces.
 				# sys.argv[2] = 0 or 1 depending on search preferences.
 	# write_tweets("../data/goldenglobes2015.json", "tweets.txt", "text")
-	print search_tweets("tweets.txt", "best_tweets.txt", ["best", "cecile",
-            "a", "b", "c", "d", "e", "f"], sys.argv[1])
+	search_tweets("tweets.txt", "presenting.txt", ["presenting", "presents"], sys.argv[1])
 	return
 
 main()
