@@ -62,8 +62,11 @@ class Tweet(object):
         Check for word in the argument list with regexes
         May be more efficient but less accurate (see test cases)
         """
-        return any(map(lambda(word): re.search(word, self.text, re.I) is not None,
-                                     words))
+        for word in words:
+            matches = re.search(word, self.text, re.I)
+            if matches is not None:
+                return True
+        return False
 
     def tweet_contains_token_in(self, words):
         """

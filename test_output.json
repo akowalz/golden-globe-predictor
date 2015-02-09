@@ -1,0 +1,32 @@
+{
+    "Best Actress in Motion Picture, Drama": {
+        "Nominees": {
+            "Jennifer Aniston": 861,
+            "Julianne Moore": 13937,
+            "Rosamund Pike": 475,
+            "Felicity Jones": 363,
+            "Reese Witherspoon": 462
+        },
+        "total": 16098
+    },
+    "Best Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Birdman": 17578,
+            "Into The Woods": 130,
+            "St.Vincent": 10,
+            "The Grand Budapest Hotel": 18295,
+            "Pride": 770
+        },
+        "total": 36783
+    },
+    "Best Motion Picture, Drama": {
+        "Nominees": {
+            "Foxcatcher": 353,
+            "Selma": 23123,
+            "Boyhood": 43968,
+            "The Imitation Game": 146,
+            "The Theory of Everything": 11702
+        },
+        "total": 77292
+    }
+}
