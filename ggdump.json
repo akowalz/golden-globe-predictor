@@ -1,0 +1,306 @@
+{
+    "0": {
+        "Best Motion Picture, Drama": {
+            "Nominees": [
+                "\nBest Motion Picture, Drama", 
+                "Boyhood", 
+                "\n\nFoxcatcher", 
+                "\n\nThe Imitation Game", 
+                "\n\nSelma", 
+                "\n\nThe Theory of Everything"
+            ], 
+            "Award": "Best Motion Picture, Drama"
+        }
+    }, 
+    "1": {
+        "Best Actress in a Motion Picture, Drama": {
+            "Nominees": [
+                "Julianne Moore\n(Still Alice)", 
+                "\n\nRosamund Pike\n(Gone Girl)", 
+                "\n\nReese Witherspoon\n(Wild)", 
+                "\n\nFelicity Jones\n(The Theory of Everything)", 
+                "\n\nJennifer Aniston\n(Cake)"
+            ], 
+            "Award": "Best Actress in a Motion Picture, Drama"
+        }
+    }, 
+    "2": {
+        "Best Actor in a Motion Picture, Drama": {
+            "Nominees": [
+                "Eddie Redmayne\n(The Theory of Everything)", 
+                "\n\nSteve Carell\n(Foxcatcher)", 
+                "\n\nBenedict Cumberbatch\n(The Imitation Game)", 
+                "\n\nDavid Oyelowo\n(Selma)", 
+                "\n\nJake Gyllenhaal\n(Nightcrawler)"
+            ], 
+            "Award": "Best Actor in a Motion Picture, Drama"
+        }
+    }, 
+    "3": {
+        "Best Motion Picture, Musical or Comedy": {
+            "Nominees": [
+                "Into The Woods", 
+                "\n\nBirdman", 
+                "\n\nThe Grand Budapest Hotel", 
+                "\n\nSt. Vincent", 
+                "\n\nPride"
+            ], 
+            "Award": "Best Motion Picture, Musical or Comedy"
+        }
+    }, 
+    "4": {
+        "Best Actress In A Motion Picture, Musical or Comedy": {
+            "Nominees": [
+                "Julianne Moore\n(Maps To The Stars)", 
+                "\n\nAmy Adams\n(Big Eyes)", 
+                "\n\nEmily Blunt\n(Into The Woods)", 
+                "\n\nHelen Mirren\n(The Hundred Foot Journey)", 
+                "\n\nQuvenzhan\u00e9 Wallis\n(Annie)"
+            ], 
+            "Award": "Best Actress In A Motion Picture, Musical or Comedy"
+        }
+    }, 
+    "5": {
+        "Best Actor in a Motion Picture, Musical or Comedy": {
+            "Nominees": [
+                "Michael Keaton\n(Birdman)", 
+                "\n\nBill Murray \n(St. Vincent)", 
+                "\n\nRalph Fiennes\n(The Grand Budapest Hotel)", 
+                "\n\nChristoph Waltz\n(Big Eyes)", 
+                "\n\nJoaquin Phoenix\n(Inherent Vice)"
+            ], 
+            "Award": "Best Actor in a Motion Picture, Musical or Comedy"
+        }
+    }, 
+    "6": {
+        "Best Animated Feature Film": {
+            "Nominees": [
+                "The Lego Movie", 
+                "\n\nHow To Train Your Dragon 2", 
+                "\n\nBig Hero 6", 
+                "\n\nThe Book of Life", 
+                "\n\nThe Boxtrolls"
+            ], 
+            "Award": "Best Animated Feature Film"
+        }
+    }, 
+    "7": {
+        "Best Foreign Language Film": {
+            "Nominees": [
+                "Ida\n(Ida)", 
+                "\n\nForce Majeure", 
+                "\n\nGett: The Trial of Viviane Amsalem", 
+                "\n\nTangerines", 
+                "\n\nLeviathan"
+            ], 
+            "Award": "Best Foreign Language Film"
+        }
+    }, 
+    "8": {
+        "Best Supporting Actress in a Motion Picture": {
+            "Nominees": [
+                "Jessica Chastain\n(A Most Violent Year)", 
+                "\n\nKeira Knightley\n(The Imitation Game)", 
+                "\n\nPatricia Arquette\n(Boyhood)", 
+                "\n\nMeryl Streep\n(Into The Woods)", 
+                "\n\nEmma Stone\n(Birdman)"
+            ], 
+            "Award": "Best Supporting Actress in a Motion Picture"
+        }
+    }, 
+    "9": {
+        "Best Supporting Actor in a Motion Picture": {
+            "Nominees": [
+                "Ethan Hawke\n(Boyhood)", 
+                "\n\nRobert Duvall\n(The Judge)", 
+                "\n\nEdward Norton\n(Birdman)", 
+                "\n\nJ.K. Simmons\n(Whiplash)", 
+                "\n\nMark Ruffalo\n(Foxcatcher)"
+            ], 
+            "Award": "Best Supporting Actor in a Motion Picture"
+        }
+    }, 
+    "10": {
+        "Best Director - Motion Picture": {
+            "Nominees": [
+                "Ava DuVernay\n(Selma)", 
+                "\n\nWes Anderson\n(The Grand Budapest Hotel)", 
+                "\n\nAlejandro Gonz\u00e1lez I\u00f1\u00e1rritu\n(Birdman)", 
+                "\n\nDavid Fincher\n(Gone Girl)", 
+                "\n\nRichard Linklater\n(Boyhood)"
+            ], 
+            "Award": "Best Director - Motion Picture"
+        }
+    }, 
+    "11": {
+        "Best Screenplay - Motion Picture": {
+            "Nominees": [
+                "Wes Anderson\n(The Grand Budapest Hotel)", 
+                "\n\nGillian Flynn\n(Gone Girl)", 
+                "\n\nAlejandro Gonz\u00e1lez I\u00f1\u00e1rritu, Nicol\u00e1s Giacobone, Alexander Dinelaris, Armando Bo\n(Birdman)", 
+                "\n\nRichard Linklater\n(Boyhood)", 
+                "\n\nGraham Moore\n(The Imitation Game)"
+            ], 
+            "Award": "Best Screenplay - Motion Picture"
+        }
+    }, 
+    "12": {
+        "Best Original Score - Motion Picture": {
+            "Nominees": [
+                "Alexandre Desplat\n(The Imitation Game)", 
+                "\n\nJ\u00f3hann J\u00f3hannsson\n(The Theory Of Everything)", 
+                "\n\nTrent Reznor, Atticus Ross\n(Gone Girl)", 
+                "\n\nAntonio Sanchez\n(Birdman)", 
+                "\n\nHans Zimmer\n(Interstellar)"
+            ], 
+            "Award": "Best Original Score - Motion Picture"
+        }
+    }, 
+    "13": {
+        "Best Original Song - Motion Picture": {
+            "Nominees": [
+                "Big Eyes", 
+                "\n\nSelma", 
+                "\n\nNoah", 
+                "\n\nAnnie", 
+                "\n\nThe Hunger Games: Mockingjay, Part 1"
+            ], 
+            "Award": "Best Original Song - Motion Picture"
+        }
+    }, 
+    "14": {
+        "Best TV Series, Drama": {
+            "Nominees": [
+                "Downton Abbey", 
+                "\n\nThe Affair", 
+                "\n\nGame Of Thrones", 
+                "\n\nHouse of Cards", 
+                "\n\nGood Wife, The"
+            ], 
+            "Award": "Best TV Series, Drama"
+        }
+    }, 
+    "15": {
+        "Best Actress in a TV Series, Drama": {
+            "Nominees": [
+                "Viola Davis\n(How to Get Away With Murder)", 
+                "\n\nClaire Danes\n(Homeland)", 
+                "\n\nJulianna Margulies\n(The Good Wife)", 
+                "\n\nRobin Wright\n(House of Cards)", 
+                "\n\nRuth Wilson\n(The Affair)"
+            ], 
+            "Award": "Best Actress in a TV Series, Drama"
+        }
+    }, 
+    "16": {
+        "Best Actor in a TV Series, Drama": {
+            "Nominees": [
+                "Kevin Spacey\n(House of Cards)", 
+                "\n\nClive Owen\n(The Knick)", 
+                "\n\nJames Spader\n(The Blacklist)", 
+                "\n\nDominic West\n(The Affair)", 
+                "\n\nLiev Schreiber\n(Ray Donovan)"
+            ], 
+            "Award": "Best Actor in a TV Series, Drama"
+        }
+    }, 
+    "17": {
+        "Best TV Series, Musical or Comedy": {
+            "Nominees": [
+                "Orange is the New Black", 
+                "\n\nGirls", 
+                "\n\nJane the Virgin", 
+                "\n\nTransparent", 
+                "\n\nSilicon Valley"
+            ], 
+            "Award": "Best TV Series, Musical or Comedy"
+        }
+    }, 
+    "18": {
+        "Best Actress in a TV Series, Musical or Comedy": {
+            "Nominees": [
+                "Julia Louis-Dreyfus\n(Veep)", 
+                "\n\nEdie Falco\n(Nurse Jackie)", 
+                "\n\nGina Rodriguez\n(Jane The Virgin)", 
+                "\n\nLena Dunham\n(Girls)", 
+                "\n\nTaylor Schilling\n(Orange is the New Black)"
+            ], 
+            "Award": "Best Actress in a TV Series, Musical or Comedy"
+        }
+    }, 
+    "19": {
+        "Best Actor in a TV Series, Musical or Comedy": {
+            "Nominees": [
+                "Don Cheadle\n(House of Lies)", 
+                "\n\nWilliam H. Macy\n(Shameless)", 
+                "\n\nRicky Gervais\n(Derek)", 
+                "\n\nJeffrey Tambor\n(Transparent)", 
+                "\n\nLouie C.K.\n(Louie)"
+            ], 
+            "Award": "Best Actor in a TV Series, Musical or Comedy"
+        }
+    }, 
+    "20": {
+        "Best TV Movie or Mini-Series": {
+            "Nominees": [
+                "Olive Kitteridge", 
+                "\n\nFargo", 
+                "\n\nThe Missing", 
+                "\n\nTrue Detective", 
+                "\n\nThe Normal Heart"
+            ], 
+            "Award": "Best TV Movie or Mini-Series"
+        }
+    }, 
+    "21": {
+        "Best Actress in a Mini-Series or TV Movie": {
+            "Nominees": [
+                "Jessica Lange\n(American Horror Story: Freak Show)", 
+                "\n\nMaggie Gyllenhaal\n(The Honorable Woman)", 
+                "\n\nFrances McDormand\n(Olive Kitteridge)", 
+                "\n\nAllison Tolman\n(Fargo)", 
+                "\n\nFrances O'Connor\n(The Missing)"
+            ], 
+            "Award": "Best Actress in a Mini-Series or TV Movie"
+        }
+    }, 
+    "22": {
+        "Best Actor in a Mini-Series or TV Movie": {
+            "Nominees": [
+                "Martin Freeman\n(Fargo)", 
+                "\n\nMatthew McConaughey\n(True Detective)", 
+                "\n\nWoody Harrelson\n(True Detective)", 
+                "\n\nBilly Bob Thornton\n(Fargo)", 
+                "\n\nMark Ruffalo\n(The Normal Heart)"
+            ], 
+            "Award": "Best Actor in a Mini-Series or TV Movie"
+        }
+    }, 
+    "23": {
+        "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
+            "Nominees": [
+                "Kathy Bates\n(American Horror Story: Freak Show)", 
+                "\n\nUzo Aduba\n(Orange is the New Black)", 
+                "\n\nJoanne Froggatt\n(Downton Abbey)", 
+                "\n\nMichelle Monaghan\n(True Detective)", 
+                "\n\nAllison Janney\n(Mom)"
+            ], 
+            "Award": "Best Supporting Actress in a Series, Mini-Series or TV Movie"
+        }
+    }, 
+    "24": {
+        "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
+            "Nominees": [
+                "Bill Murray \n(Olive Kitteridge)", 
+                "\n\nJon Voight\n(Ray Donovan)", 
+                "\n\nMatt Bomer\n(The Normal Heart)", 
+                "\n\nAlan Cumming\n(The Good Wife)", 
+                "\n\nColin Hanks\n(Fargo)", 
+                "", 
+                "\n  $(document).ready(function (){\n    function fix_heights ($_parent_grid) {\n      $($_parent_grid + ' .col').each(function( index ) {\n        if ($(this).height() < 34) {\n          $(this).height(34);\n        }\n      });\n    }\n\n    fix_heights('.has-winner');\n\n    $('.close-trailer').click(function(event) {\n      $f().stop();\n      $('.extra-row, .now-playing').toggle();\n      $_parent_grid = $(this).parents('.views-view-grid').attr('id');\n      fix_heights('#' + $_parent_grid);\n      event.preventDefault();\n    });\n  });", 
+                ""
+            ], 
+            "Award": "Best Supporting Actor in a Series, Mini-Series or TV Movie"
+        }
+    }
+}
