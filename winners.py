@@ -28,7 +28,7 @@ def nominated_for(awards):
     for award, data in awards.iteritems():
         for nom in data["Nominees"]:
             if nom in nominees:
-                nominess[nom].append(award)
+                nominees[nom].append(award)
             nominees[nom] = [award]
     return nominees
 
@@ -100,21 +100,18 @@ def find_winners(data, tweet_path):
     tweet_path is the path to a line-deliminted list of tweets
     """
     nominees = all_nominees(data)
-    pretty_print_dict(nominees)
     winners = initialize_winners(data)
-    pretty_print_dict(winners)
     nominations = nominated_for(data)
-    pretty_print_dict(nominations)
     aliases = nominee_aliases(nominees)
-    pretty_print_dict(aliases)
+
+    pretty_print_dict(nominees)
 
     tc = 0
     with codecs.open(tweet_path, 'r', 'utf-8') as f:
         for tweet in f:
             tc += 1
             for nom in nominees:
-                if tweet_contains_word_in(tweet, aliases[nom]):
-                    # This is where we need to disambiguate awards!
+                if tweet_contains_word_in(tweet, [nom]):
                     if len(nominations[nom]) > 1:
                         award_for_nom = find_best_award(tweet, nominations[nom])
                     else:
@@ -127,6 +124,8 @@ def find_winners(data, tweet_path):
                     winners[award_for_nom]["total"] += weight
             if tc % 1000 == 0:
                 print "Processed %d tweets" % tc
+                print pretty_print_dict(winners)
+
     return winners
 
 def process_winners(winners):

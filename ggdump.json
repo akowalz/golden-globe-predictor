@@ -12,21 +12,21 @@
     },
     "Best Actress in a Motion Picture, Drama": {
         "Nominees": [
-            "Julianne Moore(Still Alice)",
-            "Rosamund Pike(Gone Girl)",
-            "Reese Witherspoon(Wild)",
-            "Felicity Jones(The Theory of Everything)",
-            "Jennifer Aniston(Cake)"
+            "Julianne Moore",
+            "Rosamund Pike",
+            "Reese Witherspoon",
+            "Felicity Jones",
+            "Jennifer Aniston"
         ],
         "Award": "Best Actress in a Motion Picture, Drama"
     },
     "Best Actor in a Motion Picture, Drama": {
         "Nominees": [
-            "Eddie Redmayne(The Theory of Everything)",
-            "Steve Carell(Foxcatcher)",
-            "Benedict Cumberbatch(The Imitation Game)",
-            "David Oyelowo(Selma)",
-            "Jake Gyllenhaal(Nightcrawler)"
+            "Eddie Redmayne",
+            "Steve Carell",
+            "Benedict Cumberbatch",
+            "David Oyelowo",
+            "Jake Gyllenhaal"
         ],
         "Award": "Best Actor in a Motion Picture, Drama"
     },
@@ -42,21 +42,21 @@
     },
     "Best Actress In A Motion Picture, Musical or Comedy": {
         "Nominees": [
-            "Julianne Moore(Maps To The Stars)",
-            "Amy Adams(Big Eyes)",
-            "Emily Blunt(Into The Woods)",
-            "Helen Mirren(The Hundred Foot Journey)",
-            "Quvenzhan Wallis(Annie)"
+            "Julianne Moore",
+            "Amy Adams",
+            "Emily Blunt",
+            "Helen Mirren",
+            "Quvenzhan Wallis"
         ],
         "Award": "Best Actress In A Motion Picture, Musical or Comedy"
     },
     "Best Actor in a Motion Picture, Musical or Comedy": {
         "Nominees": [
-            "Michael Keaton(Birdman)",
-            "Bill Murray (St. Vincent)",
-            "Ralph Fiennes(The Grand Budapest Hotel)",
-            "Christoph Waltz(Big Eyes)",
-            "Joaquin Phoenix(Inherent Vice)"
+            "Michael Keaton",
+            "Bill Murray ",
+            "Ralph Fiennes",
+            "Christoph Waltz",
+            "Joaquin Phoenix"
         ],
         "Award": "Best Actor in a Motion Picture, Musical or Comedy"
     },
@@ -72,7 +72,7 @@
     },
     "Best Foreign Language Film": {
         "Nominees": [
-            "Ida(Ida)",
+            "Ida",
             "Force Majeure",
             "Gett: The Trial of Viviane Amsalem",
             "Tangerines",
@@ -82,51 +82,51 @@
     },
     "Best Supporting Actress in a Motion Picture": {
         "Nominees": [
-            "Jessica Chastain(A Most Violent Year)",
-            "Keira Knightley(The Imitation Game)",
-            "Patricia Arquette(Boyhood)",
-            "Meryl Streep(Into The Woods)",
-            "Emma Stone(Birdman)"
+            "Jessica Chastain",
+            "Keira Knightley",
+            "Patricia Arquette",
+            "Meryl Streep",
+            "Emma Stone"
         ],
         "Award": "Best Supporting Actress in a Motion Picture"
     },
     "Best Supporting Actor in a Motion Picture": {
         "Nominees": [
-            "Ethan Hawke(Boyhood)",
-            "Robert Duvall(The Judge)",
-            "Edward Norton(Birdman)",
-            "J.K. Simmons(Whiplash)",
-            "Mark Ruffalo(Foxcatcher)"
+            "Ethan Hawke",
+            "Robert Duvall",
+            "Edward Norton",
+            "J.K. Simmons",
+            "Mark Ruffalo"
         ],
         "Award": "Best Supporting Actor in a Motion Picture"
     },
     "Best Director - Motion Picture": {
         "Nominees": [
-            "Ava DuVernay(Selma)",
-            "Wes Anderson(The Grand Budapest Hotel)",
-            "Alejandro Gonz\u00e1lez I\u00f1\u00e1rritun(Birdman)",
-            "David Fincher(Gone Girl)",
-            "Richard Linklater(Boyhood)"
+            "Ava DuVernay",
+            "Wes Anderson",
+            "Alejandro Gonz\u00e1lez I\u00f1\u00e1rritun",
+            "David Fincher",
+            "Richard Linklater"
         ],
         "Award": "Best Director - Motion Picture"
     },
     "Best Screenplay - Motion Picture": {
         "Nominees": [
-            "Wes Anderson(The Grand Budapest Hotel)",
-            "Gillian Flynn(Gone Girl)",
-            "Alejandro Gonz\u00e1lez I\u00f1\u00e1rritu, Nicol\u00e1s Giacobone, Alexander Dinelaris, Armando Bo (Birdman)",
-            "Richard Linklater(Boyhood)",
-            "Graham Moore(The Imitation Game)"
+            "Wes Anderson",
+            "Gillian Flynn",
+            "Alejandro Gonz\u00e1lez I\u00f1\u00e1rritu, Nicol\u00e1s Giacobone, Alexander Dinelaris, Armando Bo ",
+            "Richard Linklater",
+            "Graham Moore"
         ],
         "Award": "Best Screenplay - Motion Picture"
     },
     "Best Original Score - Motion Picture": {
         "Nominees": [
-            "Alexandre Desplat(The Imitation Game)",
-            "J\u00f3hann J\u00f3hannsson(The Theory Of Everything)",
-            "Trent Reznor, Atticus Ross(Gone Girl)",
-            "Antonio Sanchez(Birdman)",
-            "Hans Zimmer(Interstellar)"
+            "Alexandre Desplat",
+            "J\u00f3hann J\u00f3hannsson",
+            "Trent Reznor, Atticus Ross",
+            "Antonio Sanchez",
+            "Hans Zimmer"
         ],
         "Award": "Best Original Score - Motion Picture"
     },
@@ -152,21 +152,21 @@
     },
     "Best Actress in a TV Series, Drama": {
         "Nominees": [
-            "Viola Davis(How to Get Away With Murder)",
-            "Claire Danes(Homeland)",
-            "Julianna Margulies(The Good Wife)",
-            "Robin Wright(House of Cards)",
-            "Ruth Wilson(The Affair)"
+            "Viola Davis",
+            "Claire Danes",
+            "Julianna Margulies",
+            "Robin Wright",
+            "Ruth Wilson"
         ],
         "Award": "Best Actress in a TV Series, Drama"
     },
     "Best Actor in a TV Series, Drama": {
         "Nominees": [
-            "Kevin Spacey(House of Cards)",
-            "Clive Owen(The Knick)",
-            "James Spader(The Blacklist)",
-            "Dominic West(The Affair)",
-            "Liev Schreiber(Ray Donovan)"
+            "Kevin Spacey",
+            "Clive Owen",
+            "James Spader",
+            "Dominic West",
+            "Liev Schreiber"
         ],
         "Award": "Best Actor in a TV Series, Drama"
     },
@@ -182,21 +182,21 @@
     },
     "Best Actress in a TV Series, Musical or Comedy": {
         "Nominees": [
-            "Julia Louis-Dreyfus(Veep)",
-            "Edie Falco(Nurse Jackie)",
-            "Gina Rodriguez(Jane The Virgin)",
-            "Lena Dunham(Girls)",
-            "Taylor Schilling(Orange is the New Black)"
+            "Julia Louis-Dreyfus",
+            "Edie Falco",
+            "Gina Rodriguez",
+            "Lena Dunham",
+            "Taylor Schilling"
         ],
         "Award": "Best Actress in a TV Series, Musical or Comedy"
     },
     "Best Actor in a TV Series, Musical or Comedy": {
         "Nominees": [
-            "Don Cheadle(House of Lies)",
-            "William H. Macy(Shameless)",
-            "Ricky Gervais(Derek)",
-            "Jeffrey Tambor(Transparent)",
-            "Louie C.K.(Louie)"
+            "Don Cheadle",
+            "William H. Macy",
+            "Ricky Gervais",
+            "Jeffrey Tambor",
+            "Louie C.K."
         ],
         "Award": "Best Actor in a TV Series, Musical or Comedy"
     },
@@ -212,41 +212,41 @@
     },
     "Best Actress in a Mini-Series or TV Movie": {
         "Nominees": [
-            "Jessica Lange(American Horror Story: Freak Show)",
-            "Maggie Gyllenhaal(The Honorable Woman)",
-            "Frances McDormand(Olive Kitteridge)",
-            "Allison Tolman(Fargo)",
-            "Frances O'Connor(The Missing)"
+            "Jessica Lange",
+            "Maggie Gyllenhaal",
+            "Frances McDormand",
+            "Allison Tolman",
+            "Frances O'Connor"
         ],
         "Award": "Best Actress in a Mini-Series or TV Movie"
     },
     "Best Actor in a Mini-Series or TV Movie": {
         "Nominees": [
-            "Martin Freeman(Fargo)",
-            "Matthew McConaughey(True Detective)",
-            "Woody Harrelson(True Detective)",
-            "Billy Bob Thornton(Fargo)",
-            "Mark Ruffalo(The Normal Heart)"
+            "Martin Freeman",
+            "Matthew McConaughey",
+            "Woody Harrelson",
+            "Billy Bob Thornton",
+            "Mark Ruffalo"
         ],
         "Award": "Best Actor in a Mini-Series or TV Movie"
     },
     "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
         "Nominees": [
-            "Kathy Bates(American Horror Story: Freak Show)",
-            "Uzo Aduba(Orange is the New Black)",
-            "Joanne Froggatt(Downton Abbey)",
-            "Michelle Monaghan(True Detective)",
-            "Allison Janney(Mom)"
+            "Kathy Bates",
+            "Uzo Aduba",
+            "Joanne Froggatt",
+            "Michelle Monaghan",
+            "Allison Janney"
         ],
         "Award": "Best Supporting Actress in a Series, Mini-Series or TV Movie"
     },
     "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
         "Nominees": [
-            "Bill Murray (Olive Kitteridge)",
-            "Jon Voight(Ray Donovan)",
-            "Matt Bomer(The Normal Heart)",
-            "Alan Cumming(The Good Wife)",
-            "Colin Hanks(Fargo)"
+            "Bill Murray ",
+            "Jon Voight",
+            "Matt Bomer",
+            "Alan Cumming",
+            "Colin Hanks"
         ],
         "Award": "Best Supporting Actor in a Series, Mini-Series or TV Movie"
     }
