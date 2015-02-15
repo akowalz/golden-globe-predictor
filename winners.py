@@ -1,4 +1,16 @@
-import codecs, json, tweet
+import codecs, json, re
+
+CONGRATULATORY_WORDS = [
+    'congratulations',
+    'congrats',
+    'grats',
+    'good job',
+    'wins',
+    'winner',
+    'won',
+    'win',
+    'wins',
+    'awarded' ]
 
 def pretty_print_dict(dict):
     print json.dumps(dict, indent=4)
@@ -16,9 +28,24 @@ def nominated_for(awards):
     for award, data in awards.iteritems():
         for nom in data["Nominees"]:
             if nom in nominees:
-                nominess[nom].append(award)
+                nominees[nom].append(award)
             nominees[nom] = [award]
     return nominees
+
+def find_best_award(tweet, award_list):
+	tweet_list = tweet.split()
+	best = award_list[0].split()
+	best_count = 0
+	for award in award_list:
+            list_new = [itm for itm in award.split() if itm in tweet_list]
+            count = len(list_new)
+            print best
+            print award.split()
+            if float(count)/float(len(award.split())) > float(best_count)/float(len(best)):
+                best = award
+                best_count = count
+
+        return best
 
 def all_nominees(awards):
     nominees = []
@@ -77,16 +104,19 @@ def find_winners(data, tweet_path):
     nominations = nominated_for(data)
     aliases = nominee_aliases(nominees)
 
+    pretty_print_dict(nominees)
+
     tc = 0
     with codecs.open(tweet_path, 'r', 'utf-8') as f:
-        for line in f:
+        for tweet in f:
             tc += 1
-            t = tweet.Tweet(line)
             for nom in nominees:
-                if t.tweet_contains_word_in(aliases[nom]):
-                    # This is where we need to disambiguate awards!
-                    award_for_nom = nominations[nom][0]
-                    if t.is_congratulatory():
+                if tweet_contains_word_in(tweet, [nom]):
+                    if len(nominations[nom]) > 1:
+                        award_for_nom = find_best_award(tweet, nominations[nom])
+                    else:
+                        award_for_nom = nominations[nom][0]
+                    if is_congratulatory(tweet):
                         weight = 3
                     else:
                         weight = 1
@@ -94,6 +124,8 @@ def find_winners(data, tweet_path):
                     winners[award_for_nom]["total"] += weight
             if tc % 1000 == 0:
                 print "Processed %d tweets" % tc
+                print pretty_print_dict(winners)
+
     return winners
 
 def process_winners(winners):
@@ -107,8 +139,22 @@ def process_winners(winners):
             output[award][nom] = data["Nominees"][nom] / float(data["total"])
     return output
 
+def tweet_contains_word_in(tweet, words):
+    """
+    Check for word in the argument list with regexes
+    May be more efficient but less accurate (see test cases)
+    """
+    for word in words:
+        matches = re.search(word, tweet, re.I)
+        if matches is not None:
+            return True
+    return False
+
+def is_congratulatory(tweet):
+    return tweet_contains_word_in(tweet, CONGRATULATORY_WORDS)
 
 
-data = load_data('testdata.json')
-# pretty_print_dict(find_winners(data, 'data/best_tweets_regex.txt'))
-pretty_print_dict(process_winners(json.loads(open("test_output.json","r").read())))
+
+data = load_data('ggdump.json')
+pretty_print_dict(find_winners(data, 'data/best_tweets_regex.txt'))
+# pretty_print_dict(process_winners(json.loads(open("test_output.json","r").read())))
