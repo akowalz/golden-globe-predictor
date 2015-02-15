@@ -26,4 +26,17 @@ def collect_data(in_path, out_path):
 def mean(ns):
     return sum(ns) / float(len(ns))
 
-collect_data("data/goldenglobes2015.json", "sentiments.csv")
+# collect_data("data/goldenglobes2015.json", "sentiments.csv")
+
+def find_events(in_path, t):
+    with codecs.open(in_path, 'r', 'utf-8') as f:
+        for line in f:
+            tweet = json.loads(line)
+            text = tweet["text"]
+            timestamp = int(tweet["timestamp_ms"])
+            if timestamp > (t - 60000) and timestamp < (t + 60000):
+                print text
+            else:
+                print (timestamp - t)
+
+find_events("data/goldenglobes2015.json", 1421034899453)
