@@ -39,11 +39,26 @@ def search_tweets(source_path, out_path, searchterm_list, arg):	# arg = 0: Searc
 					count += 1
 					outfile.write(content)
 	return count
+	
+def check_award(tweet, award_list):
+	tweet_list = tweet.split()
+	best = award_list[0].split()
+	best_count = 0
+	for element in award_list:
+		list_new = [itm for itm in element.split() if itm in tweet_list]
+		count = len(list_new)
+		if float(count)/float(len(element.split())) > float(best_count)/float(len(best)):
+			best = element.split()
+	print best
+	return
 
 def main():		# sys.argv[1] = String of search terms separated by spaces.
 				# sys.argv[2] = 0 or 1 depending on search preferences.
 	# write_tweets("../data/goldenglobes2015.json", "tweets.txt", "text")
 	search_tweets("tweets.txt", "presenting.txt", ["presenting", "presents"], sys.argv[1])
+	with open("presenting.txt", 'r') as f:
+		for line in f:
+			check_award(line, award_lst)
 	return
 
 main()
