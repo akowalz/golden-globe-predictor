@@ -3,7 +3,7 @@ import csv
 import numpy as np
 import copy
 import matplotlib.pyplot as plt
-
+import time
 
 def main():
 	csvfile = open("sentiments.csv", 'rb')
