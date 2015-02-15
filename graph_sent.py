@@ -3,21 +3,22 @@ import csv
 import numpy as np
 import copy
 import matplotlib.pyplot as plt
+import matplotlib
 import time
+import pylab
+from datetime import datetime
 
 def main():
 	csvfile = open("sentiments.csv", 'rb')
 	dat = csv.reader(csvfile, delimiter=',')
-	column1 = []
-	column2 = []
+	values = []
+	date_list = []
 	for row in enumerate(dat):
-		column1.append(float(row[1][0]))
-		column2.append(int(row[1][1]))
-		print int(row[1][1])/1000
-		print time.strftime("%c", time.localtime(int(row[1][1])/1000))
-	column1 = np.array(column1)
-	column2 = np.array(column2)
-	plt.plot(column1)
+		values.append(float(row[1][0]))
+		date_list.append(datetime.fromtimestamp(int(row[1][1])/1000))
+	values = np.array(values)
+	dates = matplotlib.dates.date2num(date_list)
+	plt.plot_date(dates, values, fmt = "o")
 	plt.show()
 	return
 	
