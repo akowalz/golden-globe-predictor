@@ -16,9 +16,9 @@ We set up a dictionary to hold the totals for each award, it takes the form:
       "Birdman": 13,
       "Boyhood": 40,
       ...
-    } 
+    },
     "total": 123
-  }
+  },
   ...
 }
 ```
@@ -29,7 +29,7 @@ With the relevant subset of tweets at hand, we began detection in the list of tw
 
 ### Sentiment Map
 
-We used [TextBlob](http://textblob.readthedocs.org/en/dev/) (a simplified iterface into the nltk) to do sentiment processing on the tweets from 2015.  For each minute of the awards, we have a score from -1.0 to 1.0 indicating the average sentiment of watches during that minute.  We then plotted this graph so we could see trends and spikes.  We also did our best to match up large spikes to various events during the show, such as major awards being announced.
+We used [TextBlob](http://textblob.readthedocs.org/en/dev/) (a simplified iterface into the nltk) to do sentiment processing on the   tweets from 2015.  For each minute of the awards, we have a score from -1.0 to 1.0 indicating the average sentiment of watches during that minute.  We then plotted this graph so we could see trends and spikes.  We also did our best to match up large spikes to various events during the show, such as major awards being announced.
 
 ###  Who Got "Snubbed"
 
