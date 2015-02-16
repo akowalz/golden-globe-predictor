@@ -269,15 +269,16 @@ def process_and_write_snubs(data_path, tweet_path, outpath):
     print "All done :)"
 
 
-def format_for_grader(year, hosts, metadata_path, tweet_data_path):
+def format_for_grader(metadata_path, tweet_data_path, outpath):
     metadata = load_data(metadata_path)
 
-    winners = find_winners_fast(metadata,
+    aw_data = metadata["Awards"]
+    winners = find_winners_fast(aw_data,
                                 tweet_data_path)
 
     processed_winners = process_winners(winners)
 
-    nominees_full = all_nominees(metadata)
+    nominees_full = all_nominees(aw_data)
     all_awards = []
     all_winners = []
     all_presenters = []
@@ -285,13 +286,13 @@ def format_for_grader(year, hosts, metadata_path, tweet_data_path):
     for award, info in processed_winners.iteritems():
         all_winners.append(info["winner"])
 
-    for award, v in metadata.iteritems():
+    for award, v in aw_data.iteritems():
         all_awards.append(award)
 
 
     output = {
         "metadata": {
-                "year": year,
+                "year": metadata["Year"],
                 "hosts": {
                     "method": "hardcoded",
                     "method_description": "hardcoded"
@@ -307,7 +308,7 @@ def format_for_grader(year, hosts, metadata_path, tweet_data_path):
                 },
         "data": {
             "unstructured": {
-                "hosts": hosts,
+                "hosts": metadata["Hosts"],
                 "winners": all_winners,
                 "nominees": nominees_full,
                 "awards": all_awards,
@@ -317,23 +318,39 @@ def format_for_grader(year, hosts, metadata_path, tweet_data_path):
             }
         }
 
-    for award, info in metadata.iteritems():
+    for award, info in aw_data.iteritems():
         output["data"]["structured"][award] = {}
         output["data"]["structured"][award]["nominees"] = info["Nominees"]
         output["data"]["structured"][award]["winner"] = processed_winners[award]["winner"]
         output["data"]["structured"][award]["presenters"] = []
 
+
+
+
+
+
+
+
+    with codecs.open(outpath,"w","utf-8") as f:
+        f.write(json.dumps(output, indent=4))
+
+
+
     return output
 
-pretty_print_dict(format_for_grader(2015,
-                                    ["Tiny Fey", "Amy Poehler"],
-                                    "hardcode/GG15json.json",
-                                    "preprocess/tiny_test.txt"))
+#pretty_print_dict(format_for_grader("hardcode/GG15Final.json",
+#                                   "preprocess/gg2015_best.txt", "results/GGOut2015.json"))
 
-pretty_print_dict(format_for_grader(2013,
-                                    ["Tiny Fey", "Amy Poehler"],
-                                    "hardcode/GG13json2.json",
-                                    "preprocess/tiny_test.txt"))
+pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
+                                    "preprocess/tiny_test.txt", "results/GGOut2013.json"))
+
+
+
+
+
+
+
+
 def main():
     DATA_FILE_2015 = 'hardcode/GG15json.json'
     FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
@@ -343,6 +360,20 @@ def main():
     FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
 
     TEST_PATH = 'preprocess/tiny_test.txt'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     ## 2015
