@@ -40,19 +40,17 @@ def nominated_for(awards):
     return nominees
 
 def find_best_award(tweet, award_list):
-	tweet_list = tweet.split()
-	best = award_list[0].split()
-	best_count = 0
-	for award in award_list:
-            list_new = [itm for itm in award.split() if itm in tweet_list]
-            count = len(list_new)
-            print best
-            print award.split()
-            if float(count)/float(len(award.split())) > float(best_count)/float(len(best)):
-                best = award
-                best_count = count
+    tweet_list = tweet.lower.split()
+    best = award_list[0]
+    best_count = 0
+    for award in award_list:
+        matches = [itm for itm in award.lower().split() if itm in tweet_list]
+        count = len(matches)
+        if count/float(len(award.split())) > best_count/float(len(best)):
+            best = award
+            best_count = count
 
-        return best
+    return best
 
 def all_nominees(awards):
     nominees = []
@@ -129,7 +127,6 @@ def find_winners(data, tweet_path):
                     winners[award_for_nom]["total"] += weight
             if tc % 1000 == 0:
                 print "Processed %d tweets for winners" % tc
-                print pretty_print_dict(winners)
 
     return winners
 
@@ -243,7 +240,7 @@ DATA_FILE_2015 = 'hardcode/GG15json.json'
 FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
 BEST_TWEET_FILE_2015 = 'preprocess/gg2015_best.txt'
 
-DATA_FILE_2013 = 'hardcode/GG13json.json'
+DATA_FILE_2013 = 'hardcode/GG13json2.json'
 FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
 
 TEST_PATH = 'preprocess/tiny_test.txt'
@@ -262,7 +259,8 @@ process_and_write_snubs(DATA_FILE_2015,
 # 2013
 process_and_write_winners(DATA_FILE_2013,
                           FULL_TWEET_FILE_2013,
-                          'results/winners2013-2.json')
+                          'results/winners2013-2.json',
+                          'results/winners2013-percents-2.json')
 
 process_and_write_snubs(DATA_FILE_2013,
                         FULL_TWEET_FILE_2013,

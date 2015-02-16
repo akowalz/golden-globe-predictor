@@ -26,7 +26,7 @@
             "Type": "Person",
             "Nominees": [
             	"Nicole Kidman",
-            	"Jessica Lange", 
+            	"Jessica Lange",
             	"Julianne Moore",
             	"Sienna Miller",
             	"Sigourney Weaver"],
@@ -36,13 +36,13 @@
             "Type": "Person",
             "Nominees": [
             	"Kevin Costner",
-            	"Benedict Cumberpatch", 
+            	"Benedict Cumberpatch",
             	"Woody Harrelson",
             	"Toby Jones",
             	"Clive Owen"],
             "Award": "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television"
           },
-          
+
            "Best Performance by an Actress in a Television Series - Musical or Comedy": {
             "Type": "Person",
             "Award": "Best Performance by an Actress in a Television Series - Musical or Comedy",
@@ -86,7 +86,7 @@
                 "Jon Hamm"],
             "Award": "Best Performance by an Actor in a Television Series - Drama"
           },
-          
+
             "Best Series - Drama": {
             "Type": "Media",
 
@@ -98,7 +98,7 @@
                 "The Newsroom"],
             "Award": "Best Series - Drama"
           },
-          
+
             "Best Series - Musical or Comedy": {
             "Type": "Media",
 
@@ -110,11 +110,7 @@
                 "Smash"],
             "Award": "Best Series - Musical or Comedy"
           },
-          
-          
-        
-          
-          
+
            "Best Director - Motion Picture": {
             "Type": "Person",
             "Nominees": [
@@ -128,11 +124,11 @@
           "Best Screenplay": {
             "Type": "Media",
             "Nominees": [
-                "Quentin Tarantino",
-                "Chris Terrio",
-                "Tony Kushner",
-                "David O.Russell",
-                "Mark Boal"],
+                "Zero Dark Thirty",
+                "Lincoln",
+                "Silver Linings Playbook",
+                "Django Unchained",
+                "Argo"],
             "Award": "Best Screen Play"
           },
 
@@ -202,7 +198,7 @@
             "Type": "Media",
             "Nominees": ["Argo",
             	"Django Unchained",
-            	"Life of Pi", 
+            	"Life of Pi",
             	"Lincoln",
             	"Zero Dark Thirty"],
               "Award": "Best Motion Picture - Drama"
@@ -220,7 +216,7 @@
               "Best Original Song": {
             "Type": "Media",
             "Nominees": [
-            	"Skyfall", 
+            	"Skyfall",
             	"For You","Not Running Anymore",
             	"Safe & Sound",
             	"Suddenly"],
@@ -229,10 +225,10 @@
               "Best Original Score": {
             "Type": "Media",
             "Nominees": [
-            	"Mychael Danna", 
-            	"Dario Marianelli",
-            	"Alexandre Desplat",
-            	"John Williams",
+            	"Life of Pi",
+            	"Argo",
+            	"Anna Karenina",
+            	"Lincoln",
             	"Cloud Atlas"
             	],
             "Award": "Best Original Song"
