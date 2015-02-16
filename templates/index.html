@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+  	<title>Golden Globe Winners</title>
+  </head>
+  <body>
+  	<div id="award_winners">
+		<ol>
+		{% for award, noms in winners.iteritems(): %}
+		<li>{{ award }}<ul>
+			{% for category, value in noms.iteritems(): %}
+				{% if category == "Nominees" %}
+					{% for name, number in value.iteritems(): %}
+					<li>{{ name }}:  {{ number }}</li>
+					{% endfor %}
+				{% endif %}		
+			{% endfor %}</ul>
+		{% endfor %}
+		</ol>
+  	</div>
+  </body>
+</html>
