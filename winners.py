@@ -170,9 +170,16 @@ def process_winners(winners):
     """
     output = {}
     for award, data in winners.iteritems():
+        highest = 0
         output[award] = {}
+        output[award]["Nominees"] = {}
         for nom in data["Nominees"]:
-            output[award][nom] = data["Nominees"][nom] / float(data["total"])
+            score = data["Nominees"][nom] / float(data["total"])
+            output[award]["Nominees"][nom] = score
+            if score > highest:
+                highest = score
+                output[award]["winner"] = nom
+
     return output
 
 def tweet_contains_word_in(tweet, words):
@@ -192,4 +199,7 @@ def is_congratulatory(tweet):
 data = load_data('ggdump.json')
 # winners = find_winners(data, 'data/best_tweets_regex.txt')
 # pretty_print_dict(process_winners(winners))
-pretty_print_dict(find_snubs(data, 'data/goldenglobes2015.json'))
+# pretty_print_dict(find_snubs(data, 'data/goldenglobes2015.json'))
+with codecs.open('percents.json', 'w', 'utf-8') as outfile:
+    percents = json.dumps(process_winners(json.loads(codecs.open('winner_results_round1.json', 'r', 'utf-8').read())), indent=4)
+    outfile.write(percents)
