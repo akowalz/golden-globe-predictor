@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import json
 app = Flask(__name__)
 app.debug = True
-with open('testwinners.json', 'r') as f:
+with open('../results/winner_round1_percentages.json', 'r') as f:
 	winners = json.loads(f.read())
 	
 
