@@ -8,16 +8,20 @@ CONGRATULATORY_WORDS = [
     'wins',
     'winner',
     'won',
-    'win',
     'wins',
-    'awarded' ]
+    'awarded',
+    'well done',
+    'great job']
 
 SNUB_WORDS = [
     'snubbed',
     'stiffed',
     'robbed',
     'shame',
-    'unfortunate' ]
+    'unfortunate',
+    'should have won',
+    'deserved to win'
+    ]
 
 def pretty_print_dict(dict):
     print json.dumps(dict, indent=4)
@@ -36,20 +40,25 @@ def nominated_for(awards):
         for nom in data["Nominees"]:
             if nom in nominees:
                 nominees[nom].append(award)
-            nominees[nom] = [award]
+            else:
+                nominees[nom] = [award]
     return nominees
 
 def find_best_award(tweet, award_list):
+    print "Disambiguating %s"
+    print "Options are: ", award_list
     tweet_list = tweet.lower.split()
     best = award_list[0]
     best_count = 0
     for award in award_list:
         matches = [itm for itm in award.lower().split() if itm in tweet_list]
         count = len(matches)
+        print "%s scored %f" % (award, count)
         if count/float(len(award.split())) > best_count/float(len(best)):
             best = award
             best_count = count
 
+    print "Chose", best
     return best
 
 def all_nominees(awards):
@@ -130,6 +139,38 @@ def find_winners(data, tweet_path):
 
     return winners
 
+def find_winners_fast(data, tweet_path):
+    """
+    searches first for congratulations, then for nominees, should be a lot
+    faster
+    """
+
+    print "Finding winners from", tweet_path
+    nominees = all_nominees(data)
+    winners = initialize_winners(data)
+    nominations = nominated_for(data)
+    pretty_print_dict(nominations)
+    aliases = nominee_aliases(nominees)
+
+    tc = 0
+    with codecs.open(tweet_path, 'r', 'utf-8') as f:
+        for tweet in f:
+            tc += 1
+            if tweet_contains_word_in(tweet, CONGRATULATORY_WORDS):
+                for nom in nominees:
+                    if tweet_contains_word_in(tweet, [nom]):
+                        if len(nominations[nom]) > 1:
+                            award_for_nom = find_best_award(tweet, nominations[nom])
+                        else:
+                            award_for_nom = nominations[nom][0]
+                        winners[award_for_nom]["Nominees"][nom] += 1
+                        winners[award_for_nom]["total"] += 1
+            if tc % 10000 == 0:
+                print "Processed %d tweets for winners" % tc
+
+    return winners
+
+
 def find_snubs(data, tweet_path):
     """
     data: hardcoded data
@@ -201,7 +242,7 @@ def process_and_write_winners(data_path, tweet_path, outpath, outpath_percents):
     outpath_percents: path to write results with percentages to
     """
     data = load_data(data_path)
-    winners = find_winners(data, tweet_path)
+    winners = find_winners_fast(data, tweet_path)
 
     print "Found winners"
     print "Writing winners to ", outpath
@@ -249,19 +290,19 @@ TEST_PATH = 'preprocess/tiny_test.txt'
 ## 2015
 process_and_write_winners(DATA_FILE_2015,
                           BEST_TWEET_FILE_2015,
-                          'results/winners2015-2.json',
-                          'results/winners2015-percents-2.json')
+                          'results/winners2015-3.json',
+                          'results/winners2015-percents-3.json')
 
 process_and_write_snubs(DATA_FILE_2015,
                         FULL_TWEET_FILE_2015,
-                        'results/snubs2015-2.json')
+                        'results/snubs2015-3.json')
 
 # 2013
 process_and_write_winners(DATA_FILE_2013,
                           FULL_TWEET_FILE_2013,
-                          'results/winners2013-2.json',
-                          'results/winners2013-percents-2.json')
+                          'results/winners2013-3.json',
+                          'results/winners2013-percents-3.json')
 
 process_and_write_snubs(DATA_FILE_2013,
                         FULL_TWEET_FILE_2013,
-                        'results/snubs2013-2.json')
+                        'results/snubs2013-3.json')
