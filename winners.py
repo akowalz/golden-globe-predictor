@@ -12,6 +12,13 @@ CONGRATULATORY_WORDS = [
     'wins',
     'awarded' ]
 
+SNUB_WORDS = [
+    'snubbed',
+    'stiffed',
+    'robbed',
+    'shame',
+    'unfortunate' ]
+
 def pretty_print_dict(dict):
     print json.dumps(dict, indent=4)
 
@@ -128,6 +135,35 @@ def find_winners(data, tweet_path):
 
     return winners
 
+def find_snubs(data, tweet_path):
+    """
+    in this one tweet_path is the json dataset
+    """
+
+    nominees = all_nominees(data)
+    nominations = nominated_for(data)
+    snubs = initialize_winners(data)
+    tc = 0
+    with codecs.open(tweet_path, 'r', 'utf-8') as f:
+        for line in f:
+            tweet = json.loads(line)["text"]
+            tc += 1
+            if tweet_contains_word_in(tweet, SNUB_WORDS):
+                print "Found a snub tweet"
+                for nom in nominees:
+                    if tweet_contains_word_in(tweet, [nom]):
+                        if len(nominations[nom]) > 1:
+                            award = find_best_award(tweet, nominations[nom])
+                        else:
+                            award = nominations[nom][0]
+                        snubs[award]["Nominees"][nom] += 1
+                        snubs[award]["total"] += 1
+
+        return snubs
+
+
+
+
 def process_winners(winners):
     """
     takes output from find_winners and calculates percentages, confidences
@@ -153,8 +189,7 @@ def tweet_contains_word_in(tweet, words):
 def is_congratulatory(tweet):
     return tweet_contains_word_in(tweet, CONGRATULATORY_WORDS)
 
-
-
 data = load_data('ggdump.json')
-pretty_print_dict(find_winners(data, 'data/best_tweets_regex.txt'))
-# pretty_print_dict(process_winners(json.loads(open("test_output.json","r").read())))
+# winners = find_winners(data, 'data/best_tweets_regex.txt')
+# pretty_print_dict(process_winners(winners))
+pretty_print_dict(find_snubs(data, 'data/goldenglobes2015.json'))

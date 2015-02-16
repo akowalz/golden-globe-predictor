@@ -1,0 +1,131 @@
+{
+  "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television",
+    "Nominees": ["Ed Harris","Max Greenfield","Danny Huston","Mandy Patinkin","Eric Stonestreet"],
+    "Winner": "Ed Harris"
+  },
+
+  "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television",
+    "Nominees": ["Maggie Smith","Hayden Panettiere", "Archie Panjabi","Sarah Paulson","Sofia Vergara"],
+    "Winner": "Maggie Smith"
+  },
+  "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television",
+    "Nominees": [],
+    "Winner": "Julianne Moore"
+  },
+   "Best Performance by an Actress in a Television Series - Musical or Comedy": {
+    "Type": "Media",
+    "Award": "Best Performance by an Actress in a Television Series - Musical or Comedy",
+    "Nominees": ["Lena Dunham","Zooey Deschanel","Tina Fey","Julia Louis-Dreyfus","Amy Poehler"],
+    "Winner": ["Lena Dunham","Girls"]
+  },
+   "Best Performance by an Actor in a Television Series - Musical or Comedy": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actor in a Television Series - Musical or Comedy",
+    "Nominees": ["Don Cheadle","Alec Baldwin","Louis C.K.","Matt LeBlanc", "Jim Parsons"],
+    "Winner": "Don Cheadle"
+  },
+   "Best Performance by an Actress in a Television Series - Drama": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actress in a Television Series - Drama",
+    "Nominees": ["Claire Danes","Connie Britton","Glenn Close","Michelle Dockery","Julianna Margulies"],
+    "Winner": "Claire Danes"
+  },
+    "Best Performance by an Actor in a Television Series - Drama": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actor in a Television Series - Drama",
+    "Nominees": ["Damian Lewis","Steve Buscemi","Bryan Cranston", "Jeff Daniels","Jon Hamm"],
+    "Winner": "Damian Lewis"
+  },
+   "Best Director - Motion Picture": {
+    "Type": "Person",
+    "Award": "Best Director - Motion Picture",
+    "Nominees": ["Ben Affleck","Kathryn Bigelow","Ang Lee","Steven Spielberg","Quentin Tarantino"],
+    "Winner": ["Ben Affleck", "Argo"]
+  },
+  "Best Screenplay": {
+    "Type": "Media",
+    "Award": "Best Screen Play",
+    "Nominees": ["Quentin Tarantino","Chris Terrio","Tony Kushner","David O.Russell","Mark Boal"],
+    "Winner": ["Quentin Tarantino","Django Unchained"]
+  },
+
+   "Best Performance by an Actor in a Supporting Role in a Motion Picture": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actor in a Supporting Role in a Motion Picture",
+    "Nominees": ["Christoph Waltz","Alan Arkin", "Leonardo DiCaprio","Philip Seymour Hoffman","Tommy Lee Jones"],
+    "Winner": "Christoph Waltz"
+  },
+    "Best Performance by an Actress in a Supporting Role in a Motion Picture": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actress in a Supporting Role in a Motion Picture",
+    "Nominees": ["Anne Hathaway","Amy Adams","Sally Field","Helen Hunt","Nicole Kidman"],
+    "Winner": "Anne Hathaway"
+  },
+   "Best Performance by an Actor in a Motion Picture - Drama": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actor in a Motion Picture - Drama",
+    "Nominees": ["Daniel Day-Lewis","Richard Gere","John Hawkes","Joaquin Phoenix","Denzel Washington"],
+    "Winner": "Daniel Day-Lewis"
+  },
+   "Best Performance By An Actress In A Motion Picture - Comedy or Musical": {
+    "Type": "Person",
+    "Award": "Best Performance By An Actress In A Motion Picture - Comedy or Musical",
+    "Nominees": ["Jennifer Lawrence","Emily Blunt","Judi Dench","Maggie Smith","Meryl Streep"],
+    "Winner": ["Jennifer Lawrence" , "Silver Linings Playbook"]
+  },
+   "Best Performance By An Actor In A Motion Picture - Comedy or Musical": {
+    "Type": "Person",
+    "Award": "Best Performance By An Actor In A Motion Picture - Comedy or Musical",
+    "Nominees": ["Hugh Jackman","Jack Black","Bradley Cooper","Ewan McGregor","Billy Murray"],
+    "Winner": ["Hugh Jackman","Les Miserables"]
+  },
+    "Best Performance by an Actress in a Motion Picture - Drama": {
+    "Type": "Person",
+    "Award": "Best Performance by an Actress in a Motion Picture - Drama",
+    "Nominees": ["Jessica Chastain","Marion Cotillard","Helen Mirren","Naomi Watts","Rachel Weisz"],
+    "Winner": ["Jessica Chastain", "Zero Dark Thirty"]
+  },
+    "Best Motion Picture - Drama": {
+    "Type": "Media",
+    "Award": "Best Motion Picture - Drama",
+    "Nominees": ["Argo","Django Unchained","Life of Pi", "Lincoln","Zero Dark Thirty"],
+    "Winner": "Argo"
+  },
+    "Best Motion Picture - Musical or Comedy": {
+    "Type": "Media",
+    "Award": "Best Motion Picture - Musical or Comedy",
+    "Nominees": ["Les Miserables","The Best Exotic Marigold Hotel","Moonrise Kingdom","Salmon Fishing int he Yemen","Silver Linings Playbook"],
+    "Winner": "Les Miserables"
+  },
+      "Best Original Song": {
+    "Type": "Media",
+    "Award": "Best Original Song",
+    "Nominees": ["Skyfall", "For You","Not Running Anymore","Safe & Sound","Suddenly"],
+    "Winner": ["Skyfall", "Adele", "Paul Epworth"]
+  },
+      "Best Original Score": {
+    "Type": "Media",
+    "Award": "Best Original Song",
+    "Nominees": ["Mychael Danna", "Dario Marianelli","Alexandre Desplat","John Williams","Tom Tykwer, Johhny Klimek & Reinhold Heil"],
+    "Winner": ["Mychael Danna", "Life of Pi"]
+  },
+    "Best Animated Feature Film": {
+    "Type": "Media",
+    "Award": "Best Animated Feature Film",
+    "Nominees": ["Brave","Frankenweenie","Hotel Transylvania","Rise of the Guardians","Wreck-It Ralph"],
+    "Winner": "Brave"
+  },
+      "Best Foreign Language Film": {
+    "Type": "Media",
+    "Award": "Best Foreign Language Film",
+    "Nominees": ["Amour","A Royal Affair","The Intouchables","Kon-Tiki","Rust and Bones"],
+    "Winner": "Amour"
+  }
+
+}
