@@ -3,88 +3,34 @@
 Project 1 for EECS 337, will determine the outcome of the Golden Globes based on
 tweet data.
 
-## Strategies
+## Methodology
 
-### Winners
+To find Winners, we first found the subset of tweets from 2015 that contained the word 'Best'.  This allowed us to use the fully dataset while vastly improving processing speed and narrowingly only tweets relevant to us.  We stripped newlines out of these tweets, and put only the content on a line-delimited text file (preprocessed files like this live in the `preprocess` directory).
 
-#### General strategy
+We set up a dictionary to hold the totals for each award, it takes the form:
 
-For each award category, first find subset of tweets about that category.  This can be
-done using a seed list of award categories and searching through all the tweets that
-"match" that award.  Criteria for "match" TBD.
-
-Once these tweets are found, search through the tweets looking for names of
-nominess (including aliases + twitter handle).  If possible determine if the tweet was
-congratulatory or bitter, use this to weigh score.
-
-Score = `number of tweets about particular a nominee / all tweets about category
-with any nominee`
-
-If tweet is determined congratulatory, increase it's weight by N (for example,
-pretend it was in the dataset 5 times)
-
-If the tweet is determined bitter, weight it by half or don't include it.
-
-Sentiment processing may also be used to figure out weight of the tweet.
-
-#### Data
-
-*Nominee*
-- full name
-- twitter handler
-- aliases (maybe can generate automatically)
-- movie/show nominated for (if person)
-
-*Award Category*
-- full name
-- keywords
-- short name (Best Actress - Motion Picture for Musical or Comedy => Best Actress)
-- type (tv or motion picture)
-
-*Congratulatory Words*
-- 'congratulations'
-- 'congrats'
-- 'grats'
-- 'good job'
-- 'wins'
-- 'winner'
-- 'won'
-- 'win'
-- 'awarded'
-- ....
-
-*"Snub" Words*
-- 'snubbed'
-- 'stiffed'
-- 'robbed'
-- 'shame'
-- 'too bad'
-- 'unfortunate'
-- ...
-
-#### Output format
-
-For each category, the output can be a python dict of the form
-
-```python
-
-best_picture = {
-  "Best Motion Picture – Drama": {
-    "Boyhood": 0.78,
-    "Foxcatcher": .11,
-    ...
+```json
+{
+  "Best Motion Picture, Drama": {
+    "Nominees": {
+      "Birdman": 13,
+      "Boyhood": 40,
+      ...
+    } 
+    "total": 123
   }
+  ...
 }
-
 ```
 
-Ideally, we would have all the awards with their full names inside of an array.
+With the relevant subset of tweets at hand, we began detection in the list of tweets.  The first thing we do is look for "words of congratulation" in the tweet (see winners.py for this list).  If a tweet is congratulatory, we then search within it for the name of one of the nominees.  If it does contain one of the nominees, we check from out metadata what that nominee was nominated for.  If the nominee was only nominated for one award, we increment their score within our results dict, and the total.  If they were nominated for multiple awards, we pass the tweet text and a list of awards to a funciton that will figure (to the best of it's ability) which award the tweet was talking about, using a weighted formula based on matching keywords in the tweet and the award name.  Once this is determined, we incremement the appropriate score accordingly.
 
+## Fun Goals
 
-## Stuff we need
+### Sentiment Map
 
-- List of categories and their nominees
-- all nominees' twitter handles
-- short names or keywords for each category, something to search against
-- full list of congratulatory words
-- full list of snub words
+We used [TextBlob](http://textblob.readthedocs.org/en/dev/) (a simplified iterface into the nltk) to do sentiment processing on the tweets from 2015.  For each minute of the awards, we have a score from -1.0 to 1.0 indicating the average sentiment of watches during that minute.  We then plotted this graph so we could see trends and spikes.  We also did our best to match up large spikes to various events during the show, such as major awards being announced.
+
+###  Who Got "Snubbed"
+
+We were interested in finding out if we could detect which awards got "snubbed" in each category.  The methodology we used was fairly similar to the methodology used for finding winners, but looking for "snub words" like "snub", "stiffed", "robbed" in place of congratulatory words.  We then used a similar scoring system to see if we could figure out which nominees were poised to win but did not, and did so with large success identifying snubs that we confirmed with various popular media articles.
