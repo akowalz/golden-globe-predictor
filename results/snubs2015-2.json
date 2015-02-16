@@ -51,13 +51,13 @@
     }, 
     "Best TV Series, Drama": {
         "Nominees": {
+            "The Good Wife": 48, 
             "The Affair": 46, 
             "House of Cards": 47, 
             "Downtown Abbey": 0, 
-            "Good Wife, The": 0, 
             "Game Of Thrones": 73
         }, 
-        "total": 166
+        "total": 214
     }, 
     "Best TV Movie or Mini-Series": {
         "Nominees": {
@@ -71,13 +71,13 @@
     }, 
     "Best Original Score - Motion Picture": {
         "Nominees": {
+            "Birdman": 0, 
             "Gone Girl": 22, 
-            "Antonio Sanchez": 0, 
-            "Hans Zimmer": 52, 
-            "The Theory of Everything": 0, 
-            "Alexandre Desplat": 0
+            "The Imitation Game": 0, 
+            "Interstellar": 38, 
+            "The Theory of Everything": 0
         }, 
-        "total": 74
+        "total": 60
     }, 
     "Best Motion Picture, Musical or Comedy": {
         "Nominees": {
@@ -131,13 +131,13 @@
     }, 
     "Best Screenplay - Motion Picture": {
         "Nominees": {
+            "Gone Girl": 0, 
             "Birdman": 0, 
-            "Gillian Flynn": 2, 
-            "Richard Linklater": 0, 
-            "Graham Moore": 0, 
-            "Wes Anderson": 0
+            "Boyhood": 0, 
+            "The Imitation Game": 0, 
+            "The Grand Budapest Hotel": 0
         }, 
-        "total": 2
+        "total": 0
     }, 
     "Best Actor in a TV Series, Drama": {
         "Nominees": {
@@ -175,7 +175,7 @@
             "William H. Macy": 15, 
             "Ricky Gervais": 7, 
             "Jeffrey Tambor": 21, 
-            "Louie C.K.\n(Louie)": 0
+            "Louie C.K.": 0
         }, 
         "total": 48
     }, 

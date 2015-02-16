@@ -1,0 +1,241 @@
+{
+    "Best Screenplay": {
+        "Nominees": {
+            "Silver Linings Playbook": 0, 
+            "Lincoln": 0, 
+            "Zero Dark Thirty": 0, 
+            "Django Unchained": 0, 
+            "Argo": 0
+        }
+    }, 
+    "Best Series - Drama": {
+        "Nominees": {
+            "Boardwalk Empire": 0.006349206349206349, 
+            "Homeland": 0.8871428571428571, 
+            "Downtown Abbey": 0.03301587301587302, 
+            "Breaking Bad": 0.060793650793650796, 
+            "The Newsroom": 0.012698412698412698
+        }, 
+        "winner": "Homeland"
+    }, 
+    "Best Director - Motion Picture": {
+        "Nominees": {
+            "Ang Lee": 0.01896664486592544, 
+            "Kathryn Bigelow": 0.032962720732504905, 
+            "Ben Affleck": 0.6482668410725965, 
+            "Steven Spielberg": 0.02302158273381295, 
+            "Quentin Tarantino": 0.2767822105951602
+        }, 
+        "winner": "Ben Affleck"
+    }, 
+    "Best Foreign Language Film": {
+        "Nominees": {
+            "Amour": 0.979002624671916, 
+            "The Intouchables": 0.013123359580052493, 
+            "Kon-Tiki": 0.003499562554680665, 
+            "A Royal Affair": 0.004374453193350831, 
+            "Rust and Bones": 0.0
+        }, 
+        "winner": "Amour"
+    }, 
+    "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Maggie Smith": 0.0, 
+            "Hayden Panettiere": 0.08618331053351573, 
+            "Archie Panjabi": 0.005471956224350205, 
+            "Sarah Paulson": 0.08344733242134063, 
+            "Sofia Vergara": 0.8248974008207934
+        }, 
+        "winner": "Sofia Vergara"
+    }, 
+    "Best Performance by an Actress in a Television Series - Drama": {
+        "Nominees": {
+            "Connie Britton": 0.0373387644263408, 
+            "Claire Danes": 0.769857433808554, 
+            "Michelle Dockery": 0.03496266123557366, 
+            "Glenn Close": 0.13306177868295996, 
+            "Julianna Margulies": 0.02477936184657162
+        }, 
+        "winner": "Claire Danes"
+    }, 
+    "Best Motion Picture - Musical or Comedy": {
+        "Nominees": {
+            "The Best Exotic Marigold Hotel": 0.008440366972477064, 
+            "Silver Linings Playbook": 0.1730275229357798, 
+            "Moonrise Kingdom": 0.03541284403669725, 
+            "Les Miserables": 0.75651376146789, 
+            "Salmon Fishing in the Yemen": 0.026605504587155965
+        }, 
+        "winner": "Les Miserables"
+    }, 
+    "Best Original Song": {
+        "Nominees": {
+            "Not Running Anymore": 0.000856898029134533, 
+            "Suddenly": 0.015852613538988862, 
+            "For You": 0.14974293059125965, 
+            "Safe & Sound": 0.0, 
+            "Skyfall": 0.833547557840617
+        }, 
+        "winner": "Skyfall"
+    }, 
+    "Best Performance by an Actor in a Television Series - Drama": {
+        "Nominees": {
+            "Steve Buscemi": 0.016263940520446097, 
+            "Jon Hamm": 0.1612453531598513, 
+            "Damian Lewis": 0.7193308550185874, 
+            "Jeff Daniels": 0.024163568773234202, 
+            "Bryan Cranston": 0.07899628252788105
+        }, 
+        "winner": "Damian Lewis"
+    }, 
+    "Best Performance by an Actress in a Motion Picture - Drama": {
+        "Nominees": {
+            "Marion Cotillard": 0.05720250521920668, 
+            "Naomi Watts": 0.05177453027139875, 
+            "Jessica Chastain": 0.8133611691022965, 
+            "Helen Mirren": 0.04634655532359081, 
+            "Rachel Weisz": 0.031315240083507306
+        }, 
+        "winner": "Jessica Chastain"
+    }, 
+    "Best Performance by an Actor in a Television Series - Musical or Comedy": {
+        "Nominees": {
+            "Don Cheadle": 0.6561561561561562, 
+            "Jim Parsons": 0.1921921921921922, 
+            "Louis C.K.": 0.02702702702702703, 
+            "Matt LeBlanc": 0.08408408408408409, 
+            "Alec Baldwin": 0.04054054054054054
+        }, 
+        "winner": "Don Cheadle"
+    }, 
+    "Best Performance By An Actress In A Motion Picture - Comedy or Musical": {
+        "Nominees": {
+            "Emily Blunt": 0.014818763326226014, 
+            "Judi Dench": 0.005010660980810234, 
+            "Jennifer Lawrence": 0.5638592750533049, 
+            "Meryl Streep": 0.07409381663113006, 
+            "Maggie Smith": 0.3422174840085288
+        }, 
+        "winner": "Jennifer Lawrence"
+    }, 
+    "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Sienna Miller": 0.06449948400412797, 
+            "Julianne Moore": 0.7683178534571723, 
+            "Sigourney Weaver": 0.010319917440660475, 
+            "Nicole Kidman": 0.0, 
+            "Jessica Lange": 0.1568627450980392
+        }, 
+        "winner": "Julianne Moore"
+    }, 
+    "Best Performance by an Actor in a Supporting Role in a Motion Picture": {
+        "Nominees": {
+            "Alan Arkin": 0.010206752159120648, 
+            "Tommy Lee Jones": 0.3891651400157027, 
+            "Christoph Waltz": 0.5129547238942685, 
+            "Leonardo DiCaprio": 0.08400942161737765, 
+            "Philip Seymour Hoffman": 0.0036639623135304895
+        }, 
+        "winner": "Christoph Waltz"
+    }, 
+    "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Danny Huston": 0.01618705035971223, 
+            "Max Greenfield": 0.07194244604316546, 
+            "Ed Harris": 0.5827338129496403, 
+            "Mandy Patinkin": 0.31115107913669066, 
+            "Eric Stonestreet": 0.017985611510791366
+        }, 
+        "winner": "Ed Harris"
+    }, 
+    "Best Performance by an Actress in a Supporting Role in a Motion Picture": {
+        "Nominees": {
+            "Amy Adams": 0.020237097353610345, 
+            "Helen Hunt": 0.0064662914621003474, 
+            "Anne Hathaway": 0.898096036402826, 
+            "Sally Field": 0.04286911747096156, 
+            "Nicole Kidman": 0.032331457310501736
+        }, 
+        "winner": "Anne Hathaway"
+    }, 
+    "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Woody Harrelson": 0.012367491166077738, 
+            "Clive Owen": 0.0008833922261484099, 
+            "Kevin Costner": 0.9708480565371025, 
+            "Benedict Cumberpatch": 0.0017667844522968198, 
+            "Toby Jones": 0.014134275618374558
+        }, 
+        "winner": "Kevin Costner"
+    }, 
+    "Best Animated Feature Film": {
+        "Nominees": {
+            "Hotel Transylvania": 0.020757020757020756, 
+            "Wreck-It Ralph": 0.042735042735042736, 
+            "Brave": 0.8856328856328857, 
+            "Rise of the Guardians": 0.013024013024013023, 
+            "Frankenweenie": 0.03785103785103785
+        }, 
+        "winner": "Brave"
+    }, 
+    "Best Performance by an Actress in a Television Series - Musical or Comedy": {
+        "Nominees": {
+            "Tina Fey": 0.3967752337955498, 
+            "Lena Dunham": 0.1797484682360529, 
+            "Julia Louis-Dreyfus": 0.0016768784263140922, 
+            "Zooey Deschanel": 0.014575943244114802, 
+            "Amy Poehler": 0.4072234762979684
+        }, 
+        "winner": "Amy Poehler"
+    }, 
+    "Best Performance by an Actor in a Motion Picture - Drama": {
+        "Nominees": {
+            "Daniel Day-Lewis": 0.7940364439536168, 
+            "Joaquin Phoenix": 0.04307012700165654, 
+            "Richard Gere": 0.07399226946438432, 
+            "Denzel Washington": 0.078961899503037, 
+            "John Hawkes": 0.009939260077305357
+        }, 
+        "winner": "Daniel Day-Lewis"
+    }, 
+    "Best Performance By An Actor In A Motion Picture - Comedy or Musical": {
+        "Nominees": {
+            "Billy Murray": 0.0017263703064307294, 
+            "Jack Black": 0.03517479499352611, 
+            "Hugh Jackman": 0.6534311609840311, 
+            "Bradley Cooper": 0.2736296935692706, 
+            "Ewan McGregor": 0.03603798014674148
+        }, 
+        "winner": "Hugh Jackman"
+    }, 
+    "Best Series - Musical or Comedy": {
+        "Nominees": {
+            "The Big Bang Theory": 0.014845605700712588, 
+            "Episodes": 0.0056413301662707836, 
+            "Girls": 0.8987529691211401, 
+            "Modern Family": 0.0544833729216152, 
+            "Smash": 0.026276722090261283
+        }, 
+        "winner": "Girls"
+    }, 
+    "Best Original Score": {
+        "Nominees": {
+            "Anna Karenina": 0.20833333333333334, 
+            "Lincoln": 0.0, 
+            "Life of Pi": 0.0, 
+            "Cloud Atlas": 0.7916666666666666, 
+            "Argo": 0.0
+        }, 
+        "winner": "Cloud Atlas"
+    }, 
+    "Best Motion Picture - Drama": {
+        "Nominees": {
+            "Lincoln": 0.21845686352226185, 
+            "Life of Pi": 0.11144140573391466, 
+            "Django Unchained": 0.11540494120755714, 
+            "Zero Dark Thirty": 0.05416831813978069, 
+            "Argo": 0.5005284713964857
+        }, 
+        "winner": "Argo"
+    }
+}

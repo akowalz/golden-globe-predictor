@@ -1,13 +1,12 @@
 {
     "Best Screenplay - Motion Picture": {
         "Nominees": {
-            "Birdman": 0.0, 
-            "Gillian Flynn": 1.0, 
-            "Richard Linklater": 0.0, 
-            "Graham Moore": 0.0, 
-            "Wes Anderson": 0.0
-        }, 
-        "winner": "Gillian Flynn"
+            "Gone Girl": 0, 
+            "Birdman": 0, 
+            "Boyhood": 0, 
+            "The Imitation Game": 0, 
+            "The Grand Budapest Hotel": 0
+        }
     }, 
     "Best Director - Motion Picture": {
         "Nominees": {
@@ -51,11 +50,11 @@
     }, 
     "Best TV Series, Drama": {
         "Nominees": {
-            "The Affair": 0.6292211483797612, 
-            "Game Of Thrones": 0.027686185332575327, 
-            "House of Cards": 0.33945423536100056, 
-            "Downtown Abbey": 0.0035815804434337693, 
-            "Good Wife, The": 5.6850483229107444e-05
+            "The Good Wife": 0.004076779344317989, 
+            "Game Of Thrones": 0.027574882509484176, 
+            "House of Cards": 0.3380895759017043, 
+            "The Affair": 0.6266915803182153, 
+            "Downtown Abbey": 0.0035671819262782403
         }, 
         "winner": "The Affair"
     }, 
@@ -71,13 +70,13 @@
     }, 
     "Best Original Score - Motion Picture": {
         "Nominees": {
-            "Gone Girl": 0.5986696230598669, 
-            "Antonio Sanchez": 0.04878048780487805, 
-            "Hans Zimmer": 0.29711751662971175, 
-            "Alexandre Desplat": 0.05543237250554324, 
+            "Birdman": 0.0, 
+            "Gone Girl": 0.4090909090909091, 
+            "The Imitation Game": 0.0, 
+            "Interstellar": 0.5909090909090909, 
             "The Theory of Everything": 0.0
         }, 
-        "winner": "Gone Girl"
+        "winner": "Interstellar"
     }, 
     "Best Motion Picture, Musical or Comedy": {
         "Nominees": {
@@ -175,7 +174,7 @@
             "William H. Macy": 0.0012752778283840408, 
             "Ricky Gervais": 0.036800874476225175, 
             "Jeffrey Tambor": 0.9548187283658226, 
-            "Louie C.K.\n(Louie)": 0.0
+            "Louie C.K.": 0.0
         }, 
         "winner": "Jeffrey Tambor"
     }, 

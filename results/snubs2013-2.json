@@ -1,0 +1,242 @@
+{
+    "Best Screenplay": {
+        "Nominees": {
+            "Silver Linings Playbook": 0, 
+            "Lincoln": 0, 
+            "Django Unchained": 0, 
+            "Zero Dark Thirty": 0, 
+            "Argo": 0
+        }, 
+        "total": 0
+    }, 
+    "Best Series - Drama": {
+        "Nominees": {
+            "The Newsroom": 1, 
+            "Downtown Abbey": 0, 
+            "Breaking Bad": 35, 
+            "Homeland": 38, 
+            "Boardwalk Empire": 3
+        }, 
+        "total": 77
+    }, 
+    "Best Director - Motion Picture": {
+        "Nominees": {
+            "Ang Lee": 0, 
+            "Kathryn Bigelow": 0, 
+            "Steven Spielberg": 0, 
+            "Ben Affleck": 77, 
+            "Quentin Tarantino": 1
+        }, 
+        "total": 78
+    }, 
+    "Best Foreign Language Film": {
+        "Nominees": {
+            "Amour": 4, 
+            "Rust and Bones": 0, 
+            "Kon-Tiki": 1, 
+            "A Royal Affair": 0, 
+            "The Intouchables": 0
+        }, 
+        "total": 5
+    }, 
+    "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Hayden Panettiere": 0, 
+            "Sofia Vergara": 0, 
+            "Archie Panjabi": 0, 
+            "Sarah Paulson": 0, 
+            "Maggie Smith": 0
+        }, 
+        "total": 0
+    }, 
+    "Best Performance by an Actress in a Television Series - Drama": {
+        "Nominees": {
+            "Connie Britton": 6, 
+            "Claire Danes": 8, 
+            "Michelle Dockery": 3, 
+            "Julianna Margulies": 0, 
+            "Glenn Close": 3
+        }, 
+        "total": 20
+    }, 
+    "Best Motion Picture - Musical or Comedy": {
+        "Nominees": {
+            "The Best Exotic Marigold Hotel": 0, 
+            "Silver Linings Playbook": 7, 
+            "Moonrise Kingdom": 3, 
+            "Les Miserables": 1, 
+            "Salmon Fishing in the Yemen": 1
+        }, 
+        "total": 12
+    }, 
+    "Best Original Song": {
+        "Nominees": {
+            "Not Running Anymore": 0, 
+            "Suddenly": 0, 
+            "For You": 2, 
+            "Safe & Sound": 0, 
+            "Skyfall": 1
+        }, 
+        "total": 3
+    }, 
+    "Best Performance by an Actor in a Television Series - Drama": {
+        "Nominees": {
+            "Steve Buscemi": 0, 
+            "Jon Hamm": 5, 
+            "Damian Lewis": 2, 
+            "Jeff Daniels": 2, 
+            "Bryan Cranston": 14
+        }, 
+        "total": 23
+    }, 
+    "Best Performance by an Actress in a Motion Picture - Drama": {
+        "Nominees": {
+            "Marion Cotillard": 0, 
+            "Naomi Watts": 0, 
+            "Rachel Weisz": 0, 
+            "Helen Mirren": 0, 
+            "Jessica Chastain": 0
+        }, 
+        "total": 0
+    }, 
+    "Best Original Score": {
+        "Nominees": {
+            "Anna Karenina": 0, 
+            "Lincoln": 0, 
+            "Life of Pi": 0, 
+            "Cloud Atlas": 1, 
+            "Argo": 0
+        }, 
+        "total": 1
+    }, 
+    "Best Performance By An Actress In A Motion Picture - Comedy or Musical": {
+        "Nominees": {
+            "Emily Blunt": 1, 
+            "Judi Dench": 0, 
+            "Maggie Smith": 1, 
+            "Meryl Streep": 1, 
+            "Jennifer Lawrence": 2
+        }, 
+        "total": 5
+    }, 
+    "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Sienna Miller": 0, 
+            "Julianne Moore": 4, 
+            "Sigourney Weaver": 0, 
+            "Nicole Kidman": 0, 
+            "Jessica Lange": 77
+        }, 
+        "total": 81
+    }, 
+    "Best Performance by an Actor in a Supporting Role in a Motion Picture": {
+        "Nominees": {
+            "Alan Arkin": 0, 
+            "Tommy Lee Jones": 4, 
+            "Christoph Waltz": 4, 
+            "Leonardo DiCaprio": 6, 
+            "Philip Seymour Hoffman": 0
+        }, 
+        "total": 14
+    }, 
+    "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Mandy Patinkin": 13, 
+            "Max Greenfield": 1, 
+            "Eric Stonestreet": 0, 
+            "Ed Harris": 5, 
+            "Danny Huston": 0
+        }, 
+        "total": 19
+    }, 
+    "Best Performance by an Actress in a Supporting Role in a Motion Picture": {
+        "Nominees": {
+            "Amy Adams": 0, 
+            "Helen Hunt": 0, 
+            "Anne Hathaway": 4, 
+            "Sally Field": 1, 
+            "Nicole Kidman": 1
+        }, 
+        "total": 6
+    }, 
+    "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television": {
+        "Nominees": {
+            "Woody Harrelson": 0, 
+            "Clive Owen": 0, 
+            "Kevin Costner": 1, 
+            "Benedict Cumberpatch": 0, 
+            "Toby Jones": 0
+        }, 
+        "total": 1
+    }, 
+    "Best Animated Feature Film": {
+        "Nominees": {
+            "Wreck-It Ralph": 9, 
+            "Hotel Transylvania": 1, 
+            "Brave": 9, 
+            "Rise of the Guardians": 0, 
+            "Frankenweenie": 5
+        }, 
+        "total": 24
+    }, 
+    "Best Performance by an Actress in a Television Series - Musical or Comedy": {
+        "Nominees": {
+            "Tina Fey": 3, 
+            "Lena Dunham": 6, 
+            "Julia Louis-Dreyfus": 0, 
+            "Zooey Deschanel": 1, 
+            "Amy Poehler": 77
+        }, 
+        "total": 87
+    }, 
+    "Best Performance by an Actor in a Motion Picture - Drama": {
+        "Nominees": {
+            "Richard Gere": 0, 
+            "Joaquin Phoenix": 0, 
+            "Daniel Day-Lewis": 1, 
+            "Denzel Washington": 0, 
+            "John Hawkes": 1
+        }, 
+        "total": 2
+    }, 
+    "Best Performance By An Actor In A Motion Picture - Comedy or Musical": {
+        "Nominees": {
+            "Billy Murray": 0, 
+            "Jack Black": 4, 
+            "Hugh Jackman": 3, 
+            "Bradley Cooper": 32, 
+            "Ewan McGregor": 0
+        }, 
+        "total": 39
+    }, 
+    "Best Series - Musical or Comedy": {
+        "Nominees": {
+            "The Big Bang Theory": 0, 
+            "Episodes": 2, 
+            "Girls": 19, 
+            "Modern Family": 4, 
+            "Smash": 3
+        }, 
+        "total": 28
+    }, 
+    "Best Performance by an Actor in a Television Series - Musical or Comedy": {
+        "Nominees": {
+            "Don Cheadle": 4, 
+            "Jim Parsons": 13, 
+            "Louis C.K.": 4, 
+            "Matt LeBlanc": 1, 
+            "Alec Baldwin": 1
+        }, 
+        "total": 23
+    }, 
+    "Best Motion Picture - Drama": {
+        "Nominees": {
+            "Lincoln": 5, 
+            "Life of Pi": 1, 
+            "Zero Dark Thirty": 1, 
+            "Django Unchained": 1, 
+            "Argo": 77
+        }, 
+        "total": 85
+    }
+}
