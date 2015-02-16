@@ -111,8 +111,6 @@ def find_winners(data, tweet_path):
     nominations = nominated_for(data)
     aliases = nominee_aliases(nominees)
 
-    pretty_print_dict(nominees)
-
     tc = 0
     with codecs.open(tweet_path, 'r', 'utf-8') as f:
         for tweet in f:
@@ -130,14 +128,15 @@ def find_winners(data, tweet_path):
                     winners[award_for_nom]["Nominees"][nom] += weight
                     winners[award_for_nom]["total"] += weight
             if tc % 1000 == 0:
-                print "Processed %d tweets" % tc
+                print "Processed %d tweets for winners" % tc
                 print pretty_print_dict(winners)
 
     return winners
 
 def find_snubs(data, tweet_path):
     """
-    in this one tweet_path is the json dataset
+    data: hardcoded data
+    tweet_path: path to line-delimited list of tweets
     """
 
     nominees = all_nominees(data)
@@ -145,9 +144,8 @@ def find_snubs(data, tweet_path):
     snubs = initialize_winners(data)
     tc = 0
     with codecs.open(tweet_path, 'r', 'utf-8') as f:
-        for line in f:
+        for tweet in f:
             tc += 1
-            tweet = json.loads(line)["text"]
             if tweet_contains_word_in(tweet, SNUB_WORDS):
                 for nom in nominees:
                     if tweet_contains_word_in(tweet, [nom]):
@@ -158,7 +156,7 @@ def find_snubs(data, tweet_path):
                         snubs[award]["Nominees"][nom] += 1
                         snubs[award]["total"] += 1
             if (tc % 10000) == 0:
-                print "Processed %d tweets" % tc
+                print "Processed %d tweets for snubs" % tc
 
         return snubs
 
@@ -172,7 +170,10 @@ def process_winners(winners):
         output[award] = {}
         output[award]["Nominees"] = {}
         for nom in data["Nominees"]:
-            score = data["Nominees"][nom] / float(data["total"])
+            if data["total"] > 0:
+                score = data["Nominees"][nom] / float(data["total"])
+            else:
+                score = 0
             output[award]["Nominees"][nom] = score
             if score > highest:
                 highest = score
@@ -218,29 +219,51 @@ def process_and_write_winners(data_path, tweet_path, outpath, outpath_percents):
 
     print "All done :)"
 
-def process_and_write_snubs(data_path, tweet_json_path, outpath):
+def process_and_write_snubs(data_path, tweet_path, outpath):
     """
     Similar to above function
-    Just be sure the second argument is json and new line delimited
     """
 
     data = load_data(data_path)
 
-    print "Calculating Snubs from using data from %s and tweets from %s" % (data_path, tweet_json_path)
-    snubs = find_snubs(data, tweet_json_path)
+    print "Calculating Snubs from using data from %s and tweets from %s" % (data_path, tweet_path)
+    snubs = find_snubs(data, tweet_path)
     with codecs.open(outpath, 'w', 'utf-8') as file:
         print "Writing snubs results to", outpath
         file.write(json.dumps(snubs, indent=4))
 
     print "All done :)"
 
-# example usage
+
 """
-process_and_write_winners('hardcode/GG15json.json',
-                          'preprocess/best_tweets_regex.txt',
-                          'results/winners_round2.json',
-                          'results/winners_round2_percents.json')
+Here we Go!
 """
-process_and_write_snubs('hardcode/GG13json.json',
-                        'data/goldenglobes2015.json',
-                        'results/snubs_round2.json')
+
+DATA_FILE_2015 = 'hardcode/GG15json.json'
+FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
+BEST_TWEET_FILE_2015 = 'preprocess/gg2015_best.txt'
+
+DATA_FILE_2013 = 'hardcode/GG13json.json'
+FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
+
+TEST_PATH = 'preprocess/tiny_test.txt'
+
+
+## 2015
+process_and_write_winners(DATA_FILE_2015,
+                          BEST_TWEET_FILE_2015,
+                          'results/winners2015-2.json',
+                          'results/winners2015-percents-2.json')
+
+process_and_write_snubs(DATA_FILE_2015,
+                        FULL_TWEET_FILE_2015,
+                        'results/snubs2015-2.json')
+
+# 2013
+process_and_write_winners(DATA_FILE_2013,
+                          FULL_TWEET_FILE_2013,
+                          'results/winners2013-2.json')
+
+process_and_write_snubs(DATA_FILE_2013,
+                        FULL_TWEET_FILE_2013,
+                        'results/snubs2013-2.json')
