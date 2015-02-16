@@ -4,17 +4,6 @@ import string
 import tweet
 import codecs
 
-def write_tweets(source_path, out_path, attr):
-    written = 0
-    with codecs.open(source_path, 'r', 'utf-8') as json_file:
-        outfile = codecs.open(out_path, 'w', 'utf-8')
-        for line in json_file:
-            content = json.loads(line)[attr]
-            content = string.replace(content, "\n", " ")
-            outfile.write(content.encode('utf-8') + "\n")
-            written += 1
-            if written % 1000 == 0:
-                print "Wrote %d tweets" % written
 
 def search_tweets(source_path, out_path, searchterm_list, arg):	# arg = 0: Search for tweets containing any search terms.
 	count = 0													# arg = 1: Search for tweets containing all search terms.
@@ -39,26 +28,53 @@ def search_tweets(source_path, out_path, searchterm_list, arg):	# arg = 0: Searc
 					count += 1
 					outfile.write(content)
 	return count
-	
-def check_award(tweet, award_list):
-	tweet_list = tweet.split()
-	best = award_list[0].split()
-	best_count = 0
-	for element in award_list:
-		list_new = [itm for itm in element.split() if itm in tweet_list]
-		count = len(list_new)
-		if float(count)/float(len(element.split())) > float(best_count)/float(len(best)):
-			best = element.split()
-	print best
-	return
 
-def main():		# sys.argv[1] = String of search terms separated by spaces.
-				# sys.argv[2] = 0 or 1 depending on search preferences.
-	# write_tweets("../data/goldenglobes2015.json", "tweets.txt", "text")
+
+def write_tweets(source_path, outpath):
+    """
+    for use with 2015 data, which has line-delimited json
+    Writes tweet text to line on text file
+    """
+    written = 0
+    with codecs.open(source_path, 'r', 'utf-8') as f:
+        outfile = codecs.open(outpath, 'w', 'utf-8')
+        for obj in f:
+            content = json.loads(obj)["text"]
+            content = string.replace(content, "\n", " ")
+            outfile.write(content)
+            outfile.write("\n")
+            written += 1
+            if written % 1000 == 0:
+                print "Wrote %d tweets" % written
+        outfile.close()
+
+def write_tweets_json(json_path, outpath):
+    """
+    For use with 2013 data and mini 2015 data
+    Loads whole object into a dictionary, writes only the content (stripped of
+    newlines) to a file
+    """
+    written = 0
+    print "Writing to", outpath
+    with codecs.open(json_path, 'r', 'utf-8') as f:
+        outfile = codecs.open(outpath, 'w', 'utf-8')
+        data = json.loads(f.read())
+        for tweet in data:
+            text = tweet["text"]
+            stripped_tweet = string.replace(text, "\n", " ")
+            outfile.write(stripped_tweet)
+            outfile.write("\n")
+            written += 1
+            if written % 1000 == 0:
+                print "Wrote %d tweets" % written
+        outfile.close()
+    print "Done, wrote %d tweets to %s" % (written, outpath)
+
+
+def main():
+        # sys.argv[1] = String of search terms separated by spaces.
+        # sys.argv[2] = 0 or 1 depending on search preferences.
 	search_tweets("tweets.txt", "presenting.txt", ["presenting", "presents"], sys.argv[1])
-	with open("presenting.txt", 'r') as f:
-		for line in f:
-			check_award(line, award_lst)
 	return
 
-main()
+write_tweets('../data/goldenglobes2015.json', 'gg2015.txt')

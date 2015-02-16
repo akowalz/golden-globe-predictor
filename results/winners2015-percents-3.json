@@ -1,0 +1,253 @@
+{
+    "Best Screenplay - Motion Picture": {
+        "Nominees": {
+            "Gone Girl": 0.003137550200803213, 
+            "Birdman": 0.36834839357429716, 
+            "Boyhood": 0.40963855421686746, 
+            "The Imitation Game": 0.00037650602409638556, 
+            "The Grand Budapest Hotel": 0.21849899598393574
+        }, 
+        "winner": "Boyhood"
+    }, 
+    "Best Director - Motion Picture": {
+        "Nominees": {
+            "David Fincher": 0.0014530659691950015, 
+            "Alejandro Gonzalez": 0.035164196454519035, 
+            "Richard Linklater": 0.8480092996222028, 
+            "Ava DuVernay": 0.017436791630340016, 
+            "Wes Anderson": 0.0979366463237431
+        }, 
+        "winner": "Richard Linklater"
+    }, 
+    "Best Actress in a Motion Picture, Drama": {
+        "Nominees": {
+            "Julianne Moore": 0.9833475661827498, 
+            "Jennifer Aniston": 0.0025619128949615714, 
+            "Felicity Jones": 0.004269854824935952, 
+            "Rosamund Pike": 0.008539709649871904, 
+            "Reese Witherspoon": 0.0012809564474807857
+        }, 
+        "winner": "Julianne Moore"
+    }, 
+    "Best Foreign Language Film": {
+        "Nominees": {
+            "Force Majeure": 0.003599712023038157, 
+            "Gett: The Trial of Viviane Amsalem": 0.0, 
+            "Leviathan": 0.9323254139668826, 
+            "Tangerines": 0.0007199424046076314, 
+            "Ida": 0.06335493160547156
+        }, 
+        "winner": "Leviathan"
+    }, 
+    "Best Actor in a Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Bill Murray": 0.010407632263660017, 
+            "Joaquin Phoenix": 0.0, 
+            "Ralph Fiennes": 0.0008673026886383347, 
+            "Christoph Waltz": 0.0008673026886383347, 
+            "Michael Keaton": 0.9878577623590633
+        }, 
+        "winner": "Michael Keaton"
+    }, 
+    "Best TV Series, Drama": {
+        "Nominees": {
+            "The Good Wife": 0.00267639902676399, 
+            "Game Of Thrones": 0.021897810218978103, 
+            "House of Cards": 0.30097323600973236, 
+            "The Affair": 0.6715328467153284, 
+            "Downtown Abbey": 0.00291970802919708
+        }, 
+        "winner": "The Affair"
+    }, 
+    "Best TV Movie or Mini-Series": {
+        "Nominees": {
+            "Fargo": 0.7191700070738033, 
+            "The Missing": 0.009667531242631455, 
+            "True Detective": 0.012261259136995991, 
+            "The Normal Heart": 0.258665409101627, 
+            "Olive Kitteridge": 0.0002357934449422306
+        }, 
+        "winner": "Fargo"
+    }, 
+    "Best Original Score - Motion Picture": {
+        "Nominees": {
+            "Birdman": 0.02452316076294278, 
+            "Gone Girl": 0.0027247956403269754, 
+            "The Imitation Game": 0.0013623978201634877, 
+            "Interstellar": 0.04495912806539509, 
+            "The Theory of Everything": 0.9264305177111717
+        }, 
+        "winner": "The Theory of Everything"
+    }, 
+    "Best Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Birdman": 0.2689210950080515, 
+            "Into The Woods": 0.003450655624568668, 
+            "Pride": 0.004600874166091558, 
+            "The Grand Budapest Hotel": 0.7227973314929836, 
+            "St. Vincent": 0.00023004370830457787
+        }, 
+        "winner": "The Grand Budapest Hotel"
+    }, 
+    "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
+        "Nominees": {
+            "Jon Voight": 0.000723589001447178, 
+            "Bill Murray": 0.0, 
+            "Matt Bomer": 0.9927641099855282, 
+            "Alan Cumming": 0.006512301013024602, 
+            "Colin Hanks": 0.0
+        }, 
+        "winner": "Matt Bomer"
+    }, 
+    "Best Supporting Actress in a Motion Picture": {
+        "Nominees": {
+            "Keira Knightley": 0.008911521323997454, 
+            "Jessica Chastain": 0.005728835136855506, 
+            "Meryl Streep": 0.019096117122851686, 
+            "Emma Stone": 0.012730744748567792, 
+            "Patricia Arquette": 0.9535327816677276
+        }, 
+        "winner": "Patricia Arquette"
+    }, 
+    "Best TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Orange is the New Black": 0.0005705591479650057, 
+            "Girls": 0.010079878280715101, 
+            "Transparent": 0.7107265119817421, 
+            "Silicon Valley": 0.0007607455306200076, 
+            "Jane the Virgin": 0.27786230505895776
+        }, 
+        "winner": "Transparent"
+    }, 
+    "Best Actress in a Mini-Series or TV Movie": {
+        "Nominees": {
+            "Frances O'Connor ": 0.0, 
+            "Frances McDormand": 0.0011086474501108647, 
+            "Allison Tolman": 0.02106430155210643, 
+            "Maggie Gyllenhaal": 0.9745011086474501, 
+            "Jessica Lange": 0.0033259423503325942
+        }, 
+        "winner": "Maggie Gyllenhaal"
+    }, 
+    "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
+        "Nominees": {
+            "Michelle Monaghan": 0.0, 
+            "Kathy Bates": 0.0038424591738712775, 
+            "Joanne Froggatt": 0.9903938520653218, 
+            "Uzo Aduba": 0.0009606147934678194, 
+            "Allison Janney": 0.004803073967339097
+        }, 
+        "winner": "Joanne Froggatt"
+    }, 
+    "Best Actor in a TV Series, Drama": {
+        "Nominees": {
+            "James Spader": 0.0008305647840531562, 
+            "Kevin Spacey": 0.9886489479512736, 
+            "Liev Schreiber": 0.0002768549280177187, 
+            "Clive Owen": 0.0, 
+            "Dominic West": 0.010243632336655593
+        }, 
+        "winner": "Kevin Spacey"
+    }, 
+    "Best Supporting Actor in a Motion Picture": {
+        "Nominees": {
+            "Mark Ruffalo": 0.0006666666666666666, 
+            "Edward Norton": 0.004, 
+            "J.K. Simmons": 0.976, 
+            "Robert Duvall": 0.008, 
+            "Ethan Hawke": 0.011333333333333334
+        }, 
+        "winner": "J.K. Simmons"
+    }, 
+    "Best Actor in a Mini-Series or TV Movie": {
+        "Nominees": {
+            "Matthew McConaughey": 0.03470031545741325, 
+            "Woody Harrelson": 0.0, 
+            "Billy Bob Thornton": 0.9574132492113565, 
+            "Martin Freeman": 0.006309148264984227, 
+            "Mark Ruffalo": 0.0015772870662460567
+        }, 
+        "winner": "Billy Bob Thornton"
+    }, 
+    "Best Actor in a TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Don Cheadle": 0.0017211703958691911, 
+            "William H. Macy": 0.0008605851979345956, 
+            "Ricky Gervais": 0.006024096385542169, 
+            "Jeffrey Tambor": 0.9913941480206541, 
+            "Louie C.K.": 0.0
+        }, 
+        "winner": "Jeffrey Tambor"
+    }, 
+    "Best Actress in a TV Series, Drama": {
+        "Nominees": {
+            "Claire Danes": 0.00234192037470726, 
+            "Ruth Wilson": 0.955503512880562, 
+            "Robin Wright": 0.00546448087431694, 
+            "Viola Davis": 0.03434816549570648, 
+            "Julianna Margulies": 0.00234192037470726
+        }, 
+        "winner": "Ruth Wilson"
+    }, 
+    "Best Actress in a TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Edie Falco": 0.0, 
+            "Gina Rodriguez": 0.9991958182549256, 
+            "Lena Dunham": 0.0004020908725371934, 
+            "Julia Louis-Dreyfus": 0.0, 
+            "Taylor Schilling": 0.0004020908725371934
+        }, 
+        "winner": "Gina Rodriguez"
+    }, 
+    "Best Animated Feature Film": {
+        "Nominees": {
+            "How To Train Your Dragon 2": 0.9694656488549618, 
+            "Big Hero 6": 0.01097328244274809, 
+            "The Book of Life": 0.0028625954198473282, 
+            "The Lego Movie": 0.016698473282442748, 
+            "The Boxtrolls": 0.0
+        }, 
+        "winner": "How To Train Your Dragon 2"
+    }, 
+    "Best Original Song - Motion Picture": {
+        "Nominees": {
+            "Big Eyes": 0.17340030574361215, 
+            "The Hunger Games: Mockingjay, Part 1": 0.0, 
+            "Selma": 0.8228870932518016, 
+            "Noah": 0.00262065953264905, 
+            "Annie": 0.0010919414719371041
+        }, 
+        "winner": "Selma"
+    }, 
+    "Best Actor in a Motion Picture, Drama": {
+        "Nominees": {
+            "Steve Carell": 0.000462000462000462, 
+            "Eddie Redmayne": 0.9801339801339801, 
+            "David Oyelowo": 0.01131901131901132, 
+            "Benedict Cumberbatch": 0.004158004158004158, 
+            "Jake Gyllenhaal": 0.003927003927003927
+        }, 
+        "winner": "Eddie Redmayne"
+    }, 
+    "Best Actress In A Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Emily Blunt": 0.026854802002730997, 
+            "Quvenzhane Wallis": 0.0, 
+            "Julianne Moore": 0.0, 
+            "Amy Adams": 0.9717796995903505, 
+            "Helen Mirren": 0.0013654984069185253
+        }, 
+        "winner": "Amy Adams"
+    }, 
+    "Best Motion Picture, Drama": {
+        "Nominees": {
+            "Selma": 0.019114509246088193, 
+            "Foxcatcher": 0.0010668563300142249, 
+            "The Theory of Everything": 0.15825035561877668, 
+            "Boyhood": 0.6822546230440967, 
+            "The Imitation Game": 0.0008890469416785206, 
+            "Best Motion Picture, Drama": 0.13842460881934565
+        }, 
+        "winner": "Boyhood"
+    }
+}

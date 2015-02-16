@@ -7,7 +7,7 @@
 	    <title>Golden Globe Winners</title>
 	    <style>
 	  		#winner{color: red;}
-	  		body {font-size: 16px;}
+	  		body {font-size: 18px;}
 	  	</style>
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 	    <div id="award_winners">
 			<ol>
 				{% for award, noms in winners.iteritems(): %}
-					<li>{{ award }}</li>
+					<li id='award'>{{ award }}</li>
 					<ul>
 						{% for category, value in noms.iteritems(): %}
 							{% if category == "Nominees" %}

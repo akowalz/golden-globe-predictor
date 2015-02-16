@@ -147,11 +147,11 @@
         "Best Screenplay - Motion Picture": {
             "Type" :"Media",
             "Nominees": [
-                "Wes Anderson",
-                "Gillian Flynn",
+                "Boyhood",
+                "Gone Girl",
                 "Birdman",
-                "Richard Linklater",
-                "Graham Moore"
+                "The Grand Budapest Hotel",
+                "The Imitation Game"
             ],
             "Award": "Best Screenplay - Motion Picture"
 
@@ -160,11 +160,11 @@
         "Best Original Score - Motion Picture": {
             "Type" :"Media",
             "Nominees": [
-                "Alexandre Desplat",
+                "Birdman",
                 "The Theory of Everything",
                 "Gone Girl",
-                "Antonio Sanchez",
-                "Hans Zimmer"
+                "The Imitation Game",
+                "Interstellar"
             ],
             "Award": "Best Original Score - Motion Picture"
 
@@ -190,7 +190,7 @@
                 "The Affair",
                 "Game Of Thrones",
                 "House of Cards",
-                "Good Wife, The"
+                "The Good Wife"
             ],
             "Award": "Best TV Series, Drama"
 
@@ -256,7 +256,7 @@
                 "William H. Macy",
                 "Ricky Gervais",
                 "Jeffrey Tambor",
-                "Louie C.K.\n(Louie)"
+                "Louie C.K."
             ],
             "Award": "Best Actor in a TV Series, Musical or Comedy"
 

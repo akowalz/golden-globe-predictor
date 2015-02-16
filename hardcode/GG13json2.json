@@ -1,0 +1,257 @@
+{
+          "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+            "Type": "Person",
+            "Nominees": [
+                "Ed Harris",
+                "Max Greenfield",
+                "Danny Huston",
+                "Mandy Patinkin",
+                "Eric Stonestreet"
+            ],
+            "Award": "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television"
+          },
+
+          "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
+            "Type": "Person",
+            "Nominees": [
+              "Maggie Smith",
+              "Hayden Panettiere",
+              "Archie Panjabi",
+              "Sarah Paulson",
+              "Sofia Vergara"
+            ],
+            "Award": "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television"
+          },
+          "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television": {
+            "Type": "Person",
+            "Nominees": [
+            	"Nicole Kidman",
+            	"Jessica Lange",
+            	"Julianne Moore",
+            	"Sienna Miller",
+            	"Sigourney Weaver"],
+            "Award": "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television"
+          },
+            "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television": {
+            "Type": "Person",
+            "Nominees": [
+            	"Kevin Costner",
+            	"Benedict Cumberpatch",
+            	"Woody Harrelson",
+            	"Toby Jones",
+            	"Clive Owen"],
+            "Award": "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television"
+          },
+
+           "Best Performance by an Actress in a Television Series - Musical or Comedy": {
+            "Type": "Person",
+            "Award": "Best Performance by an Actress in a Television Series - Musical or Comedy",
+            "Nominees": [
+                "Lena Dunham",
+                "Zooey Deschanel",
+                "Tina Fey",
+                "Julia Louis-Dreyfus",
+                "Amy Poehler"],
+          "Award": "Best Performance by an Actress in a Television Series - Musical or Comedy"
+          },
+           "Best Performance by an Actor in a Television Series - Musical or Comedy": {
+             "Type": "Person",
+             "Nominees": [
+                "Don Cheadle",
+                "Alec Baldwin",
+                "Louis C.K.",
+                "Matt LeBlanc",
+                "Jim Parsons"],
+             "Award": "Best Performance by an Actor in a Television Series - Musical or Comedy"
+
+          },
+           "Best Performance by an Actress in a Television Series - Drama": {
+            "Type": "Person",
+             "Nominees": [
+                "Claire Danes",
+                "Connie Britton",
+                "Glenn Close",
+                "Michelle Dockery",
+                "Julianna Margulies"],
+             "Award": "Best Performance by an Actress in a Television Series - Drama"
+          },
+            "Best Performance by an Actor in a Television Series - Drama": {
+            "Type": "Person",
+
+            "Nominees": [
+                "Damian Lewis",
+                "Steve Buscemi",
+                "Bryan Cranston",
+                "Jeff Daniels",
+                "Jon Hamm"],
+            "Award": "Best Performance by an Actor in a Television Series - Drama"
+          },
+
+            "Best Series - Drama": {
+            "Type": "Media",
+
+            "Nominees": [
+                "Homeland",
+                "Breaking Bad",
+                "Boardwalk Empire",
+                "Downtown Abbey",
+                "The Newsroom"],
+            "Award": "Best Series - Drama"
+          },
+
+            "Best Series - Musical or Comedy": {
+            "Type": "Media",
+
+            "Nominees": [
+                "Girls",
+                "The Big Bang Theory",
+                "Episodes",
+                "Modern Family",
+                "Smash"],
+            "Award": "Best Series - Musical or Comedy"
+          },
+
+           "Best Director - Motion Picture": {
+            "Type": "Person",
+            "Nominees": [
+                "Ben Affleck",
+                "Kathryn Bigelow",
+                "Ang Lee",
+                "Steven Spielberg",
+                "Quentin Tarantino"],
+            "Award": "Best Director - Motion Picture"
+          },
+          "Best Screenplay": {
+            "Type": "Media",
+            "Nominees": [
+                "Zero Dark Thirty",
+                "Lincoln",
+                "Silver Linings Playbook",
+                "Django Unchained",
+                "Argo"],
+            "Award": "Best Screen Play"
+          },
+
+           "Best Performance by an Actor in a Supporting Role in a Motion Picture": {
+            "Type": "Person",
+
+            "Nominees": [
+                "Christoph Waltz",
+                "Alan Arkin",
+                "Leonardo DiCaprio",
+                "Philip Seymour Hoffman",
+                "Tommy Lee Jones"],
+            "Award": "Best Performance by an Actor in a Supporting Role in a Motion Picture"
+          },
+            "Best Performance by an Actress in a Supporting Role in a Motion Picture": {
+            "Type": "Person",
+            "Nominees": [
+            			"Anne Hathaway",
+            			"Amy Adams",
+            			"Sally Field",
+            			"Helen Hunt",
+            			"Nicole Kidman"],
+            "Award": "Best Performance by an Actress in a Supporting Role in a Motion Picture"
+          },
+           "Best Performance by an Actor in a Motion Picture - Drama": {
+            "Type": "Person",
+            "Nominees": [
+            	"Daniel Day-Lewis",
+            	"Richard Gere",
+            	"John Hawkes",
+            	"Joaquin Phoenix",
+            	"Denzel Washington"],
+          "Award": "Best Performance by an Actor in a Motion Picture - Drama"
+          },
+           "Best Performance By An Actress In A Motion Picture - Comedy or Musical": {
+            "Type": "Person",
+            "Nominees": [
+            	"Jennifer Lawrence",
+            	"Emily Blunt",
+            	"Judi Dench",
+            	"Maggie Smith",
+            	"Meryl Streep"],
+            "Award": "Best Performance By An Actress In A Motion Picture - Comedy or Musical"
+          },
+           "Best Performance By An Actor In A Motion Picture - Comedy or Musical": {
+            "Type": "Person",
+            "Nominees": [
+            	"Hugh Jackman",
+            	"Jack Black",
+            	"Bradley Cooper",
+            	"Ewan McGregor",
+            	"Billy Murray"],
+             "Award": "Best Performance By An Actor In A Motion Picture - Comedy or Musical"
+
+          },
+            "Best Performance by an Actress in a Motion Picture - Drama": {
+            "Type": "Person",
+            "Nominees": [
+            	"Jessica Chastain",
+            	"Marion Cotillard",
+            	"Helen Mirren",
+            	"Naomi Watts",
+            	"Rachel Weisz"],
+            "Award": "Best Performance by an Actress in a Motion Picture - Drama"
+          },
+            "Best Motion Picture - Drama": {
+            "Type": "Media",
+            "Nominees": ["Argo",
+            	"Django Unchained",
+            	"Life of Pi",
+            	"Lincoln",
+            	"Zero Dark Thirty"],
+              "Award": "Best Motion Picture - Drama"
+          },
+            "Best Motion Picture - Musical or Comedy": {
+            "Type": "Media",
+            "Nominees": [
+            	"Les Miserables",
+            	"The Best Exotic Marigold Hotel",
+            	"Moonrise Kingdom",
+            	"Salmon Fishing in the Yemen",
+            	"Silver Linings Playbook"],
+           "Award": "Best Motion Picture - Musical or Comedy"
+          },
+              "Best Original Song": {
+            "Type": "Media",
+            "Nominees": [
+            	"Skyfall",
+            	"For You","Not Running Anymore",
+            	"Safe & Sound",
+            	"Suddenly"],
+         "Award": "Best Original Song"
+          },
+              "Best Original Score": {
+            "Type": "Media",
+            "Nominees": [
+            	"Life of Pi",
+            	"Argo",
+            	"Anna Karenina",
+            	"Lincoln",
+            	"Cloud Atlas"
+            	],
+            "Award": "Best Original Song"
+          },
+            "Best Animated Feature Film": {
+            "Type": "Media",
+            "Nominees": [
+            	"Brave",
+            	"Frankenweenie",
+            	"Hotel Transylvania",
+            	"Rise of the Guardians",
+            	"Wreck-It Ralph"],
+              "Award": "Best Animated Feature Film"
+          },
+              "Best Foreign Language Film": {
+              "Type": "Media",
+            "Nominees": [
+            	"Amour",
+            	"A Royal Affair",
+            	"The Intouchables",
+            	"Kon-Tiki",
+            	"Rust and Bones"],
+            "Award": "Best Foreign Language Film"
+          }
+
+}

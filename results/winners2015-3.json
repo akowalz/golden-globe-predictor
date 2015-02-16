@@ -1,0 +1,253 @@
+{
+    "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
+        "Nominees": {
+            "Michelle Monaghan": 0, 
+            "Joanne Froggatt": 1031, 
+            "Allison Janney": 5, 
+            "Uzo Aduba": 1, 
+            "Kathy Bates": 4
+        }, 
+        "total": 1041
+    }, 
+    "Best Director - Motion Picture": {
+        "Nominees": {
+            "David Fincher": 5, 
+            "Alejandro Gonzalez": 121, 
+            "Richard Linklater": 2918, 
+            "Ava DuVernay": 60, 
+            "Wes Anderson": 337
+        }, 
+        "total": 3441
+    }, 
+    "Best Actress in a Motion Picture, Drama": {
+        "Nominees": {
+            "Jennifer Aniston": 6, 
+            "Julianne Moore": 2303, 
+            "Rosamund Pike": 20, 
+            "Felicity Jones": 10, 
+            "Reese Witherspoon": 3
+        }, 
+        "total": 2342
+    }, 
+    "Best Foreign Language Film": {
+        "Nominees": {
+            "Force Majeure": 5, 
+            "Gett: The Trial of Viviane Amsalem": 0, 
+            "Leviathan": 1295, 
+            "Tangerines": 1, 
+            "Ida": 88
+        }, 
+        "total": 1389
+    }, 
+    "Best Actor in a Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Joaquin Phoenix": 0, 
+            "Bill Murray": 24, 
+            "Christoph Waltz": 2, 
+            "Ralph Fiennes": 2, 
+            "Michael Keaton": 2278
+        }, 
+        "total": 2306
+    }, 
+    "Best TV Series, Drama": {
+        "Nominees": {
+            "The Good Wife": 11, 
+            "The Affair": 2760, 
+            "House of Cards": 1237, 
+            "Downtown Abbey": 12, 
+            "Game Of Thrones": 90
+        }, 
+        "total": 4110
+    }, 
+    "Best TV Movie or Mini-Series": {
+        "Nominees": {
+            "Fargo": 3050, 
+            "The Missing": 41, 
+            "The Normal Heart": 1097, 
+            "Olive Kitteridge": 1, 
+            "True Detective": 52
+        }, 
+        "total": 4241
+    }, 
+    "Best Original Score - Motion Picture": {
+        "Nominees": {
+            "Birdman": 18, 
+            "Gone Girl": 2, 
+            "The Imitation Game": 1, 
+            "Interstellar": 33, 
+            "The Theory of Everything": 680
+        }, 
+        "total": 734
+    }, 
+    "Best Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Birdman": 1169, 
+            "Pride": 20, 
+            "Into The Woods": 15, 
+            "The Grand Budapest Hotel": 3142, 
+            "St. Vincent": 1
+        }, 
+        "total": 4347
+    }, 
+    "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
+        "Nominees": {
+            "Jon Voight": 1, 
+            "Bill Murray": 0, 
+            "Matt Bomer": 1372, 
+            "Alan Cumming": 9, 
+            "Colin Hanks": 0
+        }, 
+        "total": 1382
+    }, 
+    "Best Supporting Actress in a Motion Picture": {
+        "Nominees": {
+            "Keira Knightley": 14, 
+            "Patricia Arquette": 1498, 
+            "Meryl Streep": 30, 
+            "Emma Stone": 20, 
+            "Jessica Chastain": 9
+        }, 
+        "total": 1571
+    }, 
+    "Best TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Orange is the New Black": 3, 
+            "Girls": 53, 
+            "Transparent": 3737, 
+            "Silicon Valley": 4, 
+            "Jane the Virgin": 1461
+        }, 
+        "total": 5258
+    }, 
+    "Best Actress in a Mini-Series or TV Movie": {
+        "Nominees": {
+            "Frances O'Connor ": 0, 
+            "Frances McDormand": 1, 
+            "Allison Tolman": 19, 
+            "Maggie Gyllenhaal": 879, 
+            "Jessica Lange": 3
+        }, 
+        "total": 902
+    }, 
+    "Best Screenplay - Motion Picture": {
+        "Nominees": {
+            "Gone Girl": 25, 
+            "Birdman": 2935, 
+            "Boyhood": 3264, 
+            "The Imitation Game": 3, 
+            "The Grand Budapest Hotel": 1741
+        }, 
+        "total": 7968
+    }, 
+    "Best Actor in a TV Series, Drama": {
+        "Nominees": {
+            "Liev Schreiber": 1, 
+            "Kevin Spacey": 3571, 
+            "James Spader": 3, 
+            "Clive Owen": 0, 
+            "Dominic West": 37
+        }, 
+        "total": 3612
+    }, 
+    "Best Supporting Actor in a Motion Picture": {
+        "Nominees": {
+            "J.K. Simmons": 1464, 
+            "Mark Ruffalo": 1, 
+            "Edward Norton": 6, 
+            "Ethan Hawke": 17, 
+            "Robert Duvall": 12
+        }, 
+        "total": 1500
+    }, 
+    "Best Actor in a Mini-Series or TV Movie": {
+        "Nominees": {
+            "Matthew McConaughey": 22, 
+            "Woody Harrelson": 0, 
+            "Billy Bob Thornton": 607, 
+            "Martin Freeman": 4, 
+            "Mark Ruffalo": 1
+        }, 
+        "total": 634
+    }, 
+    "Best Actor in a TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Don Cheadle": 2, 
+            "William H. Macy": 1, 
+            "Ricky Gervais": 7, 
+            "Jeffrey Tambor": 1152, 
+            "Louie C.K.": 0
+        }, 
+        "total": 1162
+    }, 
+    "Best Actress in a TV Series, Drama": {
+        "Nominees": {
+            "Claire Danes": 3, 
+            "Ruth Wilson": 1224, 
+            "Robin Wright": 7, 
+            "Viola Davis": 44, 
+            "Julianna Margulies": 3
+        }, 
+        "total": 1281
+    }, 
+    "Best Actress in a TV Series, Musical or Comedy": {
+        "Nominees": {
+            "Edie Falco": 0, 
+            "Lena Dunham": 1, 
+            "Gina Rodriguez": 2485, 
+            "Julia Louis-Dreyfus": 0, 
+            "Taylor Schilling": 1
+        }, 
+        "total": 2487
+    }, 
+    "Best Animated Feature Film": {
+        "Nominees": {
+            "How To Train Your Dragon 2": 2032, 
+            "Big Hero 6": 23, 
+            "The Boxtrolls": 0, 
+            "The Lego Movie": 35, 
+            "The Book of Life": 6
+        }, 
+        "total": 2096
+    }, 
+    "Best Original Song - Motion Picture": {
+        "Nominees": {
+            "Big Eyes": 794, 
+            "The Hunger Games: Mockingjay, Part 1": 0, 
+            "Selma": 3768, 
+            "Annie": 5, 
+            "Noah": 12
+        }, 
+        "total": 4579
+    }, 
+    "Best Actor in a Motion Picture, Drama": {
+        "Nominees": {
+            "Steve Carell": 2, 
+            "Benedict Cumberbatch": 18, 
+            "David Oyelowo": 49, 
+            "Eddie Redmayne": 4243, 
+            "Jake Gyllenhaal": 17
+        }, 
+        "total": 4329
+    }, 
+    "Best Actress In A Motion Picture, Musical or Comedy": {
+        "Nominees": {
+            "Emily Blunt": 59, 
+            "Quvenzhane Wallis": 0, 
+            "Julianne Moore": 0, 
+            "Amy Adams": 2135, 
+            "Helen Mirren": 3
+        }, 
+        "total": 2197
+    }, 
+    "Best Motion Picture, Drama": {
+        "Nominees": {
+            "Selma": 215, 
+            "Foxcatcher": 12, 
+            "The Imitation Game": 10, 
+            "The Theory of Everything": 1780, 
+            "Boyhood": 7674, 
+            "Best Motion Picture, Drama": 1557
+        }, 
+        "total": 11248
+    }
+}
