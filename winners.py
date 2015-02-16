@@ -8,7 +8,6 @@ CONGRATULATORY_WORDS = [
     'wins',
     'winner',
     'won',
-    'wins',
     'awarded',
     'well done',
     'great job']
@@ -45,20 +44,18 @@ def nominated_for(awards):
     return nominees
 
 def find_best_award(tweet, award_list):
-    print "Disambiguating %s"
-    print "Options are: ", award_list
-    tweet_list = tweet.lower.split()
+    tweet_list = tweet.lower().split()
     best = award_list[0]
-    best_count = 0
+    best_score = 0
     for award in award_list:
-        matches = [itm for itm in award.lower().split() if itm in tweet_list]
+        award_tokens = award.lower().translate(',-').split()
+        matches = [itm for itm in award_tokens if itm in tweet_list]
         count = len(matches)
-        print "%s scored %f" % (award, count)
-        if count/float(len(award.split())) > best_count/float(len(best)):
+        award_score = count/float(len(award.split()))
+        if award_score > best_score:
             best = award
-            best_count = count
+            best_score = award_score
 
-    print "Chose", best
     return best
 
 def all_nominees(awards):
@@ -149,7 +146,6 @@ def find_winners_fast(data, tweet_path):
     nominees = all_nominees(data)
     winners = initialize_winners(data)
     nominations = nominated_for(data)
-    pretty_print_dict(nominations)
     aliases = nominee_aliases(nominees)
 
     tc = 0
@@ -213,7 +209,7 @@ def process_winners(winners):
             else:
                 score = 0
             output[award]["Nominees"][nom] = score
-            if score > highest:
+            if score >= highest:
                 highest = score
                 output[award]["winner"] = nom
 
@@ -273,36 +269,97 @@ def process_and_write_snubs(data_path, tweet_path, outpath):
     print "All done :)"
 
 
-"""
-Here we Go!
-"""
+def format_for_grader(year, hosts, metadata_path, tweet_data_path):
+    metadata = load_data(metadata_path)
 
-DATA_FILE_2015 = 'hardcode/GG15json.json'
-FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
-BEST_TWEET_FILE_2015 = 'preprocess/gg2015_best.txt'
+    winners = find_winners_fast(metadata,
+                                tweet_data_path)
 
-DATA_FILE_2013 = 'hardcode/GG13json2.json'
-FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
+    processed_winners = process_winners(winners)
 
-TEST_PATH = 'preprocess/tiny_test.txt'
+    nominees_full = all_nominees(metadata)
+    all_awards = []
+    all_winners = []
+    all_presenters = []
+
+    for award, info in processed_winners.iteritems():
+        all_winners.append(info["winner"])
+
+    for award, v in metadata.iteritems():
+        all_awards.append(award)
 
 
-## 2015
-process_and_write_winners(DATA_FILE_2015,
-                          BEST_TWEET_FILE_2015,
-                          'results/winners2015-3.json',
-                          'results/winners2015-percents-3.json')
+    output = {
+        "metadata": {
+                "year": year,
+                "hosts": {
+                    "method": "hardcoded",
+                    "method_description": "hardcoded"
+                    },
+                "nominees": {
+                    "method": "hardcoded",
+                    "method_description": "calculated from award dataset used"
+                    },
+                "awards": {
+                    "method": "hardcoded",
+                    "method_description": "calculated from award dataset used"
+                    }
+                },
+        "data": {
+            "unstructured": {
+                "hosts": hosts,
+                "winners": all_winners,
+                "nominees": nominees_full,
+                "awards": all_awards,
+                "presenters": all_presenters
+                },
+            "structured": {}
+            }
+        }
 
-process_and_write_snubs(DATA_FILE_2015,
-                        FULL_TWEET_FILE_2015,
-                        'results/snubs2015-3.json')
+    for award, info in metadata.iteritems():
+        output["data"]["structured"][award] = {}
+        output["data"]["structured"][award]["nominees"] = info["Nominees"]
+        output["data"]["structured"][award]["winner"] = processed_winners[award]["winner"]
+        output["data"]["structured"][award]["presenters"] = []
 
-# 2013
-process_and_write_winners(DATA_FILE_2013,
-                          FULL_TWEET_FILE_2013,
-                          'results/winners2013-3.json',
-                          'results/winners2013-percents-3.json')
+    return output
 
-process_and_write_snubs(DATA_FILE_2013,
-                        FULL_TWEET_FILE_2013,
-                        'results/snubs2013-3.json')
+pretty_print_dict(format_for_grader(2015,
+                                    ["Tiny Fey", "Amy Poehler"],
+                                    "hardcode/GG15json.json",
+                                    "preprocess/tiny_test.txt"))
+
+pretty_print_dict(format_for_grader(2013,
+                                    ["Tiny Fey", "Amy Poehler"],
+                                    "hardcode/GG13json2.json",
+                                    "preprocess/tiny_test.txt"))
+def main():
+    DATA_FILE_2015 = 'hardcode/GG15json.json'
+    FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
+    BEST_TWEET_FILE_2015 = 'preprocess/gg2015_best.txt'
+
+    DATA_FILE_2013 = 'hardcode/GG13json2.json'
+    FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
+
+    TEST_PATH = 'preprocess/tiny_test.txt'
+
+
+    ## 2015
+    process_and_write_winners(DATA_FILE_2015,
+                              BEST_TWEET_FILE_2015,
+                              'results/winners2015-3.json',
+                              'results/winners2015-percents-3.json')
+
+    process_and_write_snubs(DATA_FILE_2015,
+                            FULL_TWEET_FILE_2015,
+                            'results/snubs2015-3.json')
+    # 2013
+    process_and_write_winners(DATA_FILE_2013,
+                              FULL_TWEET_FILE_2013,
+                              'results/winners2013-3.json',
+                              'results/winners2013-percents-3.json')
+
+    process_and_write_snubs(DATA_FILE_2013,
+                            FULL_TWEET_FILE_2013,
+                            'results/snubs2013-3.json')
