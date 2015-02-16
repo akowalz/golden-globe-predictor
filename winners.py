@@ -146,10 +146,9 @@ def find_snubs(data, tweet_path):
     tc = 0
     with codecs.open(tweet_path, 'r', 'utf-8') as f:
         for line in f:
-            tweet = json.loads(line)["text"]
             tc += 1
+            tweet = json.loads(line)["text"]
             if tweet_contains_word_in(tweet, SNUB_WORDS):
-                print "Found a snub tweet"
                 for nom in nominees:
                     if tweet_contains_word_in(tweet, [nom]):
                         if len(nominations[nom]) > 1:
@@ -158,11 +157,10 @@ def find_snubs(data, tweet_path):
                             award = nominations[nom][0]
                         snubs[award]["Nominees"][nom] += 1
                         snubs[award]["total"] += 1
+            if (tc % 10000) == 0:
+                print "Processed %d tweets" % tc
 
         return snubs
-
-
-
 
 def process_winners(winners):
     """
@@ -196,10 +194,53 @@ def tweet_contains_word_in(tweet, words):
 def is_congratulatory(tweet):
     return tweet_contains_word_in(tweet, CONGRATULATORY_WORDS)
 
-data = load_data('ggdump.json')
-# winners = find_winners(data, 'data/best_tweets_regex.txt')
-# pretty_print_dict(process_winners(winners))
-# pretty_print_dict(find_snubs(data, 'data/goldenglobes2015.json'))
-with codecs.open('percents.json', 'w', 'utf-8') as outfile:
-    percents = json.dumps(process_winners(json.loads(codecs.open('winner_results_round1.json', 'r', 'utf-8').read())), indent=4)
-    outfile.write(percents)
+def process_and_write_winners(data_path, tweet_path, outpath, outpath_percents):
+    """
+    A nice wrapper to help use process and write all the winners
+    data_path: path to hardcoded data
+    tweet_path: path to line-delimited tweets
+    outpath: to write results to
+    outpath_percents: path to write results with percentages to
+    """
+    data = load_data(data_path)
+    winners = find_winners(data, tweet_path)
+
+    print "Found winners"
+    print "Writing winners to ", outpath
+    with codecs.open(outpath, 'w', 'utf-8') as file:
+        file.write(json.dumps(winners, indent=4))
+
+    processed_winners = process_winners(winners)
+    print "Processed winners"
+    print "Writing processed winners to ", outpath_percents
+    with codecs.open(outpath_percents, 'w', 'utf-8') as file:
+        file.write(json.dumps(processed_winners, indent=4))
+
+    print "All done :)"
+
+def process_and_write_snubs(data_path, tweet_json_path, outpath):
+    """
+    Similar to above function
+    Just be sure the second argument is json and new line delimited
+    """
+
+    data = load_data(data_path)
+
+    print "Calculating Snubs from using data from %s and tweets from %s" % (data_path, tweet_json_path)
+    snubs = find_snubs(data, tweet_json_path)
+    with codecs.open(outpath, 'w', 'utf-8') as file:
+        print "Writing snubs results to", outpath
+        file.write(json.dumps(snubs, indent=4))
+
+    print "All done :)"
+
+# example usage
+"""
+process_and_write_winners('hardcode/GG15json.json',
+                          'preprocess/best_tweets_regex.txt',
+                          'results/winners_round2.json',
+                          'results/winners_round2_percents.json')
+"""
+process_and_write_snubs('hardcode/GG13json.json',
+                        'data/goldenglobes2015.json',
+                        'results/snubs_round2.json')
