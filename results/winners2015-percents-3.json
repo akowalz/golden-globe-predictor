@@ -1,13 +1,15 @@
 {
-    "Best Screenplay - Motion Picture": {
+    "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
         "Nominees": {
-            "Gone Girl": 0.003137550200803213, 
-            "Birdman": 0.36834839357429716, 
-            "Boyhood": 0.40963855421686746, 
-            "The Imitation Game": 0.00037650602409638556, 
-            "The Grand Budapest Hotel": 0.21849899598393574
+            "Michelle Monaghan": 0.0, 
+            "Joanne Froggatt": 0.9903938520653218, 
+            "Allison Janney": 0.004803073967339097, 
+            "Uzo Aduba": 0.0009606147934678194, 
+            "Kathy Bates": 0.0038424591738712775
         }, 
-        "winner": "Boyhood"
+        "winner": "Joanne Froggatt", 
+        "real_winner": "Joanne Froggatt", 
+        "correct": true
     }, 
     "Best Director - Motion Picture": {
         "Nominees": {
@@ -17,7 +19,9 @@
             "Ava DuVernay": 0.017436791630340016, 
             "Wes Anderson": 0.0979366463237431
         }, 
-        "winner": "Richard Linklater"
+        "winner": "Richard Linklater", 
+        "real_winner": " Richard Linklater", 
+        "correct": true
     }, 
     "Best Actress in a Motion Picture, Drama": {
         "Nominees": {
@@ -27,7 +31,9 @@
             "Rosamund Pike": 0.008539709649871904, 
             "Reese Witherspoon": 0.0012809564474807857
         }, 
-        "winner": "Julianne Moore"
+        "winner": "Julianne Moore", 
+        "real_winner": "Julianne Moore", 
+        "correct": true
     }, 
     "Best Foreign Language Film": {
         "Nominees": {
@@ -37,7 +43,9 @@
             "Tangerines": 0.0007199424046076314, 
             "Ida": 0.06335493160547156
         }, 
-        "winner": "Leviathan"
+        "winner": "Leviathan", 
+        "real_winner": "Leviathan", 
+        "correct": true
     }, 
     "Best Actor in a Motion Picture, Musical or Comedy": {
         "Nominees": {
@@ -47,27 +55,33 @@
             "Christoph Waltz": 0.0008673026886383347, 
             "Michael Keaton": 0.9878577623590633
         }, 
-        "winner": "Michael Keaton"
+        "winner": "Michael Keaton", 
+        "real_winner": "Michael Keaton", 
+        "correct": true
     }, 
     "Best TV Series, Drama": {
         "Nominees": {
             "The Good Wife": 0.00267639902676399, 
-            "Game Of Thrones": 0.021897810218978103, 
+            "Downtown Abbey": 0.00291970802919708, 
             "House of Cards": 0.30097323600973236, 
             "The Affair": 0.6715328467153284, 
-            "Downtown Abbey": 0.00291970802919708
+            "Game Of Thrones": 0.021897810218978103
         }, 
-        "winner": "The Affair"
+        "winner": "The Affair", 
+        "real_winner": "The Affair", 
+        "correct": true
     }, 
     "Best TV Movie or Mini-Series": {
         "Nominees": {
             "Fargo": 0.7191700070738033, 
+            "Olive Kitteridge": 0.0002357934449422306, 
             "The Missing": 0.009667531242631455, 
-            "True Detective": 0.012261259136995991, 
             "The Normal Heart": 0.258665409101627, 
-            "Olive Kitteridge": 0.0002357934449422306
+            "True Detective": 0.012261259136995991
         }, 
-        "winner": "Fargo"
+        "winner": "Fargo", 
+        "real_winner": "Fargo", 
+        "correct": true
     }, 
     "Best Original Score - Motion Picture": {
         "Nominees": {
@@ -77,17 +91,21 @@
             "Interstellar": 0.04495912806539509, 
             "The Theory of Everything": 0.9264305177111717
         }, 
-        "winner": "The Theory of Everything"
+        "winner": "The Theory of Everything", 
+        "real_winner": "The Theory of Everything", 
+        "correct": true
     }, 
     "Best Motion Picture, Musical or Comedy": {
         "Nominees": {
             "Birdman": 0.2689210950080515, 
             "Into The Woods": 0.003450655624568668, 
-            "Pride": 0.004600874166091558, 
+            "St. Vincent": 0.00023004370830457787, 
             "The Grand Budapest Hotel": 0.7227973314929836, 
-            "St. Vincent": 0.00023004370830457787
+            "Pride": 0.004600874166091558
         }, 
-        "winner": "The Grand Budapest Hotel"
+        "winner": "The Grand Budapest Hotel", 
+        "real_winner": "The Grand Budapest Hotel", 
+        "correct": true
     }, 
     "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
         "Nominees": {
@@ -97,17 +115,21 @@
             "Alan Cumming": 0.006512301013024602, 
             "Colin Hanks": 0.0
         }, 
-        "winner": "Matt Bomer"
+        "winner": "Matt Bomer", 
+        "real_winner": "Matt Bomer", 
+        "correct": true
     }, 
     "Best Supporting Actress in a Motion Picture": {
         "Nominees": {
             "Keira Knightley": 0.008911521323997454, 
-            "Jessica Chastain": 0.005728835136855506, 
+            "Patricia Arquette": 0.9535327816677276, 
             "Meryl Streep": 0.019096117122851686, 
             "Emma Stone": 0.012730744748567792, 
-            "Patricia Arquette": 0.9535327816677276
+            "Jessica Chastain": 0.005728835136855506
         }, 
-        "winner": "Patricia Arquette"
+        "winner": "Patricia Arquette", 
+        "real_winner": "Patricia Arquette", 
+        "correct": true
     }, 
     "Best TV Series, Musical or Comedy": {
         "Nominees": {
@@ -117,7 +139,9 @@
             "Silicon Valley": 0.0007607455306200076, 
             "Jane the Virgin": 0.27786230505895776
         }, 
-        "winner": "Transparent"
+        "winner": "Transparent", 
+        "real_winner": "Transparent", 
+        "correct": true
     }, 
     "Best Actress in a Mini-Series or TV Movie": {
         "Nominees": {
@@ -127,37 +151,45 @@
             "Maggie Gyllenhaal": 0.9745011086474501, 
             "Jessica Lange": 0.0033259423503325942
         }, 
-        "winner": "Maggie Gyllenhaal"
+        "winner": "Maggie Gyllenhaal", 
+        "real_winner": "Maggie Gyllenhaal", 
+        "correct": true
     }, 
-    "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
+    "Best Screenplay - Motion Picture": {
         "Nominees": {
-            "Michelle Monaghan": 0.0, 
-            "Kathy Bates": 0.0038424591738712775, 
-            "Joanne Froggatt": 0.9903938520653218, 
-            "Uzo Aduba": 0.0009606147934678194, 
-            "Allison Janney": 0.004803073967339097
+            "Gone Girl": 0.003137550200803213, 
+            "Birdman": 0.36834839357429716, 
+            "Boyhood": 0.40963855421686746, 
+            "The Imitation Game": 0.00037650602409638556, 
+            "The Grand Budapest Hotel": 0.21849899598393574
         }, 
-        "winner": "Joanne Froggatt"
+        "winner": "Boyhood", 
+        "real_winner": "Birdman", 
+        "correct": true
     }, 
     "Best Actor in a TV Series, Drama": {
         "Nominees": {
-            "James Spader": 0.0008305647840531562, 
-            "Kevin Spacey": 0.9886489479512736, 
             "Liev Schreiber": 0.0002768549280177187, 
+            "Kevin Spacey": 0.9886489479512736, 
+            "James Spader": 0.0008305647840531562, 
             "Clive Owen": 0.0, 
             "Dominic West": 0.010243632336655593
         }, 
-        "winner": "Kevin Spacey"
+        "winner": "Kevin Spacey", 
+        "real_winner": "Kevin Spacey", 
+        "correct": true
     }, 
     "Best Supporting Actor in a Motion Picture": {
         "Nominees": {
             "Mark Ruffalo": 0.0006666666666666666, 
             "Edward Norton": 0.004, 
             "J.K. Simmons": 0.976, 
-            "Robert Duvall": 0.008, 
-            "Ethan Hawke": 0.011333333333333334
+            "Ethan Hawke": 0.011333333333333334, 
+            "Robert Duvall": 0.008
         }, 
-        "winner": "J.K. Simmons"
+        "winner": "J.K. Simmons", 
+        "real_winner": "J.K. Simmons", 
+        "correct": true
     }, 
     "Best Actor in a Mini-Series or TV Movie": {
         "Nominees": {
@@ -167,7 +199,9 @@
             "Martin Freeman": 0.006309148264984227, 
             "Mark Ruffalo": 0.0015772870662460567
         }, 
-        "winner": "Billy Bob Thornton"
+        "winner": "Billy Bob Thornton", 
+        "real_winner": "Billy Bob Thornton", 
+        "correct": true
     }, 
     "Best Actor in a TV Series, Musical or Comedy": {
         "Nominees": {
@@ -177,7 +211,9 @@
             "Jeffrey Tambor": 0.9913941480206541, 
             "Louie C.K.": 0.0
         }, 
-        "winner": "Jeffrey Tambor"
+        "winner": "Jeffrey Tambor", 
+        "real_winner": "Jeffrey Tambor", 
+        "correct": true
     }, 
     "Best Actress in a TV Series, Drama": {
         "Nominees": {
@@ -187,47 +223,57 @@
             "Viola Davis": 0.03434816549570648, 
             "Julianna Margulies": 0.00234192037470726
         }, 
-        "winner": "Ruth Wilson"
+        "winner": "Ruth Wilson", 
+        "real_winner": "Ruth Wilson", 
+        "correct": true
     }, 
     "Best Actress in a TV Series, Musical or Comedy": {
         "Nominees": {
             "Edie Falco": 0.0, 
-            "Gina Rodriguez": 0.9991958182549256, 
             "Lena Dunham": 0.0004020908725371934, 
+            "Gina Rodriguez": 0.9991958182549256, 
             "Julia Louis-Dreyfus": 0.0, 
             "Taylor Schilling": 0.0004020908725371934
         }, 
-        "winner": "Gina Rodriguez"
+        "winner": "Gina Rodriguez", 
+        "real_winner": "Gina Rodriguez", 
+        "correct": true
     }, 
     "Best Animated Feature Film": {
         "Nominees": {
             "How To Train Your Dragon 2": 0.9694656488549618, 
             "Big Hero 6": 0.01097328244274809, 
-            "The Book of Life": 0.0028625954198473282, 
+            "The Boxtrolls": 0.0, 
             "The Lego Movie": 0.016698473282442748, 
-            "The Boxtrolls": 0.0
+            "The Book of Life": 0.0028625954198473282
         }, 
-        "winner": "How To Train Your Dragon 2"
+        "winner": "How To Train Your Dragon 2", 
+        "real_winner": "How To Train Your Dragon 2", 
+        "correct": true
     }, 
     "Best Original Song - Motion Picture": {
         "Nominees": {
             "Big Eyes": 0.17340030574361215, 
             "The Hunger Games: Mockingjay, Part 1": 0.0, 
             "Selma": 0.8228870932518016, 
-            "Noah": 0.00262065953264905, 
-            "Annie": 0.0010919414719371041
+            "Annie": 0.0010919414719371041, 
+            "Noah": 0.00262065953264905
         }, 
-        "winner": "Selma"
+        "winner": "Selma", 
+        "real_winner": "Selma", 
+        "correct": true
     }, 
     "Best Actor in a Motion Picture, Drama": {
         "Nominees": {
             "Steve Carell": 0.000462000462000462, 
-            "Eddie Redmayne": 0.9801339801339801, 
-            "David Oyelowo": 0.01131901131901132, 
             "Benedict Cumberbatch": 0.004158004158004158, 
+            "David Oyelowo": 0.01131901131901132, 
+            "Eddie Redmayne": 0.9801339801339801, 
             "Jake Gyllenhaal": 0.003927003927003927
         }, 
-        "winner": "Eddie Redmayne"
+        "winner": "Eddie Redmayne", 
+        "real_winner": "Eddie Redmayne", 
+        "correct": true
     }, 
     "Best Actress In A Motion Picture, Musical or Comedy": {
         "Nominees": {
@@ -237,7 +283,9 @@
             "Amy Adams": 0.9717796995903505, 
             "Helen Mirren": 0.0013654984069185253
         }, 
-        "winner": "Amy Adams"
+        "winner": "Amy Adams", 
+        "real_winner": "Amy Adams", 
+        "correct": true
     }, 
     "Best Motion Picture, Drama": {
         "Nominees": {
@@ -248,6 +296,8 @@
             "The Imitation Game": 0.0008890469416785206, 
             "Best Motion Picture, Drama": 0.13842460881934565
         }, 
-        "winner": "Boyhood"
+        "winner": "Boyhood", 
+        "real_winner": "Boyhood", 
+        "correct": true
     }
 }
