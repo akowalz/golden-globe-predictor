@@ -25,6 +25,13 @@ We set up a dictionary to hold the totals for each award, it takes the form:
 
 With the relevant subset of tweets at hand, we began detection on the list of tweets.  The first thing we do is look for "words of congratulation" in the tweet (see `winners.py` for this list).  If a tweet is congratulatory, we then search within it for the name of one of the nominees.  If it does contain one of the nominees, we check from out metadata what that nominee was nominated for.  If the nominee was only nominated for one award, we increment their score within our results dict, and the total.  If they were nominated for multiple awards, we pass the tweet text and a list of awards to a funciton that will figure (to the best of it's ability) which award the tweet was talking about, using a weighted formula based on matching keywords in the tweet and the award name.  Once this is determined, we incremement the appropriate score accordingly.
 
+### Results
+
+The results are outputed as JSON files : GGOut2015.json, GGOut2013.json in the results folder.  
+The results were dumped by the `Winner.py` function and shown on on a Flask-based framework.
+The web app/gui can be accessed by running `showresults.py`.
+
+
 ## Fun Goals
 
 ### Sentiment Map
