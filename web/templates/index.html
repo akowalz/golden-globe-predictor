@@ -51,7 +51,14 @@
 	            		<li><a href="snubs2015">2015</a></li>
 	            		<li><a href="snubs2013">2013</a></li>
           			</ul>
-        		</li>		        
+        		</li>
+		        <li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nominees <span class="caret"></span></a>
+          			<ul class="dropdown-menu" role="menu">
+<!-- 	            		<li><a href="total_13">2015</a></li> -->
+	            		<li><a href="totals_13">2013</a></li>
+          			</ul>
+        		</li>			        
         		<li><a href="sentiment">Sentiment Graph</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -74,28 +81,69 @@
                     </div>
                     <div class="panel-body">
                       <dl class="dl-horizontal">
-              <ul>
-                {% for category, value in noms.iteritems(): %}
-                  {% if category == "Nominees" %}
-                    {% for name, number in value.iteritems(): %}
-                    <ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
-                    {% endfor %}
-                  {% endif %}
-                {% endfor %}
-                {% if noms["correct"] %}
-                  <li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
-                {% endif %}
-                {% if noms["correct"]==False %}
-                  <li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
-                  <li id='real_winner'>Real Winner:  {{ noms["real_winner"] }}</li>
-                {% endif %}
-              </ul>
+              	<ul>
+	                {% for category, value in noms.iteritems(): %}
+	                  {% if category == "Nominees" %}
+	                    {% for name, number in value.iteritems(): %}
+	                    <ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
+	                    {% endfor %}
+	                  {% endif %}
+	                {% endfor %}
+	                {% if noms["correct"] %}
+	                  <li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+	                {% endif %}
+	                {% if noms["correct"]==False %}
+	                  <li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+	                  <li id='real_winner'>Real Winner:  {{ noms["real_winner"] }}</li>
+	                {% endif %}
+              	</ul>
                       </dl>
                   </div>
                 </div>
             {% endfor %}
           </div>
       </div> 
+
+
+  	{% elif totals %}
+      	<div class="container">
+        	<div class="row">Hello World
+				<h1>Golden Globes</h1>
+	            {% for data, firstTotal in totals.iteritems(): %}
+	            	{% for unstructured, secondTotal in firstTotal.iteritems(): %}
+	            		{% for innerTotal, longList in secondTotal.iteritems(): %}
+	                		<div class="panel panel-default">
+	                    		<div class="panel-heading">
+	                      			<div class="panel-title">
+	                          			{{ award }}
+	                      			</div>
+	                    		</div>
+	                    		<div class="panel-body">
+	                      			<dl class="dl-horizontal">
+	              						<ul>
+	                						{% for category, value in noms.iteritems(): %}
+	                  							{% if category == "Nominees" %}
+	                    							{% for name, number in value.iteritems(): %}
+	                    								<ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
+	                    							{% endfor %}
+	                  							{% endif %}
+	                						{% endfor %}
+	                						{% if noms["correct"] %}
+	                  							<li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+	                						{% endif %}
+	                						{% if noms["correct"]==False %}
+							                  	<li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+							                  	<li id='real_winner'>Real Winner:  {{ noms["real_winner"] }}</li>
+	                						{% endif %}
+	              						</ul>
+	                      			</dl>
+	                  			</div>
+	                		</div>
+	            		{% endfor %}
+	            	{% endfor %}
+	            {% endfor %}
+          	</div>
+      	</div> 
 
 
 

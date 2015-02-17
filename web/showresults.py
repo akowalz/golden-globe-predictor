@@ -8,9 +8,13 @@ with open('../results/winners2013-percents-3.json', 'r') as f:
     winners13 = json.loads(f.read())
 with open('../results/snubs2015-3.json', 'r') as f:
 	snubs15 = json.loads(f.read())
-
 with open('../results/snubs2013-3.json', 'r') as f:
 	snubs13 = json.loads(f.read())
+
+with open('../results/GGOut2013.json', 'r') as f:
+    total13 = json.loads(f.read())
+# with open('../results/GGOut2015.json', 'r') as f:
+#     total15 = json.loads(f.read())
 
 @app.route('/')
 def root():
@@ -24,6 +28,15 @@ def predictors15():
 @app.route('/predictor_winner13')
 def predictors13():
     return render_template('index.html', winners=winners13)
+
+# @app.route('/totals_15')
+# def predictors13():
+#     return render_template('index.html', totals=total15)
+@app.route('/totals_13')
+def totals13():
+    return render_template('index.html', totals=total13)
+
+
 
 
 @app.route('/snubs2015')
