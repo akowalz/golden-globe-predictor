@@ -3,7 +3,9 @@ import json
 app = Flask(__name__)
 app.debug = True
 with open('../results/winners2015-percents-3.json', 'r') as f:
-	winners = json.loads(f.read())
+	winners15 = json.loads(f.read())
+with open('../results/winners2013-percents-3.json', 'r') as f:
+    winners13 = json.loads(f.read())
 with open('../results/snubs2015-3.json', 'r') as f:
 	snubs15 = json.loads(f.read())
 
@@ -16,9 +18,13 @@ def root():
 @app.route('/sentiment')
 def sentiment():
 	return render_template('index.html', pageScroll=1)
-@app.route('/predictor_winner')
-def predictors():
-	return render_template('index.html', winners=winners)
+@app.route('/predictor_winner15')
+def predictors15():
+	return render_template('index.html', winners=winners15)
+@app.route('/predictor_winner13')
+def predictors13():
+    return render_template('index.html', winners=winners13)
+
 
 @app.route('/snubs2015')
 def snubs2015():
