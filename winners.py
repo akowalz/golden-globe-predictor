@@ -72,13 +72,6 @@ def all_awards(awards):
 		awards_list.append(award)
 	return awards_list
 
-def all_presenters(presents):
-	all_presenters = []
-	for title, data, in presents.iteritems():
-		for presenter in data["Presenters"]:
-			all_presenters.append(presenter)
-	return all_presenters
-
 def nominee_aliases(nominees):
     """
     takes a list of nominees (without repeats) and does simple computation for
@@ -207,7 +200,7 @@ def find_snubs(data, tweet_path):
 
         return snubs
 
-def process_winners(winners):
+def process_winners(winners, award_data):
     """
     takes output from find_winners and calculates percentages, confidences
     """
@@ -225,6 +218,11 @@ def process_winners(winners):
             if score >= highest:
                 highest = score
                 output[award]["winner"] = nom
+        output[award]["real_winner"] = award_data[award]["Winner"]
+        if output[award]["real_winner"] == output[award]["real_winner"]:
+            output[award]["correct"] = True
+        else:
+            output[award]["correct"] = False
     return output
 
 def tweet_contains_word_in(tweet, words):
@@ -281,20 +279,20 @@ def process_and_write_snubs(data_path, tweet_path, outpath):
     print "All done :)"
 
 
-def format_for_grader(metadata_path, tweet_data_path, outpath):
+def format_for_grader(metadata_path, tweet_data_path, presenting_tweets, outpath):
     metadata = load_data(metadata_path)
 
     aw_data = metadata["Awards"]
     winners = find_winners_fast(aw_data,
                                 tweet_data_path)
 
-    processed_winners = process_winners(winners)
-
+    processed_winners = process_winners(winners, aw_data)
+	
     nominees_full = all_nominees(aw_data)
     all_awards = []
     all_winners = []
-    all_presenters = []
-
+    all_presenters = metadata["Presenters"]
+    presenters_for_awards = find_presenters(metadata_path, presenting_tweets)
     for award, info in processed_winners.iteritems():
         all_winners.append(info["winner"])
 
@@ -334,19 +332,11 @@ def format_for_grader(metadata_path, tweet_data_path, outpath):
         output["data"]["structured"][award] = {}
         output["data"]["structured"][award]["nominees"] = info["Nominees"]
         output["data"]["structured"][award]["winner"] = processed_winners[award]["winner"]
-        output["data"]["structured"][award]["presenters"] = []
-
-
-
-
-
-
+        output["data"]["structured"][award]["presenters"] = presenters_for_awards[award]
 
 
     with codecs.open(outpath,"w","utf-8") as f:
         f.write(json.dumps(output, indent=4))
-
-
 
     return output
 
@@ -358,11 +348,10 @@ def format_for_grader(metadata_path, tweet_data_path, outpath):
 
 
 
-def find_presenters(data_path, tweet_path, presenter_path):
+def find_presenters(data_path, tweet_path):
 	data = load_data(data_path)
-	award_list = all_awards(data)
-	presenters_dict = load_data(presenter_path)
-	presenters_list = all_presenters(presenters_dict)
+	award_list = all_awards(data["Awards"])
+	presenters_list = data["Presenters"]
 	presenters_last_names = [u'AA']
 	award_dict = {}
 	for award in award_list:
@@ -383,8 +372,23 @@ def find_presenters(data_path, tweet_path, presenter_path):
 						award_dict[award_for_tweet][presenter_for_tweet] += 1
 					else:
 						award_dict[award_for_tweet][presenter_for_tweet] = 1
-	print award_dict
-	return award_dict
+	output_dict = {}
+	for element, data in award_dict.iteritems():
+		best = 0
+		best_name = []
+		for name, score in data.iteritems():
+			if score > best:
+				best = score
+				best_name = name
+		output_dict[element] = [resolve_last_name(best_name, presenters_list)]
+	return output_dict
+
+def resolve_last_name(last_name, name_list):
+	for name in name_list:
+		if last_name == name.split()[-1]:
+			return name
+	return last_name
+
 
 def find_best_presenter(tweet, award_list):
     tweet_list = tweet.lower().split()
@@ -404,24 +408,16 @@ def find_best_presenter(tweet, award_list):
 
     return best
 
-#    with codecs.open(tweet_path, 'r', 'utf-8') as f:
-#        for tweet in f:
-#            tc += 1
-#            if tweet_contains_word_in(tweet, CONGRATULATORY_WORDS):
-#                for nom in nominees:
-#                    if tweet_contains_word_in(tweet, [nom]):
-#                        if len(nominations[nom]) > 1:
-#                            award_for_nom = find_best_award(tweet, nominations[nom])
-#                        else:
-#                            award_for_nom = nominations[nom][0]
-#                        winners[award_for_nom]["Nominees"][nom] += 1
-#                        winners[award_for_nom]["total"] += 1
-#            if tc % 10000 == 0:
-#                print "Processed %d tweets for winners" % tc
 
+#                                   "preprocess/gg2015_best.txt",
+#                                   "results/GGOut2015.json"))
+pretty_print_dict(format_for_grader("hardcode/GG15Final2.json",
+                                    "preprocess/tiny_test.txt",
+                                    "preprocess/presenting.txt",
+                                    "results/test.json"))
 
 def main():
-    DATA_FILE_2015 = 'hardcode/GG15json.json'
+    DATA_FILE_2015 = 'hardcode/GG15Final2.json'
     FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
     BEST_TWEET_FILE_2015 = 'preprocess/gg2015_best.txt'
 
@@ -429,12 +425,9 @@ def main():
     FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
 
     TEST_PATH = 'preprocess/tiny_test.txt'
-    PRESENTERS_2015 = 'hardcode/presenter15.json'
-    find_presenters(DATA_FILE_2015, 'preprocess/presenting.txt', PRESENTERS_2015)
     return
 	
 main()
-
 
 
 
@@ -458,6 +451,14 @@ main()
     #                        FULL_TWEET_FILE_2015,
     #                        'results/snubs2015-3.json')
     # 2013
+    #process_and_write_winners(DATA_FILE_2013,
+    #                          FULL_TWEET_FILE_2013,
+    #                          'results/winners2013-3.json',
+    #                          'results/winners2013-percents-3.json')
+
+    #process_and_write_snubs(DATA_FILE_2013,
+    #                        FULL_TWEET_FILE_2013,
+    #                        'results/snubs2013-3.json')
     #process_and_write_winners(DATA_FILE_2013,
     #                          FULL_TWEET_FILE_2013,
     #                          'results/winners2013-3.json',
