@@ -416,6 +416,12 @@ pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
                                     "preprocess/presenting_2013.txt",
                                     "results/GGOut2013.json"))
 
+
+pretty_print_dict(format_for_grader("hardcode/GG15Final2.json",
+                                    "preprocess/gg2015_best.txt",
+                                    "preprocess/presenting_2015.txt",
+                                    "results/GGOut2015.json"))
+
 def main():
     DATA_FILE_2015 = 'hardcode/GG15Final2.json'
     FULL_TWEET_FILE_2015 = 'preprocess/gg2015.txt'
