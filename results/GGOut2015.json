@@ -1,0 +1,568 @@
+{
+    "data": {
+        "unstructured": {
+            "nominees": [
+                "Boyhood", 
+                "Gone Girl", 
+                "Birdman", 
+                "The Grand Budapest Hotel", 
+                "The Imitation Game", 
+                "Ava DuVernay", 
+                "Wes Anderson", 
+                "Alejandro Gonzalez", 
+                "David Fincher", 
+                "Richard Linklater", 
+                "Julianne Moore", 
+                "Rosamund Pike", 
+                "Reese Witherspoon", 
+                "Felicity Jones", 
+                "Jennifer Aniston", 
+                "Ida", 
+                "Force Majeure", 
+                "Gett: The Trial of Viviane Amsalem", 
+                "Tangerines", 
+                "Leviathan", 
+                "Michael Keaton", 
+                "Bill Murray", 
+                "Ralph Fiennes", 
+                "Christoph Waltz", 
+                "Joaquin Phoenix", 
+                "Downtown Abbey", 
+                "The Affair", 
+                "Game Of Thrones", 
+                "House of Cards", 
+                "The Good Wife", 
+                "Olive Kitteridge", 
+                "Fargo", 
+                "The Missing", 
+                "True Detective", 
+                "The Normal Heart", 
+                "The Theory of Everything", 
+                "Interstellar", 
+                "Into The Woods", 
+                "St. Vincent", 
+                "Pride", 
+                "Jon Voight", 
+                "Matt Bomer", 
+                "Alan Cumming", 
+                "Colin Hanks", 
+                "Jessica Chastain", 
+                "Keira Knightley", 
+                "Patricia Arquette", 
+                "Meryl Streep", 
+                "Emma Stone", 
+                "Orange is the New Black", 
+                "Girls", 
+                "Jane the Virgin", 
+                "Transparent", 
+                "Silicon Valley", 
+                "Jessica Lange", 
+                "Maggie Gyllenhaal", 
+                "Frances McDormand", 
+                "Allison Tolman", 
+                "Frances O'Connor ", 
+                "Kathy Bates", 
+                "Uzo Aduba", 
+                "Joanne Froggatt", 
+                "Michelle Monaghan", 
+                "Allison Janney", 
+                "Kevin Spacey", 
+                "Clive Owen", 
+                "James Spader", 
+                "Dominic West", 
+                "Liev Schreiber", 
+                "Ethan Hawke", 
+                "Robert Duvall", 
+                "Edward Norton", 
+                "J.K. Simmons", 
+                "Mark Ruffalo", 
+                "Martin Freeman", 
+                "Matthew McConaughey", 
+                "Woody Harrelson", 
+                "Billy Bob Thornton", 
+                "Don Cheadle", 
+                "William H. Macy", 
+                "Ricky Gervais", 
+                "Jeffrey Tambor", 
+                "Louie C.K.", 
+                "Viola Davis", 
+                "Claire Danes", 
+                "Julianna Margulies", 
+                "Robin Wright", 
+                "Ruth Wilson", 
+                "Julia Louis-Dreyfus", 
+                "Edie Falco", 
+                "Gina Rodriguez", 
+                "Lena Dunham", 
+                "Taylor Schilling", 
+                "The Lego Movie", 
+                "How To Train Your Dragon 2", 
+                "Big Hero 6", 
+                "The Book of Life", 
+                "The Boxtrolls", 
+                "Big Eyes", 
+                "Selma", 
+                "Noah", 
+                "Annie", 
+                "The Hunger Games: Mockingjay, Part 1", 
+                "Eddie Redmayne", 
+                "Steve Carell", 
+                "Benedict Cumberbatch", 
+                "David Oyelowo", 
+                "Jake Gyllenhaal", 
+                "Amy Adams", 
+                "Emily Blunt", 
+                "Helen Mirren", 
+                "Quvenzhane Wallis", 
+                "Foxcatcher"
+            ], 
+            "awards": [
+                "Best Screenplay - Motion Picture", 
+                "Best Director - Motion Picture", 
+                "Best Actress in a Motion Picture, Drama", 
+                "Best Foreign Language Film", 
+                "Best Actor in a Motion Picture, Musical or Comedy", 
+                "Best TV Series, Drama", 
+                "Best TV Movie or Mini-Series", 
+                "Best Original Score - Motion Picture", 
+                "Best Motion Picture, Musical or Comedy", 
+                "Best Supporting Actor in a Series, Mini-Series or TV Movie", 
+                "Best Supporting Actress in a Motion Picture", 
+                "Best TV Series, Musical or Comedy", 
+                "Best Actress in a Mini-Series or TV Movie", 
+                "Best Supporting Actress in a Series, Mini-Series or TV Movie", 
+                "Best Actor in a TV Series, Drama", 
+                "Best Supporting Actor in a Motion Picture", 
+                "Best Actor in a Mini-Series or TV Movie", 
+                "Best Actor in a TV Series, Musical or Comedy", 
+                "Best Actress in a TV Series, Drama", 
+                "Best Actress in a TV Series, Musical or Comedy", 
+                "Best Animated Feature Film", 
+                "Best Original Song - Motion Picture", 
+                "Best Actor in a Motion Picture, Drama", 
+                "Best Actress In A Motion Picture, Musical or Comedy", 
+                "Best Motion Picture, Drama"
+            ], 
+            "winners": [
+                "Boyhood", 
+                "Richard Linklater", 
+                "Julianne Moore", 
+                "Leviathan", 
+                "Michael Keaton", 
+                "The Affair", 
+                "Fargo", 
+                "The Theory of Everything", 
+                "The Grand Budapest Hotel", 
+                "Matt Bomer", 
+                "Patricia Arquette", 
+                "Transparent", 
+                "Maggie Gyllenhaal", 
+                "Joanne Froggatt", 
+                "Kevin Spacey", 
+                "J.K. Simmons", 
+                "Billy Bob Thornton", 
+                "Jeffrey Tambor", 
+                "Ruth Wilson", 
+                "Gina Rodriguez", 
+                "How To Train Your Dragon 2", 
+                "Selma", 
+                "Eddie Redmayne", 
+                "Amy Adams", 
+                "Boyhood"
+            ], 
+            "hosts": [
+                "Tina Fey", 
+                "Amy Poehler"
+            ], 
+            "presenters": [
+                "Amy Adams", 
+                "Jennifer Aniston", 
+                "Kate Beckinsale", 
+                "Jack Black", 
+                "Adrien Brody", 
+                "Bryan Cranston", 
+                "Benedict Cumberbatch", 
+                "Jamie Dornan", 
+                "Robert Downey, Jr.", 
+                "David Duchovny", 
+                "Anna Faris", 
+                "Colin Farrell", 
+                "Colin Firth", 
+                "Jane Fonda", 
+                "Harrison Ford", 
+                "Ricky Gervais", 
+                "Bill Hader", 
+                "Kevin Hart", 
+                "Salma Hayek", 
+                "Katherine Heigl", 
+                "Katie Holmes", 
+                "Kate Hudson", 
+                "Dakota Johnson", 
+                "Jared Leto", 
+                "Adam Levine", 
+                "Jennifer Lopez", 
+                "Melissa McCarthy", 
+                "Matthew McConaughey", 
+                "Seth Meyers", 
+                "Sienna Miller", 
+                "Lupita Nyong", 
+                "Clive Owen", 
+                "Gwyneth Paltrow", 
+                "Chris Pratt", 
+                "Jeremy Renner", 
+                "Paul Rudd", 
+                "Meryl Streep", 
+                "Channing Tatum", 
+                "Lily Tomlin", 
+                "Vince Vaughn", 
+                "Naomi Watts", 
+                "Kristen Wiig", 
+                "Owen Wilson", 
+                "Oprah Winfrey", 
+                "Catherine Zeta-Jones"
+            ]
+        }, 
+        "structured": {
+            "Best Supporting Actress in a Series, Mini-Series or TV Movie": {
+                "nominees": [
+                    "Kathy Bates", 
+                    "Uzo Aduba", 
+                    "Joanne Froggatt", 
+                    "Michelle Monaghan", 
+                    "Allison Janney"
+                ], 
+                "presenters": [
+                    []
+                ], 
+                "winner": "Joanne Froggatt"
+            }, 
+            "Best Director - Motion Picture": {
+                "nominees": [
+                    "Ava DuVernay", 
+                    "Wes Anderson", 
+                    "Alejandro Gonzalez", 
+                    "David Fincher", 
+                    "Richard Linklater"
+                ], 
+                "presenters": [
+                    "Harrison Ford"
+                ], 
+                "winner": "Richard Linklater"
+            }, 
+            "Best Actress in a Motion Picture, Drama": {
+                "nominees": [
+                    "Julianne Moore", 
+                    "Rosamund Pike", 
+                    "Reese Witherspoon", 
+                    "Felicity Jones", 
+                    "Jennifer Aniston"
+                ], 
+                "presenters": [
+                    "Kevin Hart"
+                ], 
+                "winner": "Julianne Moore"
+            }, 
+            "Best Foreign Language Film": {
+                "nominees": [
+                    "Ida", 
+                    "Force Majeure", 
+                    "Gett: The Trial of Viviane Amsalem", 
+                    "Tangerines", 
+                    "Leviathan"
+                ], 
+                "presenters": [
+                    "Lupita Nyong"
+                ], 
+                "winner": "Leviathan"
+            }, 
+            "Best Actor in a Motion Picture, Musical or Comedy": {
+                "nominees": [
+                    "Michael Keaton", 
+                    "Bill Murray", 
+                    "Ralph Fiennes", 
+                    "Christoph Waltz", 
+                    "Joaquin Phoenix"
+                ], 
+                "presenters": [
+                    "Robert Downey, Jr."
+                ], 
+                "winner": "Michael Keaton"
+            }, 
+            "Best TV Series, Drama": {
+                "nominees": [
+                    "Downtown Abbey", 
+                    "The Affair", 
+                    "Game Of Thrones", 
+                    "House of Cards", 
+                    "The Good Wife"
+                ], 
+                "presenters": [
+                    "Meryl Streep"
+                ], 
+                "winner": "The Affair"
+            }, 
+            "Best TV Movie or Mini-Series": {
+                "nominees": [
+                    "Olive Kitteridge", 
+                    "Fargo", 
+                    "The Missing", 
+                    "True Detective", 
+                    "The Normal Heart"
+                ], 
+                "presenters": [
+                    "Jeremy Renner"
+                ], 
+                "winner": "Fargo"
+            }, 
+            "Best Original Score - Motion Picture": {
+                "nominees": [
+                    "Birdman", 
+                    "The Theory of Everything", 
+                    "Gone Girl", 
+                    "The Imitation Game", 
+                    "Interstellar"
+                ], 
+                "presenters": [
+                    "Sienna Miller"
+                ], 
+                "winner": "The Theory of Everything"
+            }, 
+            "Best Motion Picture, Musical or Comedy": {
+                "nominees": [
+                    "Into The Woods", 
+                    "Birdman", 
+                    "The Grand Budapest Hotel", 
+                    "St. Vincent", 
+                    "Pride"
+                ], 
+                "presenters": [
+                    "Robert Downey, Jr."
+                ], 
+                "winner": "The Grand Budapest Hotel"
+            }, 
+            "Best Supporting Actor in a Series, Mini-Series or TV Movie": {
+                "nominees": [
+                    "Bill Murray", 
+                    "Jon Voight", 
+                    "Matt Bomer", 
+                    "Alan Cumming", 
+                    "Colin Hanks"
+                ], 
+                "presenters": [
+                    []
+                ], 
+                "winner": "Matt Bomer"
+            }, 
+            "Best Supporting Actress in a Motion Picture": {
+                "nominees": [
+                    "Jessica Chastain", 
+                    "Keira Knightley", 
+                    "Patricia Arquette", 
+                    "Meryl Streep", 
+                    "Emma Stone"
+                ], 
+                "presenters": [
+                    "Jared Leto"
+                ], 
+                "winner": "Patricia Arquette"
+            }, 
+            "Best TV Series, Musical or Comedy": {
+                "nominees": [
+                    "Orange is the New Black", 
+                    "Girls", 
+                    "Jane the Virgin", 
+                    "Transparent", 
+                    "Silicon Valley"
+                ], 
+                "presenters": [
+                    []
+                ], 
+                "winner": "Transparent"
+            }, 
+            "Best Actress in a Mini-Series or TV Movie": {
+                "nominees": [
+                    "Jessica Lange", 
+                    "Maggie Gyllenhaal", 
+                    "Frances McDormand", 
+                    "Allison Tolman", 
+                    "Frances O'Connor "
+                ], 
+                "presenters": [
+                    "Bill Hader"
+                ], 
+                "winner": "Maggie Gyllenhaal"
+            }, 
+            "Best Screenplay - Motion Picture": {
+                "nominees": [
+                    "Boyhood", 
+                    "Gone Girl", 
+                    "Birdman", 
+                    "The Grand Budapest Hotel", 
+                    "The Imitation Game"
+                ], 
+                "presenters": [
+                    "Meryl Streep"
+                ], 
+                "winner": "Boyhood"
+            }, 
+            "Best Actor in a TV Series, Drama": {
+                "nominees": [
+                    "Kevin Spacey", 
+                    "Clive Owen", 
+                    "James Spader", 
+                    "Dominic West", 
+                    "Liev Schreiber"
+                ], 
+                "presenters": [
+                    "Gwyneth Paltrow"
+                ], 
+                "winner": "Kevin Spacey"
+            }, 
+            "Best Supporting Actor in a Motion Picture": {
+                "nominees": [
+                    "Ethan Hawke", 
+                    "Robert Duvall", 
+                    "Edward Norton", 
+                    "J.K. Simmons", 
+                    "Mark Ruffalo"
+                ], 
+                "presenters": [
+                    "Jennifer Aniston"
+                ], 
+                "winner": "J.K. Simmons"
+            }, 
+            "Best Actor in a Mini-Series or TV Movie": {
+                "nominees": [
+                    "Martin Freeman", 
+                    "Matthew McConaughey", 
+                    "Woody Harrelson", 
+                    "Billy Bob Thornton", 
+                    "Mark Ruffalo"
+                ], 
+                "presenters": [
+                    "Katie Holmes"
+                ], 
+                "winner": "Billy Bob Thornton"
+            }, 
+            "Best Actor in a TV Series, Musical or Comedy": {
+                "nominees": [
+                    "Don Cheadle", 
+                    "William H. Macy", 
+                    "Ricky Gervais", 
+                    "Jeffrey Tambor", 
+                    "Louie C.K."
+                ], 
+                "presenters": [
+                    []
+                ], 
+                "winner": "Jeffrey Tambor"
+            }, 
+            "Best Actress in a TV Series, Drama": {
+                "nominees": [
+                    "Viola Davis", 
+                    "Claire Danes", 
+                    "Julianna Margulies", 
+                    "Robin Wright", 
+                    "Ruth Wilson"
+                ], 
+                "presenters": [
+                    "Chris Pratt"
+                ], 
+                "winner": "Ruth Wilson"
+            }, 
+            "Best Actress in a TV Series, Musical or Comedy": {
+                "nominees": [
+                    "Julia Louis-Dreyfus", 
+                    "Edie Falco", 
+                    "Gina Rodriguez", 
+                    "Lena Dunham", 
+                    "Taylor Schilling"
+                ], 
+                "presenters": [
+                    "Amy Adams"
+                ], 
+                "winner": "Gina Rodriguez"
+            }, 
+            "Best Animated Feature Film": {
+                "nominees": [
+                    "The Lego Movie", 
+                    "How To Train Your Dragon 2", 
+                    "Big Hero 6", 
+                    "The Book of Life", 
+                    "The Boxtrolls"
+                ], 
+                "presenters": [
+                    "Salma Hayek"
+                ], 
+                "winner": "How To Train Your Dragon 2"
+            }, 
+            "Best Original Song - Motion Picture": {
+                "nominees": [
+                    "Big Eyes", 
+                    "Selma", 
+                    "Noah", 
+                    "Annie", 
+                    "The Hunger Games: Mockingjay, Part 1"
+                ], 
+                "presenters": [
+                    "Robert Downey, Jr."
+                ], 
+                "winner": "Selma"
+            }, 
+            "Best Actor in a Motion Picture, Drama": {
+                "nominees": [
+                    "Eddie Redmayne", 
+                    "Steve Carell", 
+                    "Benedict Cumberbatch", 
+                    "David Oyelowo", 
+                    "Jake Gyllenhaal"
+                ], 
+                "presenters": [
+                    "Gwyneth Paltrow"
+                ], 
+                "winner": "Eddie Redmayne"
+            }, 
+            "Best Actress In A Motion Picture, Musical or Comedy": {
+                "nominees": [
+                    "Julianne Moore", 
+                    "Amy Adams", 
+                    "Emily Blunt", 
+                    "Helen Mirren", 
+                    "Quvenzhane Wallis"
+                ], 
+                "presenters": [
+                    "Ricky Gervais"
+                ], 
+                "winner": "Amy Adams"
+            }, 
+            "Best Motion Picture, Drama": {
+                "nominees": [
+                    "Boyhood", 
+                    "Foxcatcher", 
+                    "The Imitation Game", 
+                    "Selma", 
+                    "The Theory of Everything"
+                ], 
+                "presenters": [
+                    "Meryl Streep"
+                ], 
+                "winner": "Boyhood"
+            }
+        }
+    }, 
+    "metadata": {
+        "nominees": {
+            "method": "hardcoded", 
+            "method_description": "calculated from award dataset used"
+        }, 
+        "awards": {
+            "method": "hardcoded", 
+            "method_description": "calculated from award dataset used"
+        }, 
+        "hosts": {
+            "method": "hardcoded", 
+            "method_description": "hardcoded"
+        }, 
+        "year": "2015"
+    }
+}
