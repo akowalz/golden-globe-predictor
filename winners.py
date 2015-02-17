@@ -375,7 +375,7 @@ def find_presenters(data_path, tweet_path):
 	output_dict = {}
 	for element, data in award_dict.iteritems():
 		best = 0
-		best_name = []
+		best_name = ""
 		for name, score in data.iteritems():
 			if score > best:
 				best = score
@@ -411,10 +411,10 @@ def find_best_presenter(tweet, award_list):
 
 #                                   "preprocess/gg2015_best.txt",
 #                                   "results/GGOut2015.json"))
-pretty_print_dict(format_for_grader("hardcode/GG15Final2.json",
-                                    "preprocess/tiny_test.txt",
-                                    "preprocess/presenting_2015.txt",
-                                    "results/test.json"))
+pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
+                                    "preprocess/gg2013.txt",
+                                    "preprocess/presenting_2013.txt",
+                                    "results/GGOut2013.json"))
 
 def main():
     DATA_FILE_2015 = 'hardcode/GG15Final2.json'
@@ -426,6 +426,8 @@ def main():
 
     TEST_PATH = 'preprocess/tiny_test.txt'
     return
+	
+main()
 
 
 
