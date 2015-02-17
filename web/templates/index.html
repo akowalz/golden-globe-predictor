@@ -7,11 +7,8 @@
 	    <title>Golden Globe Winners</title>
 	    <style>
 	  		#winner{color: red;}
-	  		.winner{color: red;}
 	  		#real_winner{color: green;}
-	  		.real_winner{color: green;}
 	  		body {font-size: 18px;}
-	  		#changing{margin-left: 20px; margin-right: 10px;}
 	  	</style>
 		<!-- Bootstrap -->
     	<link href="../static/css/bootstrap.min.css" rel="stylesheet">
@@ -56,151 +53,132 @@
           			</ul>
         		</li>		        
         		<li><a href="sentiment">Sentiment Graph</a></li>
-
-
-		        
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<div id="changing">
-			{% if winners %}
-			    <div id="award_winners">
-			    	<div id="heading">
-			    		<p><h1>Golden Globe Confidence Predictor With Winners</h1></p>
-			    		<p>For the winners, when our algorithm found the correct winner, we marked it in <span class="real_winner">green</span> but if we got the wrong answer, we marked it in <span class="winner">red</span>.
-			    	</div>
-					<ol>
-						{% for award, noms in winners.iteritems(): %}
-							
-							<li id='award'>{{ award }}</li>
-							<ul>
-								{% for category, value in noms.iteritems(): %}
-									{% if category == "Nominees" %}
-										{% for name, number in value.iteritems(): %}
-										<ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
-										{% endfor %}
-									{% endif %}
-								{% endfor %}
-								{% if category == "winner" %}
-									<li id='winner'>Predicted Winner:  {{ value }}</li>
-								{% endif %}
-								{% if noms["correct"] %}
-									<li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
-								{% endif %}
-								{% if noms["correct"]==False %}
-									<li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
-								{% endif %}
-							</ul></br>
-						{% endfor %}
-					</ol>
-			  	</div>
-		</div>
-		{% elif snubs %}
-    <div class="container">
-      <div class="row">
-        <h1>Snubbed Movies and Shows</h1>
-        {% for award, data in snubs.iteritems() %}
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  {{ award }}
 
-                </div>
-              </div>
-              <div class="panel-body">
-              <dl class="dl-horizontal">
-                {% for name, value in data["Nominees"].iteritems() %}
-                  <dt>{{ name }}</dt>
-                  <dd>{{ value }}</dd>
+
+
+
+  {% if winners %}
+      <div class="container">
+        <div class="row">
+            <h1>Golden Globe Confidence Predictor With Winners</h1>
+            {% for award, noms in winners.iteritems(): %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">
+                          {{ award }}
+                      </div>
+                    </div>
+                    <div class="panel-body">
+                      <dl class="dl-horizontal">
+              <ul>
+                {% for category, value in noms.iteritems(): %}
+                  {% if category == "Nominees" %}
+                    {% for name, number in value.iteritems(): %}
+                    <ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
+                    {% endfor %}
+                  {% endif %}
                 {% endfor %}
-              </dl>
-              <strong>Total tweets:</strong>  {{ data["total"] }}
-            </div>
-            {% if "article" in data %}
-              <div class="panel-footer">
-                <a href={{ data["article"] }}>Reference</a>
-              </div>
-            {% endif %}
+                {% if noms["correct"] %}
+                  <li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+                {% endif %}
+                {% if noms["correct"]==False %}
+                  <li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+                  <li id='real_winner'>Real Winner:  {{ noms["real_winner"] }}</li>
+                {% endif %}
+              </ul>
+                      </dl>
+                  </div>
+                </div>
+            {% endfor %}
           </div>
-        {% endfor %}
-      </div>
-    </div>
-	{% endif %}
-	{% if pageScroll == 1 %}
-		<h1>Sentiment</h1>
-		<h3>For this graph, we used TextBlob to find the sentiment of the tweets. A higher number means the tweets were generally happier. We marked the three 'happiest' momemnts of the Golden Globes</h2>
-		<img src="../static/Sentiment_Graph.png" alt="Smiley face">
-	{% endif %}
-	{% if pageScroll == 0 %}
+      </div> 
+
+
+
+
+	{% elif snubs %}
+	    <div class="container">
+	      <div class="row">
+	        <h1>Snubbed Movies and Shows</h1>
+	        {% for award, data in snubs.iteritems() %}
+	          <div class="panel panel-default">
+	              <div class="panel-heading">
+	                <div class="panel-title">
+	                  {{ award }}
+
+	                </div>
+	              </div>
+	              <div class="panel-body">
+	              <dl class="dl-horizontal">
+	                {% for name, value in data["Nominees"].iteritems() %}
+	                  <dt>{{ name }}</dt>
+	                  <dd>{{ value }}</dd>
+	                {% endfor %}
+	              </dl>
+	              <strong>Total tweets:</strong>  {{ data["total"] }}
+	            </div>
+	            {% if "article" in data %}
+	              <div class="panel-footer">
+	                <a href={{ data["article"] }}>Reference</a>
+	              </div>
+	            {% endif %}
+	          </div>
+	        {% endfor %}
+	      </div>
+	    </div>
+
+
+	{% elif pageScroll == 1 %}
+		<div class="container">
+			<div class="row">
+				<h1>Sentiment</h1>
+				<h3>For this graph, we used TextBlob to find the sentiment of the tweets. A higher number means the tweets were generally happier. We marked the three 'happiest' momemnts of the Golden Globes</h2>
+				
+			</div>
+		</div>
+		<img src="../static/Sentiment_Graph.png" width="80%" height="80%" alt="Sentiment Graph">
+	{% elif pageScroll == 0 %}
 		
-<h1>Golden Globes Prediction Tool</h1>
+		<h1>Golden Globes Prediction Tool</h1>
 
-<p>Project 1 for EECS 337, will determine the outcome of the Golden Globes based on
-tweet data.</p>
+		<p>Project 1 for EECS 337, will determine the outcome of the Golden Globes based on
+		tweet data.</p>
 
-<p>Methodology</p>
+		<p>Methodology</p>
 
-<p>To find Winners, we first found the subset of tweets from 2015 that contained the word 'Best'.  This allowed us to use the full dataset (instead of the mini dataset) while vastly improving processing speed and filtering only tweets relevant to us.  We stripped newlines out of these tweets, and put only the content on a line-delimited text file (preprocessed files like this live in the `preprocess` directory).  Having the tweets line by line also makes processing much faster, as it saves the time it takes for pythons json parser to parse the structure.</p>
+		<p>To find Winners, we first found the subset of tweets from 2015 that contained the word 'Best'.  This allowed us to use the full dataset (instead of the mini dataset) while vastly improving processing speed and filtering only tweets relevant to us.  We stripped newlines out of these tweets, and put only the content on a line-delimited text file (preprocessed files like this live in the `preprocess` directory).  Having the tweets line by line also makes processing much faster, as it saves the time it takes for pythons json parser to parse the structure.</p>
 
-<p>We set up a dictionary to hold the totals for each award, it takes the form:
+		<p>We set up a dictionary to hold the totals for each award, it takes the form:
 
-```json
-{
-  "Best Motion Picture, Drama": {
-    "Nominees": {
-      "Birdman": 13,
-      "Boyhood": 40,
-      ...
-    },
-    "total": 123
-  },
-  ...
-}
-```
-</p>
-<p>With the relevant subset of tweets at hand, we began detection on the list of tweets.  The first thing we do is look for "words of congratulation" in the tweet (see `winners.py` for this list).  If a tweet is congratulatory, we then search within it for the name of one of the nominees.  If it does contain one of the nominees, we check from out metadata what that nominee was nominated for.  If the nominee was only nominated for one award, we increment their score within our results dict, and the total.  If they were nominated for multiple awards, we pass the tweet text and a list of awards to a funciton that will figure (to the best of it's ability) which award the tweet was talking about, using a weighted formula based on matching keywords in the tweet and the award name.  Once this is determined, we incremement the appropriate score accordingly.</p>
+		```json
+		{
+		  "Best Motion Picture, Drama": {
+		    "Nominees": {
+		      "Birdman": 13,
+		      "Boyhood": 40,
+		      ...
+		    },
+		    "total": 123
+		  },
+		  ...
+		}
+		```
+		</p>
+		<p>With the relevant subset of tweets at hand, we began detection on the list of tweets.  The first thing we do is look for "words of congratulation" in the tweet (see `winners.py` for this list).  If a tweet is congratulatory, we then search within it for the name of one of the nominees.  If it does contain one of the nominees, we check from out metadata what that nominee was nominated for.  If the nominee was only nominated for one award, we increment their score within our results dict, and the total.  If they were nominated for multiple awards, we pass the tweet text and a list of awards to a funciton that will figure (to the best of it's ability) which award the tweet was talking about, using a weighted formula based on matching keywords in the tweet and the award name.  Once this is determined, we incremement the appropriate score accordingly.</p>
 
-<h2>Fun Goals</h2>
+		<h2>Fun Goals</h2>
 
-<h3>Sentiment Map</h3>
+		<h3>Sentiment Map</h3>
 
-<p>We used [TextBlob] (<a href="http://textblob.readthedocs.org/en/dev/" target="_blank">http://textblob.readthedocs.org/en/dev/</a>) (a simplified iterface into the nltk) to do sentiment processing on the   tweets from 2015.  For each minute of the awards, we have a score from -1.0 to 1.0 indicating the average sentiment of viewers during that minute.  We then plotted sentiment vs. time so we could see trends and spikes as the show progressed.  We also did our best to match up large spikes to various events during the show, such as major awards being announced.</p>
+		<p>We used [TextBlob] (<a href="http://textblob.readthedocs.org/en/dev/" target="_blank">http://textblob.readthedocs.org/en/dev/</a>) (a simplified iterface into the nltk) to do sentiment processing on the   tweets from 2015.  For each minute of the awards, we have a score from -1.0 to 1.0 indicating the average sentiment of viewers during that minute.  We then plotted sentiment vs. time so we could see trends and spikes as the show progressed.  We also did our best to match up large spikes to various events during the show, such as major awards being announced.</p>
 
-<h3>Who Got "Snubbed"</h3>
+		<h3>Who Got "Snubbed"</h3>
 
-<p>We were interested in finding out if we could detect which awards people thought would win, but didn't, or that people were upset did not win.  The methodology we used was fairly similar to the methodology used for finding winners, but looking for "snub words" like "snub", "stiffed", "robbed" in place of congratulatory words.  We then used a similar scoring system to see if we could figure out which nominees were poised to win but did not.  After searching online for media about the topic, we found that we did really well at identifying these awards, with our results being corroborated by popular media.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<p>We were interested in finding out if we could detect which awards people thought would win, but didn't, or that people were upset did not win.  The methodology we used was fairly similar to the methodology used for finding winners, but looking for "snub words" like "snub", "stiffed", "robbed" in place of congratulatory words.  We then used a similar scoring system to see if we could figure out which nominees were poised to win but did not.  After searching online for media about the topic, we found that we did really well at identifying these awards, with our results being corroborated by popular media.</p>
 
 	{% endif %}
 
