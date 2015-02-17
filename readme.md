@@ -27,7 +27,7 @@ With the relevant subset of tweets at hand, we began detection on the list of tw
 
 ### Results
 
-The results are outputed as JSON files : GGOut2015.json, GGOut2013.json in the results folder.  
+The results are outputed as JSON files : `GGOut2015.json`, `GGOut2013.json` in the results folder.  
 The results were dumped by the `Winner.py` function and shown on on a Flask-based framework.
 The web app/gui can be accessed by running `showresults.py`.
 
