@@ -78,7 +78,6 @@
 						{% endfor %}
 					</ol>
 			  	</div>
-			{% endif %}
 			{% if pageScroll == 1 %}
 				<h1>Sentiment</h1>
 				<h3>For this graph, we used TextBlob to find the sentiment of the tweets. A higher number means the tweets were generally happier. We marked the three 'happiest' momemnts of the Golden Globes</h2>
@@ -88,11 +87,7 @@
 				<h1>Hello World</h1>
 			{% endif %}
 		</div>
-							{% endfor %}
-						</ul></br>
-					{% endfor %}
-				</ol>
-		  	</div>
+
 		{% elif sentiment %}
 		<h1>Sentiment</h1>
 		<img src="../static/Sentiment_Graph.png" alt="Smiley face">
