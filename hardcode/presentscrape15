@@ -1,0 +1,21 @@
+page1 = urllib2.urlopen('http://www.huffingtonpost.com/2015/01/09/2015-golden-globe-presenters_n_6444440.html').read()
+
+page2 = urllib2.urlopen('http://en.wikipedia.org/wiki/70th_Golden_Globe_Awards').read()
+
+soup1 = BeautifulSoup(page1)
+soup2 = BeautifulSoup(page2)
+
+
+pr_names15 = soup1.findAll('div',{'class':'title'})
+
+store_names={}
+for div_tag in soup1.find_all("div",{"class":"title"}):
+    print div_tag.text, div_tag.next_sibling
+
+
+pr_names13 = soup2.findAll('div',{'class':'col'})
+
+print pr_names13
+
+pre_data = [link.text for link in soup1.find_all("div",{"class":"title"})]
+
