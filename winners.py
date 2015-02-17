@@ -426,8 +426,6 @@ def main():
 
     TEST_PATH = 'preprocess/tiny_test.txt'
     return
-	
-main()
 
 
 
