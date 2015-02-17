@@ -172,7 +172,56 @@
                 "Tina Fey", 
                 "Amy Poehler"
             ], 
-            "presenters": []
+            "presenters": [
+                "Jessica Alba", 
+                "Kiefer Sutherland", 
+                "Aziz Ansari", 
+                "Jason Bateman", 
+                "Christian Bale", 
+                "Kristen Bell", 
+                "John Krasinski", 
+                "Halle Berry", 
+                "Josh Brolin", 
+                "Don Cheadle", 
+                "Eva Longoria", 
+                "Bill Clinton", 
+                "George Clooney", 
+                "Sacha Baron Cohen", 
+                "Bradley Cooper", 
+                "Kate Hudson", 
+                "Rosario Dawson", 
+                "Robert Downey, Jr.", 
+                "Jimmy Fallon", 
+                "Jay Leno", 
+                "Will Ferrell", 
+                "Kristen Wiig", 
+                "Nathan Fillion", 
+                "Lea Michele", 
+                "Megan Fox", 
+                "Jonah Hill", 
+                "Jamie Foxx", 
+                "Jennifer Garner", 
+                "John Goodman", 
+                "Tony Mendez", 
+                "Salma Hayek", 
+                "Paul Rudd", 
+                "Dustin Hoffman", 
+                "Jeremy Irons", 
+                "Lucy Liu", 
+                "Debra Messing", 
+                "Jennifer Lopez", 
+                "Jason Statham", 
+                "Robert Pattinson", 
+                "Amanda Seyfried", 
+                "Dennis Quaid", 
+                "Kerry Washington", 
+                "Jeremy Renner", 
+                "Julia Roberts", 
+                "Liev Schreiber", 
+                "Arnold Schwarzenegger", 
+                "Sylvester Stallone", 
+                "Catherine Zeta-Jones"
+            ]
         }, 
         "structured": {
             "Best Screenplay": {
@@ -183,7 +232,9 @@
                     "David O.Russell", 
                     "Mark Boal"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Halle Berry"
+                ], 
                 "winner": "Quentin Tarantino"
             }, 
             "Best Series - Drama": {
@@ -194,7 +245,9 @@
                     "Downtown Abbey", 
                     "The Newsroom"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Dennis Quaid"
+                ], 
                 "winner": "Homeland"
             }, 
             "Best Director - Motion Picture": {
@@ -205,7 +258,9 @@
                     "Steven Spielberg", 
                     "Quentin Tarantino"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Bill Clinton"
+                ], 
                 "winner": "Ben Affleck"
             }, 
             "Best Foreign Language Film": {
@@ -216,7 +271,9 @@
                     "Kon-Tiki", 
                     "Rust and Bones"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Arnold Schwarzenegger"
+                ], 
                 "winner": "Amour"
             }, 
             "Best Performance by an Actress in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
@@ -227,7 +284,9 @@
                     "Sarah Paulson", 
                     "Sofia Vergara"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Maggie Smith"
             }, 
             "Best Performance by an Actress in a Television Series - Drama": {
@@ -238,7 +297,9 @@
                     "Michelle Dockery", 
                     "Julianna Margulies"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Lea Michele"
+                ], 
                 "winner": "Claire Danes"
             }, 
             "Best Motion Picture - Musical or Comedy": {
@@ -249,7 +310,9 @@
                     "Salmon Fishing in the Yemen", 
                     "Silver Linings Playbook"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Dustin Hoffman"
+                ], 
                 "winner": "Les Miserables"
             }, 
             "Best Original Song": {
@@ -260,7 +323,9 @@
                     "Safe & Sound", 
                     "Suddenly"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Skyfall"
             }, 
             "Best Performance by an Actor in a Television Series - Drama": {
@@ -271,7 +336,9 @@
                     "Jeff Daniels", 
                     "Jon Hamm"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Damian Lewis"
             }, 
             "Best Performance by an Actress in a Motion Picture - Drama": {
@@ -282,7 +349,9 @@
                     "Naomi Watts", 
                     "Rachel Weisz"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Jessica Chastain"
             }, 
             "Best Original Score": {
@@ -292,7 +361,9 @@
                     "Lincoln", 
                     "Cloud Atlas"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Argo"
             }, 
             "Best Performance By An Actress In A Motion Picture - Comedy or Musical": {
@@ -303,7 +374,9 @@
                     "Maggie Smith", 
                     "Meryl Streep"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Jennifer Lawrence"
             }, 
             "Best Performance by an Actress in a Mini-Series or Motion Picture Made for Television": {
@@ -314,7 +387,9 @@
                     "Sienna Miller", 
                     "Sigourney Weaver"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Julianne Moore"
             }, 
             "Best Performance by an Actor in a Supporting Role in a Motion Picture": {
@@ -325,7 +400,9 @@
                     "Philip Seymour Hoffman", 
                     "Tommy Lee Jones"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Bill Clinton"
+                ], 
                 "winner": "Christoph Waltz"
             }, 
             "Best Performance by an Actor in a Supporting Role in a Series, Mini-Series or Motion Picture Made for Television": {
@@ -336,7 +413,9 @@
                     "Mandy Patinkin", 
                     "Eric Stonestreet"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Ed Harris"
             }, 
             "Best Performance by an Actress in a Supporting Role in a Motion Picture": {
@@ -347,7 +426,9 @@
                     "Helen Hunt", 
                     "Nicole Kidman"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Robert Pattinson"
+                ], 
                 "winner": "Anne Hathaway"
             }, 
             "Best Performance by an Actor in a Mini-Series or Motion Picture Made for Television": {
@@ -358,7 +439,9 @@
                     "Toby Jones", 
                     "Clive Owen"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Kevin Costner"
             }, 
             "Best Animated Feature Film": {
@@ -369,7 +452,9 @@
                     "Rise of the Guardians", 
                     "Wreck-It Ralph"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Sacha Baron Cohen"
+                ], 
                 "winner": "Brave"
             }, 
             "Best Performance by an Actress in a Television Series - Musical or Comedy": {
@@ -380,7 +465,9 @@
                     "Julia Louis-Dreyfus", 
                     "Amy Poehler"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Lena Dunham"
             }, 
             "Best Performance by an Actor in a Motion Picture - Drama": {
@@ -391,7 +478,9 @@
                     "Joaquin Phoenix", 
                     "Denzel Washington"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Daniel Day-Lewis"
             }, 
             "Best Performance By An Actor In A Motion Picture - Comedy or Musical": {
@@ -402,7 +491,9 @@
                     "Ewan McGregor", 
                     "Billy Murray"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Hugh Jackman"
             }, 
             "Best Series - Musical or Comedy": {
@@ -413,7 +504,9 @@
                     "Modern Family", 
                     "Smash"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Jimmy Fallon"
+                ], 
                 "winner": "Girls"
             }, 
             "Best Performance by an Actor in a Television Series - Musical or Comedy": {
@@ -424,7 +517,9 @@
                     "Matt LeBlanc", 
                     "Jim Parsons"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    ""
+                ], 
                 "winner": "Don Cheadle"
             }, 
             "Best Motion Picture - Drama": {
@@ -435,7 +530,9 @@
                     "Lincoln", 
                     "Zero Dark Thirty"
                 ], 
-                "presenters": [], 
+                "presenters": [
+                    "Julia Roberts"
+                ], 
                 "winner": "Argo"
             }
         }
