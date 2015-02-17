@@ -194,7 +194,7 @@ def find_snubs(data, tweet_path):
 
         return snubs
 
-def process_winners(winners):
+def process_winners(winners, award_data):
     """
     takes output from find_winners and calculates percentages, confidences
     """
@@ -212,6 +212,11 @@ def process_winners(winners):
             if score >= highest:
                 highest = score
                 output[award]["winner"] = nom
+        output[award]["real_winner"] = award_data[award]["Winner"]
+        if output[award]["real_winner"] == output[award]["real_winner"]:
+            output[award]["correct"] = True
+        else:
+            output[award]["correct"] = False
 
     return output
 
@@ -276,7 +281,7 @@ def format_for_grader(metadata_path, tweet_data_path, outpath):
     winners = find_winners_fast(aw_data,
                                 tweet_data_path)
 
-    processed_winners = process_winners(winners)
+    processed_winners = process_winners(winners, aw_data)
 
     nominees_full = all_nominees(aw_data)
     all_awards = []
@@ -325,31 +330,17 @@ def format_for_grader(metadata_path, tweet_data_path, outpath):
         output["data"]["structured"][award]["presenters"] = []
 
 
-
-
-
-
-
-
     with codecs.open(outpath,"w","utf-8") as f:
         f.write(json.dumps(output, indent=4))
-
-
 
     return output
 
 #pretty_print_dict(format_for_grader("hardcode/GG15Final.json",
-#                                   "preprocess/gg2015_best.txt", "results/GGOut2015.json"))
-
+#                                   "preprocess/gg2015_best.txt",
+#                                   "results/GGOut2015.json"))
 pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
-                                    "preprocess/tiny_test.txt", "results/GGOut2013.json"))
-
-
-
-
-
-
-
+                                    "preprocess/gg2013.txt",
+                                    "results/GGOut2013.json"))
 
 def main():
     DATA_FILE_2015 = 'hardcode/GG15json.json'
@@ -360,21 +351,6 @@ def main():
     FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
 
     TEST_PATH = 'preprocess/tiny_test.txt'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     ## 2015
     process_and_write_winners(DATA_FILE_2015,
@@ -394,3 +370,4 @@ def main():
     process_and_write_snubs(DATA_FILE_2013,
                             FULL_TWEET_FILE_2013,
                             'results/snubs2013-3.json')
+

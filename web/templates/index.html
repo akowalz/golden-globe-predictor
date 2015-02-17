@@ -88,6 +88,48 @@
 				<h1>Hello World</h1>
 			{% endif %}
 		</div>
+							{% endfor %}
+						</ul></br>
+					{% endfor %}
+				</ol>
+		  	</div>
+		{% elif sentiment %}
+		<h1>Sentiment</h1>
+		<img src="../static/Sentiment_Graph.png" alt="Smiley face">
+
+		{% elif snubs %}
+    <div class="container">
+      <div class="row">
+        <h1>Snubbed Movies and Shows 2015</h1>
+        {% for award, data in snubs.iteritems() %}
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  {{ award }}
+
+                </div>
+              </div>
+              <div class="panel-body">
+              <dl class="dl-horizontal">
+                {% for name, value in data["Nominees"].iteritems() %}
+                  <dt>{{ name }}</dt>
+                  <dd>{{ value }}</dd>
+                {% endfor %}
+              </dl>
+              <strong>Total tweets:</strong>  {{ data["total"] }}
+            </div>
+            {% if "article" in data %}
+              <div class="panel-footer">
+                <a href={{ data["article"] }}>Reference</a>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+		{% endif %}
+
+
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
