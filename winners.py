@@ -413,7 +413,7 @@ def find_best_presenter(tweet, award_list):
 #                                   "results/GGOut2015.json"))
 pretty_print_dict(format_for_grader("hardcode/GG15Final2.json",
                                     "preprocess/tiny_test.txt",
-                                    "preprocess/presenting.txt",
+                                    "preprocess/presenting_2015.txt",
                                     "results/test.json"))
 
 def main():
