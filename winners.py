@@ -66,6 +66,19 @@ def all_nominees(awards):
                 nominees.append(nom)
     return nominees
 
+def all_awards(awards):
+	awards_list = []
+	for award, data, in awards.iteritems():
+		awards_list.append(award)
+	return awards_list
+
+def all_presenters(presents):
+	all_presenters = []
+	for title, data, in presents.iteritems():
+		for presenter in data["Presenters"]:
+			all_presenters.append(presenter)
+	return all_presenters
+
 def nominee_aliases(nominees):
     """
     takes a list of nominees (without repeats) and does simple computation for
@@ -212,7 +225,6 @@ def process_winners(winners):
             if score >= highest:
                 highest = score
                 output[award]["winner"] = nom
-
     return output
 
 def tweet_contains_word_in(tweet, words):
@@ -341,14 +353,71 @@ def format_for_grader(metadata_path, tweet_data_path, outpath):
 #pretty_print_dict(format_for_grader("hardcode/GG15Final.json",
 #                                   "preprocess/gg2015_best.txt", "results/GGOut2015.json"))
 
-pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
-                                    "preprocess/tiny_test.txt", "results/GGOut2013.json"))
+#pretty_print_dict(format_for_grader("hardcode/GG13Final.json",
+#                                    "preprocess/tiny_test.txt", "results/GGOut2013.json"))
 
 
 
+def find_presenters(data_path, tweet_path, presenter_path):
+	data = load_data(data_path)
+	award_list = all_awards(data)
+	presenters_dict = load_data(presenter_path)
+	presenters_list = all_presenters(presenters_dict)
+	presenters_last_names = [u'AA']
+	award_dict = {}
+	for award in award_list:
+		award_dict[award] = {}
+	for element in presenters_list:
+		presenters_last_names.append(element.split()[len(element.split()) - 1])
+	tc = 0
+	with codecs.open(tweet_path, 'r', 'utf-8') as f:
+		for tweet in f:
+			award_for_tweet = ""
+			presenter_for_tweet = ""
+			if tweet_contains_word_in(tweet, ['best', 'Best']):
+				award_for_tweet = find_best_presenter(tweet, award_list)
+			if award_for_tweet != "":
+				presenter_for_tweet = find_best_presenter(tweet, presenters_last_names)
+				if presenter_for_tweet != u'AA':
+					if presenter_for_tweet in award_dict[award_for_tweet]:
+						award_dict[award_for_tweet][presenter_for_tweet] += 1
+					else:
+						award_dict[award_for_tweet][presenter_for_tweet] = 1
+	print award_dict
+	return award_dict
 
+def find_best_presenter(tweet, award_list):
+    tweet_list = tweet.lower().split()
+    best = award_list[0]
+    best_score = 0
+    for award in award_list:
+    	count = 0
+        award_tokens = award.lower().translate(',-').split()
+        for word in award_tokens:
+        	matches = re.search(word, tweet, re.I)
+        	if matches is not None:
+        		count += 1
+        award_score = count/float(len(award.split()))
+        if award_score > best_score:
+            best = award
+            best_score = award_score
 
+    return best
 
+#    with codecs.open(tweet_path, 'r', 'utf-8') as f:
+#        for tweet in f:
+#            tc += 1
+#            if tweet_contains_word_in(tweet, CONGRATULATORY_WORDS):
+#                for nom in nominees:
+#                    if tweet_contains_word_in(tweet, [nom]):
+#                        if len(nominations[nom]) > 1:
+#                            award_for_nom = find_best_award(tweet, nominations[nom])
+#                        else:
+#                            award_for_nom = nominations[nom][0]
+#                        winners[award_for_nom]["Nominees"][nom] += 1
+#                        winners[award_for_nom]["total"] += 1
+#            if tc % 10000 == 0:
+#                print "Processed %d tweets for winners" % tc
 
 
 def main():
@@ -360,8 +429,11 @@ def main():
     FULL_TWEET_FILE_2013 = 'preprocess/gg2013.txt'
 
     TEST_PATH = 'preprocess/tiny_test.txt'
-
-
+    PRESENTERS_2015 = 'hardcode/presenter15.json'
+    find_presenters(DATA_FILE_2015, 'preprocess/presenting.txt', PRESENTERS_2015)
+    return
+	
+main()
 
 
 
@@ -377,20 +449,20 @@ def main():
 
 
     ## 2015
-    process_and_write_winners(DATA_FILE_2015,
-                              BEST_TWEET_FILE_2015,
-                              'results/winners2015-3.json',
-                              'results/winners2015-percents-3.json')
+    #process_and_write_winners(DATA_FILE_2015,
+    #                          BEST_TWEET_FILE_2015,
+    #                          'results/winners2015-3.json',
+    #                          'results/winners2015-percents-3.json')
 
-    process_and_write_snubs(DATA_FILE_2015,
-                            FULL_TWEET_FILE_2015,
-                            'results/snubs2015-3.json')
+    #process_and_write_snubs(DATA_FILE_2015,
+    #                        FULL_TWEET_FILE_2015,
+    #                        'results/snubs2015-3.json')
     # 2013
-    process_and_write_winners(DATA_FILE_2013,
-                              FULL_TWEET_FILE_2013,
-                              'results/winners2013-3.json',
-                              'results/winners2013-percents-3.json')
+    #process_and_write_winners(DATA_FILE_2013,
+    #                          FULL_TWEET_FILE_2013,
+    #                          'results/winners2013-3.json',
+    #                          'results/winners2013-percents-3.json')
 
-    process_and_write_snubs(DATA_FILE_2013,
-                            FULL_TWEET_FILE_2013,
-                            'results/snubs2013-3.json')
+    #process_and_write_snubs(DATA_FILE_2013,
+    #                        FULL_TWEET_FILE_2013,
+    #                        'results/snubs2013-3.json')
