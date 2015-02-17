@@ -7,7 +7,11 @@
 	    <title>Golden Globe Winners</title>
 	    <style>
 	  		#winner{color: red;}
+	  		.winner{color: red;}
+	  		#real_winner{color: green;}
+	  		.real_winner{color: green;}
 	  		body {font-size: 18px;}
+	  		#changing{margin-left: 20px; margin-right: 10px;}
 	  	</style>
 		<!-- Bootstrap -->
     	<link href="../static/css/bootstrap.min.css" rel="stylesheet">
@@ -36,60 +40,54 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a href="sentiment">Link</a></li>
-		        <li><a href="#">Link</a></li>
-		      </ul>
-		      <form class="navbar-form navbar-left" role="search">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		          </ul>
-		        </li>
+		      	<li><a href="predictor_winner">Winners</a></li>
+		        <li><a href="sentiment">Sentiment Graph</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-
-		{% if winners %}
-			<!-- <div id="heading"><h1>Golden Globe Confidence Predictor With Winners</h1></div> -->
-		    <div id="award_winners">
-	<!-- 	    	<button><a href="sentiment">yo</a></button> -->
-				<ol>
-					{% for award, noms in winners.iteritems(): %}
-						<li id='award'>{{ award }}</li>
-						<ul>
-							{% for category, value in noms.iteritems(): %}
-								{% if category == "Nominees" %}
-									{% for name, number in value.iteritems(): %}
-									<ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
-									{% endfor %}
-								{% endif %}
+		<div id="changing">
+			{% if winners %}
+			    <div id="award_winners">
+			    	<div id="heading">
+			    		<p><h1>Golden Globe Confidence Predictor With Winners</h1></p>
+			    		<p>For the winners, when our algorithm found the correct winner, we marked it in <span class="real_winner">green</span> but if we got the wrong answer, we marked it in <span class="winner">red</span>.
+			    	</div>
+					<ol>
+						{% for award, noms in winners.iteritems(): %}
+							
+							<li id='award'>{{ award }}</li>
+							<ul>
+								{% for category, value in noms.iteritems(): %}
+									{% if category == "Nominees" %}
+										{% for name, number in value.iteritems(): %}
+										<ul><li>{{ name }}:  {{ number*100 }}%</li></ul>
+										{% endfor %}
+									{% endif %}
+								{% endfor %}
 								{% if category == "winner" %}
-									<li id='winner'>Winner:  {{ value }}</li>
+									<li id='winner'>Predicted Winner:  {{ value }}</li>
 								{% endif %}
-							{% endfor %}
-						</ul></br>
-					{% endfor %}
-				</ol>
-		  	</div>
-		{% else %}
-		<h1>Sentiment</h1>
-		<img src="../static/Sentiment_Graph.png" alt="Smiley face">
-		{% endif %}
-
-
+								{% if noms["correct"] %}
+									<li id='real_winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+								{% endif %}
+								{% if noms["correct"]==False %}
+									<li id='winner'>Predicted Winner:  {{ noms["winner"] }}</li>
+								{% endif %}
+							</ul></br>
+						{% endfor %}
+					</ol>
+			  	</div>
+			{% endif %}
+			{% if pageScroll == 1 %}
+				<h1>Sentiment</h1>
+				<h3>For this graph, we used TextBlob to find the sentiment of the tweets. A higher number means the tweets were generally happier. We marked the three 'happiest' momemnts of the Golden Globes</h2>
+				<img src="../static/Sentiment_Graph.png" alt="Smiley face">
+			{% endif %}
+			{% if pageScroll == 0 %}
+				<h1>Hello World</h1>
+			{% endif %}
+		</div>
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
