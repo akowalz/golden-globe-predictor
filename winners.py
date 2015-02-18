@@ -302,27 +302,44 @@ def format_for_grader(metadata_path, tweet_data_path, presenting_tweets, outpath
 
     output = {
         "metadata": {
-                "year": metadata["Year"],
+            "year": metadata["Year"],
+            "names": {
                 "hosts": {
                     "method": "hardcoded",
                     "method_description": "hardcoded"
                     },
                 "nominees": {
-                    "method": "hardcoded",
+                    "method": "hardcoded", "scraped"
                     "method_description": "calculated from award dataset used"
                     },
                 "awards": {
-                    "method": "hardcoded",
+                    "method": "hardcoded", "scraped"
+                    "method_description": "calculated from award dataset used"
+                    },
+                "presenters": {
+                    "method": "hardcoded", "scraped"
                     "method_description": "calculated from award dataset used"
                     }
                 },
+            "mappings": {
+                "nominees": {
+                    "method": "hardcoded",
+                    "method_description": "calculated from award dataset used"
+                    },
+                "presenters": {
+                    "method": "hardcoded",
+                    "method_description": "calculated from award dataset used"
+                        }
+                    }
+                },
+
         "data": {
             "unstructured": {
                 "hosts": metadata["Hosts"],
                 "winners": all_winners,
-                "nominees": nominees_full,
                 "awards": all_awards,
-                "presenters": all_presenters
+                "presenters": all_presenters,
+                "nominees": nominees_full
                 },
             "structured": {}
             }
