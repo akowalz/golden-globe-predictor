@@ -538,17 +538,33 @@
         }
     }, 
     "metadata": {
-        "nominees": {
-            "method": "hardcoded", 
-            "method_description": "calculated from award dataset used"
+        "mappings": {
+            "nominees": {
+                "method": "hardcoded", 
+                "method_description": "calculated from award dataset used"
+            }, 
+            "presenters": {
+                "method": "hardcoded", 
+                "method_description": "calculated from award dataset used"
+            }
         }, 
-        "awards": {
-            "method": "hardcoded", 
-            "method_description": "calculated from award dataset used"
-        }, 
-        "hosts": {
-            "method": "hardcoded", 
-            "method_description": "hardcoded"
+        "names": {
+            "nominees": {
+                "method": "hardcoded", 
+                "method_description": "calculated from award dataset used"
+            }, 
+            "awards": {
+                "method": "hardcoded", 
+                "method_description": "calculated from award dataset used"
+            }, 
+            "hosts": {
+                "method": "hardcoded", 
+                "method_description": "hardcoded"
+            }, 
+            "presenters": {
+                "method": "hardcoded", 
+                "method_description": "calculated from award dataset used"
+            }
         }, 
         "year": "2013"
     }
